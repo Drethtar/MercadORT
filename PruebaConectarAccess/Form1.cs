@@ -31,7 +31,10 @@ namespace PruebaConectarAccess
             /* if (new Interaccion().verificarConexion())
                 MessageBox.Show("Conexion esta abierta");
             else
-                MessageBox.Show("Fallo la conexion D:"); */
+                MessageBox.Show("Fallo la conexion D:"); 
+            
+             fua alto nombre Jorge
+             */
         }
     }
 }
