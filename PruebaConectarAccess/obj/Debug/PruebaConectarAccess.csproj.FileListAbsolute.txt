@@ -1,0 +1,43 @@
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe.config
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.pdb
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csprojAssemblyReference.cache
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Form1.resources
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.jorge.resources
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Properties.Resources.resources
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.GenerateResource.cache
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CoreCompileInputs.cache
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.exe
+C:\Users\defa\source\repos\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\MercadOrt.accdb
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe.config
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.pdb
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.pdb
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll.config
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csprojAssemblyReference.cache
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Form1.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.jorge.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Properties.Resources.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.GenerateResource.cache
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CoreCompileInputs.cache
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CopyComplete
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.exe
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\MercadOrt.accdb
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe.config
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.pdb
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.pdb
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll.config
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csprojAssemblyReference.cache
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Form1.resources
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.jorge.resources
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Properties.Resources.resources
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.GenerateResource.cache
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CoreCompileInputs.cache
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CopyComplete
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.exe
+C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
