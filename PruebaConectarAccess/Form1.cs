@@ -21,6 +21,7 @@ namespace PruebaConectarAccess
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // comment 4 github
             this.Hide();
             new jorge().ShowDialog();   
             this.Show();
