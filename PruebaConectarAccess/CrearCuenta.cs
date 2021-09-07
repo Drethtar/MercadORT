@@ -33,37 +33,55 @@ namespace PruebaConectarAccess
 
         private void btnInsertarDatos_Click(object sender, EventArgs e)
         {
-
             try
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
+                int count = 0;
 
-                command.CommandText = "select * from Usuario where NombreUsuario='" + txtNombre.Text + "' and PasswordUsuario='" + txtContra.Text + 
-                    "' and MailUsuario='" + txtMail.Text+ "'";
-
-
-
-
-
-
-
-
-                command.CommandText = "select ID from Curso where Orientacion='" + cbxOrientacion.Text + "' and Anio='" + cbxCurso.Text +
-                "' and Letra='" + cbxLetra.Text + "'";
+                //chequear que no exista el user en la db
+                command.CommandText = "select * from Usuario where NombreUsuario='" + txtNombre.Text + "' or MailUsuario='" + txtMail.Text+ "'";
 
                 OleDbDataReader reader = command.ExecuteReader();
-                reader.Read();
-                string IDdelCurso = reader["ID"].ToString();
-                
 
+                while (reader.Read())
+                {
+                    count += 1;
+                }
+
+                if (count == 1)
+                {
+                    MessageBox.Show("Ya existe una cuenta con los datos introducidos");
+                    connection.Close();
+                    return;
+
+                }
+                else if (count > 1)
+                {
+                    MessageBox.Show("Contactar a oficina tecnica y decir que hay mas de una cuenta con mismo Usuario Contra y mail");
+                    connection.Close();
+                    return;
+                }
+
+                reader.Close();
                 connection.Close();
                 connection.Open();
 
+                
+                command.CommandText = "select ID from Curso where Orientacion='" + cbxOrientacion.Text + "' and Anio='" + cbxCurso.Text +
+                "' and Letra='" + cbxLetra.Text + "'";
+
+                OleDbDataReader reader2 = command.ExecuteReader();
+                reader2.Read();
+                string IDdelCurso = reader2["ID"].ToString();
+
+                reader2.Close();
+
                 command.CommandText = "insert into Usuario (NombreUsuario,PasswordUsuario,MailUsuario,IDCurso) " +
                     "values ('"+txtNombre.Text+"','"+txtContra.Text+"','"+txtMail.Text+"', '" + IDdelCurso + "')";
-                
+
+
                 command.ExecuteNonQuery();
 
 
@@ -72,7 +90,7 @@ namespace PruebaConectarAccess
                 this.Hide();
                 new IniciasteSesion().ShowDialog();
                 this.Show();
-
+                                
                 connection.Close();
             }
             catch (Exception ex)
