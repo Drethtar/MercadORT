@@ -49,21 +49,17 @@ namespace PruebaConectarAccess
                 "' and Letra='" + cbxLetra.Text + "'";
 
                 OleDbDataReader reader = command.ExecuteReader();
-                string LectoApp = Convert.ToString(reader);
-
-                MessageBox.Show(LectoApp);
+                reader.Read();
+                string IDdelCurso = reader["ID"].ToString();
+                
 
                 connection.Close();
                 connection.Open();
 
                 command.CommandText = "insert into Usuario (NombreUsuario,PasswordUsuario,MailUsuario,IDCurso) " +
-                    "values ('"+txtNombre.Text+"','"+txtContra.Text+"','"+txtMail.Text+"', '" + LectoApp + "')";
+                    "values ('"+txtNombre.Text+"','"+txtContra.Text+"','"+txtMail.Text+"', '" + IDdelCurso + "')";
                 
                 command.ExecuteNonQuery();
-
-
-
-
 
 
                 MessageBox.Show("Saved");

@@ -60,9 +60,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MercadOrt.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="MercadOrt.accdb" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
