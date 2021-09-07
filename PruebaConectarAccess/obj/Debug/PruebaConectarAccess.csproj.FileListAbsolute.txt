@@ -17,8 +17,6 @@ C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAcc
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.pdb
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll.config
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csprojAssemblyReference.cache
-C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Form1.resources
-C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.jorge.resources
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Properties.Resources.resources
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.GenerateResource.cache
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CoreCompileInputs.cache
@@ -41,3 +39,5 @@ C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\Prue
 C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CopyComplete
 C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.exe
 C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Login.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CrearCuenta.resources

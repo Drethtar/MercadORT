@@ -12,9 +12,9 @@ using ClassLibrary1.Access;
 
 namespace PruebaConectarAccess
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -22,19 +22,13 @@ namespace PruebaConectarAccess
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new jorge().ShowDialog();   
+            new CrearCuenta().ShowDialog();   
             this.Show();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
-            /* if (new Interaccion().verificarConexion())
-                MessageBox.Show("Conexion esta abierta");
-            else
-                MessageBox.Show("Fallo la conexion D:"); 
-            
-             fua alto nombre Jorge
-             */
+            //this.WindowState = FormWindowState.Maximized;
         }
     }
 }
