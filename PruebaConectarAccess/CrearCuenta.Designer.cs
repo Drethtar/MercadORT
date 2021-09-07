@@ -49,7 +49,7 @@
             // 
             // btnInsertarDatos
             // 
-            this.btnInsertarDatos.Location = new System.Drawing.Point(499, 479);
+            this.btnInsertarDatos.Location = new System.Drawing.Point(470, 479);
             this.btnInsertarDatos.Margin = new System.Windows.Forms.Padding(4);
             this.btnInsertarDatos.Name = "btnInsertarDatos";
             this.btnInsertarDatos.Size = new System.Drawing.Size(100, 28);
@@ -132,9 +132,9 @@
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -143,7 +143,7 @@
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(1067, 30);
+            this.menuStrip2.Size = new System.Drawing.Size(1067, 24);
             this.menuStrip2.TabIndex = 10;
             this.menuStrip2.Text = "menuStrip2";
             // 

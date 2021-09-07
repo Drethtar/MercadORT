@@ -28,38 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtContra = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.llCrearCuenta = new System.Windows.Forms.Label();
+            this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // txtUsuario
             // 
-            this.button1.Location = new System.Drawing.Point(428, 427);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 71);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Empezar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtUsuario.Location = new System.Drawing.Point(415, 194);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(162, 22);
+            this.txtUsuario.TabIndex = 1;
             // 
-            // textBox1
+            // txtContra
             // 
-            this.textBox1.Location = new System.Drawing.Point(415, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 22);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(415, 317);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 22);
-            this.textBox2.TabIndex = 2;
+            this.txtContra.Location = new System.Drawing.Point(415, 317);
+            this.txtContra.Name = "txtContra";
+            this.txtContra.Size = new System.Drawing.Size(162, 22);
+            this.txtContra.TabIndex = 2;
             // 
             // label1
             // 
@@ -88,17 +78,38 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Inicio de Sesion";
             // 
+            // llCrearCuenta
+            // 
+            this.llCrearCuenta.AutoSize = true;
+            this.llCrearCuenta.Location = new System.Drawing.Point(451, 434);
+            this.llCrearCuenta.Name = "llCrearCuenta";
+            this.llCrearCuenta.Size = new System.Drawing.Size(81, 17);
+            this.llCrearCuenta.TabIndex = 6;
+            this.llCrearCuenta.Text = "Registrarse";
+            this.llCrearCuenta.Click += new System.EventHandler(this.llCrearCuenta_Click);
+            // 
+            // btnIniciarSesion
+            // 
+            this.btnIniciarSesion.Location = new System.Drawing.Point(438, 482);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Size = new System.Drawing.Size(111, 23);
+            this.btnIniciarSesion.TabIndex = 7;
+            this.btnIniciarSesion.Text = "Iniciar Sesion";
+            this.btnIniciarSesion.UseVisualStyleBackColor = true;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnIniciarSesion);
+            this.Controls.Add(this.llCrearCuenta);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtContra);
+            this.Controls.Add(this.txtUsuario);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Login";
@@ -110,12 +121,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtContra;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label llCrearCuenta;
+        private System.Windows.Forms.Button btnIniciarSesion;
     }
 }
 

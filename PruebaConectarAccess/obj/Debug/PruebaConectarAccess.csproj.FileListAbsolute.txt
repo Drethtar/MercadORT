@@ -41,3 +41,4 @@ C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\Prue
 C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Login.resources
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CrearCuenta.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.IniciasteSesion.resources

@@ -34,16 +34,21 @@ namespace PruebaConectarAccess
         private void btnInsertarDatos_Click(object sender, EventArgs e)
         {
 
-            //Guid NewGUID = Guid.NewGuid();
-            //"insert into Usuario (NombreUsuario,PasswordUsuario,MailUsuario,IDCurso) " +
-            //"values ('" + txtNombre.Text + "','" + txtContra.Text + "','" + txtMail.Text + "',1)";
             try
             {
-                
-                
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
+
+                command.CommandText = "select * from Usuario where NombreUsuario='" + txtNombre.Text + "' and PasswordUsuario='" + txtContra.Text + 
+                    "' and MailUsuario='" + txtMail.Text+ "'";
+
+
+
+
+
+
+
 
                 command.CommandText = "select ID from Curso where Orientacion='" + cbxOrientacion.Text + "' and Anio='" + cbxCurso.Text +
                 "' and Letra='" + cbxLetra.Text + "'";
@@ -65,7 +70,7 @@ namespace PruebaConectarAccess
                 MessageBox.Show("Saved");
 
                 this.Hide();
-                new Login().ShowDialog();
+                new IniciasteSesion().ShowDialog();
                 this.Show();
 
                 connection.Close();
