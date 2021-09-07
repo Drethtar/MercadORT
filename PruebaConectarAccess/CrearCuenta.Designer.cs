@@ -41,10 +41,10 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.cbxCurso = new System.Windows.Forms.ComboBox();
             this.cbxOrientacion = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.llOrientacion = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbxLetra = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.llLetra = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnInsertarDatos
@@ -133,9 +133,9 @@
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -144,7 +144,7 @@
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(1067, 30);
+            this.menuStrip2.Size = new System.Drawing.Size(1067, 24);
             this.menuStrip2.TabIndex = 10;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -162,30 +162,25 @@
             this.cbxCurso.Name = "cbxCurso";
             this.cbxCurso.Size = new System.Drawing.Size(121, 24);
             this.cbxCurso.TabIndex = 11;
+            this.cbxCurso.SelectedIndexChanged += new System.EventHandler(this.cbxCurso_SelectedIndexChanged);
             // 
             // cbxOrientacion
             // 
             this.cbxOrientacion.FormattingEnabled = true;
-            this.cbxOrientacion.Items.AddRange(new object[] {
-            "Ninguna",
-            "TIC",
-            "Humanidades",
-            "Medios",
-            "Diseño",
-            "Gestion"});
             this.cbxOrientacion.Location = new System.Drawing.Point(615, 267);
             this.cbxOrientacion.Name = "cbxOrientacion";
             this.cbxOrientacion.Size = new System.Drawing.Size(121, 24);
             this.cbxOrientacion.TabIndex = 12;
+            this.cbxOrientacion.SelectedIndexChanged += new System.EventHandler(this.cbxOrientacion_SelectedIndexChanged);
             // 
-            // label5
+            // llOrientacion
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(615, 244);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 17);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Orientacion";
+            this.llOrientacion.AutoSize = true;
+            this.llOrientacion.Location = new System.Drawing.Point(615, 244);
+            this.llOrientacion.Name = "llOrientacion";
+            this.llOrientacion.Size = new System.Drawing.Size(81, 17);
+            this.llOrientacion.TabIndex = 13;
+            this.llOrientacion.Text = "Orientacion";
             // 
             // label6
             // 
@@ -199,56 +194,29 @@
             // cbxLetra
             // 
             this.cbxLetra.FormattingEnabled = true;
-            this.cbxLetra.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z"});
             this.cbxLetra.Location = new System.Drawing.Point(615, 384);
             this.cbxLetra.Name = "cbxLetra";
             this.cbxLetra.Size = new System.Drawing.Size(121, 24);
             this.cbxLetra.TabIndex = 15;
             // 
-            // label7
+            // llLetra
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(615, 349);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 17);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Letra";
+            this.llLetra.AutoSize = true;
+            this.llLetra.Location = new System.Drawing.Point(615, 349);
+            this.llLetra.Name = "llLetra";
+            this.llLetra.Size = new System.Drawing.Size(41, 17);
+            this.llLetra.TabIndex = 16;
+            this.llLetra.Text = "Letra";
             // 
             // CrearCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.llLetra);
             this.Controls.Add(this.cbxLetra);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.llOrientacion);
             this.Controls.Add(this.cbxOrientacion);
             this.Controls.Add(this.cbxCurso);
             this.Controls.Add(this.CheckConnection);
@@ -287,9 +255,9 @@
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ComboBox cbxCurso;
         private System.Windows.Forms.ComboBox cbxOrientacion;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label llOrientacion;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbxLetra;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label llLetra;
     }
 }

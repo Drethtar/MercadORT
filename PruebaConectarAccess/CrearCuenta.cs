@@ -23,11 +23,16 @@ namespace PruebaConectarAccess
 
         private void CrearCuenta_Load(object sender, EventArgs e)
         {
-            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
             connection.Open();
             CheckConnection.Text = "funca";
             connection.Close();
+            
+            cbxOrientacion.Hide();
+            llOrientacion.Hide();
+            cbxLetra.Hide();
+            llLetra.Hide();
             
         }
 
@@ -88,7 +93,7 @@ namespace PruebaConectarAccess
                 MessageBox.Show("Saved");
 
                 this.Hide();
-                new IniciasteSesion().ShowDialog();
+                new Login().ShowDialog();
                 this.Show();
                                 
                 connection.Close();
@@ -99,6 +104,145 @@ namespace PruebaConectarAccess
             }
         }
 
+        private void cbxCurso_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbxOrientacion.Items.Clear();
+            
+            if (cbxCurso.Text == "7mo" || cbxCurso.Text == "1ro" || cbxCurso.Text == "2do")
+            {
+                cbxOrientacion.Items.Add("Ninguna");
+            }
+            else if (cbxCurso.Text == "3ro" || cbxCurso.Text == "4to" || cbxCurso.Text == "5to")
+            {
+                cbxOrientacion.Items.Add("TIC");
+                cbxOrientacion.Items.Add("Gestion");
+                cbxOrientacion.Items.Add("Medios");
+                cbxOrientacion.Items.Add("Humanidades");
+                cbxOrientacion.Items.Add("Diseño");
+            }
+            
+            cbxOrientacion.Show();
+            llOrientacion.Show();
+        }
 
+        private void cbxOrientacion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbxLetra.Items.Clear();
+            
+            if (cbxCurso.Text == "7mo" && cbxOrientacion.Text == "Ninguna")
+            {
+                cbxLetra.Items.Add("A"); cbxLetra.Items.Add("B"); cbxLetra.Items.Add("C"); cbxLetra.Items.Add("D"); cbxLetra.Items.Add("E"); cbxLetra.Items.Add("F"); cbxLetra.Items.Add("G");
+            }
+            else if (cbxCurso.Text == "1ro" && cbxOrientacion.Text == "Ninguna")
+            {
+                cbxLetra.Items.Add("A"); cbxLetra.Items.Add("B"); cbxLetra.Items.Add("C"); cbxLetra.Items.Add("D"); cbxLetra.Items.Add("E"); cbxLetra.Items.Add("F"); cbxLetra.Items.Add("G");
+                cbxLetra.Items.Add("H"); cbxLetra.Items.Add("I"); cbxLetra.Items.Add("J"); cbxLetra.Items.Add("K"); cbxLetra.Items.Add("L"); cbxLetra.Items.Add("M"); cbxLetra.Items.Add("N");
+                cbxLetra.Items.Add("O"); cbxLetra.Items.Add("P"); cbxLetra.Items.Add("Q"); cbxLetra.Items.Add("R"); cbxLetra.Items.Add("S"); cbxLetra.Items.Add("T");
+            }
+            else if (cbxCurso.Text == "2do" && cbxOrientacion.Text == "Ninguna")
+            {
+                cbxLetra.Items.Add("A"); cbxLetra.Items.Add("B"); cbxLetra.Items.Add("C"); cbxLetra.Items.Add("D"); cbxLetra.Items.Add("E"); cbxLetra.Items.Add("F"); cbxLetra.Items.Add("G");
+                cbxLetra.Items.Add("H"); cbxLetra.Items.Add("I"); cbxLetra.Items.Add("J"); cbxLetra.Items.Add("K"); cbxLetra.Items.Add("L"); cbxLetra.Items.Add("M"); cbxLetra.Items.Add("N");
+                cbxLetra.Items.Add("O"); cbxLetra.Items.Add("P");
+            }
+            else if (cbxCurso.Text == "3ro" && cbxOrientacion.Text == "TIC")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+                cbxLetra.Items.Add("D");
+                cbxLetra.Items.Add("E");
+                cbxLetra.Items.Add("F");
+            }
+            else if (cbxCurso.Text == "4to" && cbxOrientacion.Text == "TIC")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+                cbxLetra.Items.Add("D");
+            }
+            else if (cbxCurso.Text == "5to" && cbxOrientacion.Text == "TIC")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+                cbxLetra.Items.Add("D");
+            }
+            else if (cbxCurso.Text == "3ro" && cbxOrientacion.Text == "Medios")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+                cbxLetra.Items.Add("D");
+                cbxLetra.Items.Add("E");
+            }
+            else if (cbxCurso.Text == "4to" && cbxOrientacion.Text == "Medios")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+                cbxLetra.Items.Add("D");
+            }
+            else if (cbxCurso.Text == "5to" && cbxOrientacion.Text == "Medios")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+                cbxLetra.Items.Add("D");
+            }
+            else if (cbxCurso.Text == "3ro" && cbxOrientacion.Text == "Gestion")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+            }
+            else if (cbxCurso.Text == "4to" && cbxOrientacion.Text == "Gestion")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+                cbxLetra.Items.Add("D");
+            }
+            else if (cbxCurso.Text == "5to" && cbxOrientacion.Text == "Gestion")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+                cbxLetra.Items.Add("D");
+            }
+            else if (cbxCurso.Text == "3ro" && cbxOrientacion.Text == "Diseño")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+            }
+            else if (cbxCurso.Text == "4to" && cbxOrientacion.Text == "Diseño")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+            }
+            else if (cbxCurso.Text == "5to" && cbxOrientacion.Text == "Diseño")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+                cbxLetra.Items.Add("C");
+            }
+            else if (cbxCurso.Text == "3ro" && cbxOrientacion.Text == "Humanidades")
+            {
+                cbxLetra.Items.Add("A");
+            }
+            else if (cbxCurso.Text == "4to" && cbxOrientacion.Text == "Humanidades")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+            }
+            else if (cbxCurso.Text == "5to" && cbxOrientacion.Text == "Humanidades")
+            {
+                cbxLetra.Items.Add("A");
+                cbxLetra.Items.Add("B");
+            }
+            cbxLetra.Show();
+            llLetra.Show();
+        }
     }
 }

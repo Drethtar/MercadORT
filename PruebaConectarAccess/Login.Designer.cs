@@ -48,6 +48,7 @@
             // 
             this.txtContra.Location = new System.Drawing.Point(415, 317);
             this.txtContra.Name = "txtContra";
+            this.txtContra.PasswordChar = '*';
             this.txtContra.Size = new System.Drawing.Size(162, 22);
             this.txtContra.TabIndex = 2;
             // 
@@ -90,9 +91,9 @@
             // 
             // btnIniciarSesion
             // 
-            this.btnIniciarSesion.Location = new System.Drawing.Point(438, 482);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(437, 476);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(111, 23);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(117, 32);
             this.btnIniciarSesion.TabIndex = 7;
             this.btnIniciarSesion.Text = "Iniciar Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = true;

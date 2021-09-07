@@ -25,7 +25,7 @@ namespace PruebaConectarAccess
 
         private void Login_Load(object sender, EventArgs e)
         {
-            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
         }
 
@@ -62,11 +62,11 @@ namespace PruebaConectarAccess
                 }
                 else if (count > 1)
                 {
-                    MessageBox.Show("Ducplicate Username and Password");
+                    MessageBox.Show("Contactar a oficina tecnica y decir que hay mas de una cuenta con mismo Usuario Contra y mail");
                 }
                 else
                 {
-                    MessageBox.Show("Username and Password is not correct");
+                    MessageBox.Show("Los datos introducidos son incorrectos");
                 }
 
                 connection.Close();
