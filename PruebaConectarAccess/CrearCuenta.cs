@@ -25,9 +25,6 @@ namespace PruebaConectarAccess
         {
             this.WindowState = FormWindowState.Maximized;
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
-            connection.Open();
-            CheckConnection.Text = "funca";
-            connection.Close();
             
             cbxOrientacion.Hide();
             llOrientacion.Hide();
@@ -119,8 +116,9 @@ namespace PruebaConectarAccess
                 cbxOrientacion.Items.Add("Medios");
                 cbxOrientacion.Items.Add("Humanidades");
                 cbxOrientacion.Items.Add("Diseño");
+
             }
-            
+
             cbxOrientacion.Show();
             llOrientacion.Show();
         }

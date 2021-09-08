@@ -36,7 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.CheckConnection = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.cbxCurso = new System.Windows.Forms.ComboBox();
@@ -120,16 +119,6 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Crear Cuenta";
             // 
-            // CheckConnection
-            // 
-            this.CheckConnection.AutoSize = true;
-            this.CheckConnection.Location = new System.Drawing.Point(843, 479);
-            this.CheckConnection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.CheckConnection.Name = "CheckConnection";
-            this.CheckConnection.Size = new System.Drawing.Size(12, 17);
-            this.CheckConnection.TabIndex = 8;
-            this.CheckConnection.Text = ".";
-            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -176,7 +165,7 @@
             // llOrientacion
             // 
             this.llOrientacion.AutoSize = true;
-            this.llOrientacion.Location = new System.Drawing.Point(615, 244);
+            this.llOrientacion.Location = new System.Drawing.Point(615, 229);
             this.llOrientacion.Name = "llOrientacion";
             this.llOrientacion.Size = new System.Drawing.Size(81, 17);
             this.llOrientacion.TabIndex = 13;
@@ -185,7 +174,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(615, 125);
+            this.label6.Location = new System.Drawing.Point(615, 107);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 17);
             this.label6.TabIndex = 14;
@@ -219,7 +208,6 @@
             this.Controls.Add(this.llOrientacion);
             this.Controls.Add(this.cbxOrientacion);
             this.Controls.Add(this.cbxCurso);
-            this.Controls.Add(this.CheckConnection);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -250,7 +238,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label CheckConnection;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ComboBox cbxCurso;

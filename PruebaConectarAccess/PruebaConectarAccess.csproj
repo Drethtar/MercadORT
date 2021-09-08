@@ -64,6 +64,18 @@
     <Compile Include="CrearCuenta.Designer.cs">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="OlvideMiContra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlvideMiContra.Designer.cs">
+      <DependentUpon>OlvideMiContra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlvideMiPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlvideMiPassword.Designer.cs">
+      <DependentUpon>OlvideMiPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="IniciasteSesion.resx">
@@ -74,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CrearCuenta.resx">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlvideMiPassword.resx">
+      <DependentUpon>OlvideMiPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

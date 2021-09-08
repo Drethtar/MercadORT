@@ -35,6 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.llCrearCuenta = new System.Windows.Forms.Label();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
+            this.LLCambiarPassword = new System.Windows.Forms.Label();
+            this.llOlvideMiPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -82,7 +84,7 @@
             // llCrearCuenta
             // 
             this.llCrearCuenta.AutoSize = true;
-            this.llCrearCuenta.Location = new System.Drawing.Point(451, 434);
+            this.llCrearCuenta.Location = new System.Drawing.Point(453, 459);
             this.llCrearCuenta.Name = "llCrearCuenta";
             this.llCrearCuenta.Size = new System.Drawing.Size(81, 17);
             this.llCrearCuenta.TabIndex = 6;
@@ -91,19 +93,40 @@
             // 
             // btnIniciarSesion
             // 
-            this.btnIniciarSesion.Location = new System.Drawing.Point(437, 476);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(427, 409);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(117, 32);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(136, 38);
             this.btnIniciarSesion.TabIndex = 7;
             this.btnIniciarSesion.Text = "Iniciar Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
+            // 
+            // LLCambiarPassword
+            // 
+            this.LLCambiarPassword.AutoSize = true;
+            this.LLCambiarPassword.Location = new System.Drawing.Point(428, 485);
+            this.LLCambiarPassword.Name = "LLCambiarPassword";
+            this.LLCambiarPassword.Size = new System.Drawing.Size(137, 17);
+            this.LLCambiarPassword.TabIndex = 8;
+            this.LLCambiarPassword.Text = "Cambiar Contraseña";
+            this.LLCambiarPassword.Click += new System.EventHandler(this.llOlvideMiPassword_Click);
+            // 
+            // llOlvideMiPassword
+            // 
+            this.llOlvideMiPassword.AutoSize = true;
+            this.llOlvideMiPassword.Location = new System.Drawing.Point(428, 512);
+            this.llOlvideMiPassword.Name = "llOlvideMiPassword";
+            this.llOlvideMiPassword.Size = new System.Drawing.Size(141, 17);
+            this.llOlvideMiPassword.TabIndex = 9;
+            this.llOlvideMiPassword.Text = "Olvide mi contraseña";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.llOlvideMiPassword);
+            this.Controls.Add(this.LLCambiarPassword);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.llCrearCuenta);
             this.Controls.Add(this.label3);
@@ -130,6 +153,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label llCrearCuenta;
         private System.Windows.Forms.Button btnIniciarSesion;
+        private System.Windows.Forms.Label LLCambiarPassword;
+        private System.Windows.Forms.Label llOlvideMiPassword;
     }
 }
 

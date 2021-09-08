@@ -76,5 +76,12 @@ namespace PruebaConectarAccess
                 MessageBox.Show("Upa algo salio mal... " + ex);
             }
         }
+
+        private void llOlvideMiPassword_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new OlvideMiPassword().ShowDialog();
+            this.Show();
+        }
     }
 }
