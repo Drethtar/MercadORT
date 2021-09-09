@@ -15,8 +15,8 @@ namespace PruebaConectarAccess
 {
     public partial class OlvideMiContra : Form
     {
-        static string YourUsername = "proyectoortml@gmail.com";
-        static string YourPassword = "gpxeexmklfvvmrzm";
+        static string YourUsername = "pmercadort@gmail.com";
+        static string YourPassword = "zqcfflunfrcekbcz";
         static string Destination = "";
         static string YourMessageSubject = "Recuperacion de Contraseña";
         static string YourMessageBody = "";
@@ -41,17 +41,21 @@ namespace PruebaConectarAccess
             connection.Open();
             OleDbCommand command = new OleDbCommand();
             command.Connection = connection;
+            int count = 0;
 
-            command.CommandText = "select PasswordUsuario from Usuario where MailUsuario='" + txtMailPerdiContra.Text + "'";
+            command.CommandText = "select * from Usuario where MailUsuario='" + txtMailPerdiContra.Text + "'";
 
             OleDbDataReader reader = command.ExecuteReader();
+            
+            command.CommandText = "select PasswordUsuario from Usuario where MailUsuario='" + txtMailPerdiContra.Text + "'";
+
             reader.Read();
             string PasswordARecuperar = reader["PasswordUsuario"].ToString();
 
             string Mail = txtMailPerdiContra.Text;
 
             YourMessageBody = "La contraseña de la cuenta con la direccion de correo electronico " + Mail + " es " + PasswordARecuperar+".";
-            int count = 0;
+        
             while (reader.Read())
             {
                 count += 1;
