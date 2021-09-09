@@ -1,7 +1,7 @@
 ﻿
 namespace PruebaConectarAccess
 {
-    partial class OlvideMiPassword
+    partial class CambiarMiPassword
     {
         /// <summary>
         /// Required designer variable.

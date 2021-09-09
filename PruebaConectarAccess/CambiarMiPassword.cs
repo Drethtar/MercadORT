@@ -11,10 +11,10 @@ using System.Data.OleDb;
 
 namespace PruebaConectarAccess
 {
-    public partial class OlvideMiPassword : Form
+    public partial class CambiarMiPassword : Form
     {
         private OleDbConnection connection = new OleDbConnection();
-        public OlvideMiPassword()
+        public CambiarMiPassword()
         {
             InitializeComponent();
         }

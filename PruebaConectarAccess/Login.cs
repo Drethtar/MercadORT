@@ -80,7 +80,14 @@ namespace PruebaConectarAccess
         private void llOlvideMiPassword_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new OlvideMiPassword().ShowDialog();
+            new CambiarMiPassword().ShowDialog();
+            this.Show();
+        }
+
+        private void llOlvideMiPassword_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            new OlvideMiContra().ShowDialog();
             this.Show();
         }
     }

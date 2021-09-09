@@ -41,61 +41,68 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(415, 194);
+            this.txtUsuario.Location = new System.Drawing.Point(311, 158);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(162, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(122, 20);
             this.txtUsuario.TabIndex = 1;
             // 
             // txtContra
             // 
-            this.txtContra.Location = new System.Drawing.Point(415, 317);
+            this.txtContra.Location = new System.Drawing.Point(311, 258);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtContra.Name = "txtContra";
             this.txtContra.PasswordChar = '*';
-            this.txtContra.Size = new System.Drawing.Size(162, 22);
+            this.txtContra.Size = new System.Drawing.Size(122, 20);
             this.txtContra.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(415, 149);
+            this.label1.Location = new System.Drawing.Point(311, 121);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Usuario";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(415, 274);
+            this.label2.Location = new System.Drawing.Point(311, 223);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 17);
+            this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Contrasena";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 13);
+            this.label3.Location = new System.Drawing.Point(10, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 17);
+            this.label3.Size = new System.Drawing.Size(82, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Inicio de Sesion";
             // 
             // llCrearCuenta
             // 
             this.llCrearCuenta.AutoSize = true;
-            this.llCrearCuenta.Location = new System.Drawing.Point(453, 459);
+            this.llCrearCuenta.Location = new System.Drawing.Point(340, 373);
+            this.llCrearCuenta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llCrearCuenta.Name = "llCrearCuenta";
-            this.llCrearCuenta.Size = new System.Drawing.Size(81, 17);
+            this.llCrearCuenta.Size = new System.Drawing.Size(60, 13);
             this.llCrearCuenta.TabIndex = 6;
             this.llCrearCuenta.Text = "Registrarse";
             this.llCrearCuenta.Click += new System.EventHandler(this.llCrearCuenta_Click);
             // 
             // btnIniciarSesion
             // 
-            this.btnIniciarSesion.Location = new System.Drawing.Point(427, 409);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(320, 332);
+            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(136, 38);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(102, 31);
             this.btnIniciarSesion.TabIndex = 7;
             this.btnIniciarSesion.Text = "Iniciar Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
@@ -104,9 +111,10 @@
             // LLCambiarPassword
             // 
             this.LLCambiarPassword.AutoSize = true;
-            this.LLCambiarPassword.Location = new System.Drawing.Point(428, 485);
+            this.LLCambiarPassword.Location = new System.Drawing.Point(321, 394);
+            this.LLCambiarPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LLCambiarPassword.Name = "LLCambiarPassword";
-            this.LLCambiarPassword.Size = new System.Drawing.Size(137, 17);
+            this.LLCambiarPassword.Size = new System.Drawing.Size(102, 13);
             this.LLCambiarPassword.TabIndex = 8;
             this.LLCambiarPassword.Text = "Cambiar Contraseña";
             this.LLCambiarPassword.Click += new System.EventHandler(this.llOlvideMiPassword_Click);
@@ -114,17 +122,19 @@
             // llOlvideMiPassword
             // 
             this.llOlvideMiPassword.AutoSize = true;
-            this.llOlvideMiPassword.Location = new System.Drawing.Point(428, 512);
+            this.llOlvideMiPassword.Location = new System.Drawing.Point(321, 416);
+            this.llOlvideMiPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llOlvideMiPassword.Name = "llOlvideMiPassword";
-            this.llOlvideMiPassword.Size = new System.Drawing.Size(141, 17);
+            this.llOlvideMiPassword.Size = new System.Drawing.Size(106, 13);
             this.llOlvideMiPassword.TabIndex = 9;
             this.llOlvideMiPassword.Text = "Olvide mi contraseña";
+            this.llOlvideMiPassword.Click += new System.EventHandler(this.llOlvideMiPassword_Click_1);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.llOlvideMiPassword);
             this.Controls.Add(this.LLCambiarPassword);
             this.Controls.Add(this.btnIniciarSesion);
@@ -134,7 +144,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtUsuario);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
