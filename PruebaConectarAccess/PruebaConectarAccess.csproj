@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IniciasteSesion.cs">
+    <Compile Include="ComprarOVender.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IniciasteSesion.Designer.cs">
-      <DependentUpon>IniciasteSesion.cs</DependentUpon>
+    <Compile Include="ComprarOVender.Designer.cs">
+      <DependentUpon>ComprarOVender.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -78,8 +78,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="IniciasteSesion.resx">
-      <DependentUpon>IniciasteSesion.cs</DependentUpon>
+    <Compile Include="PublicacionDeVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublicacionDeVenta.Designer.cs">
+      <DependentUpon>PublicacionDeVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publicaciones.Designer.cs">
+      <DependentUpon>Publicaciones.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComprarOVender.resx">
+      <DependentUpon>ComprarOVender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -102,6 +114,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PublicacionDeVenta.resx">
+      <DependentUpon>PublicacionDeVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

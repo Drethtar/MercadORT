@@ -41,8 +41,6 @@ C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\Prue
 C:\Users\ALUMNO\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Login.resources
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CrearCuenta.resources
-C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.IniciasteSesion.resources
-C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.OlvideMiPassword.resources
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe.config
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.pdb
@@ -61,3 +59,7 @@ C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\Pr
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CambiarMiPassword.resources
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.OlvideMiContra.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.ComprarOVender.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CambiarMiPassword.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.OlvideMiContra.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionDeVenta.resources

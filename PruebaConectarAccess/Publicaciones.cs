@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PruebaConectarAccess
 {
-    public partial class IniciasteSesion : Form
+    public partial class Publicaciones : Form
     {
-        public IniciasteSesion()
+        public Publicaciones()
         {
             InitializeComponent();
         }

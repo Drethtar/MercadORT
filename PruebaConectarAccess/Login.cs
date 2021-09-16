@@ -57,7 +57,7 @@ namespace PruebaConectarAccess
                 if (count == 1)
                 {
                     this.Hide();
-                    new IniciasteSesion().ShowDialog();
+                    new ComprarOVender().ShowDialog();
                     this.Show();
                 }
                 else if (count > 1)

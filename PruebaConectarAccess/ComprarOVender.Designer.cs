@@ -1,7 +1,7 @@
 ﻿
 namespace PruebaConectarAccess
 {
-    partial class IniciasteSesion
+    partial class ComprarOVender
     {
         /// <summary>
         /// Required designer variable.
@@ -30,25 +30,50 @@ namespace PruebaConectarAccess
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.btnComprar = new System.Windows.Forms.Button();
+            this.btnVender = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(321, 217);
+            this.label1.Location = new System.Drawing.Point(339, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 17);
+            this.label1.Size = new System.Drawing.Size(87, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "FUNCIONO TODO";
+            this.label1.Text = "Bienvenid@!";
             // 
-            // IniciasteSesion
+            // btnComprar
+            // 
+            this.btnComprar.Location = new System.Drawing.Point(263, 386);
+            this.btnComprar.Name = "btnComprar";
+            this.btnComprar.Size = new System.Drawing.Size(108, 52);
+            this.btnComprar.TabIndex = 1;
+            this.btnComprar.Text = "Comprar";
+            this.btnComprar.UseVisualStyleBackColor = true;
+            this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
+            // 
+            // btnVender
+            // 
+            this.btnVender.Location = new System.Drawing.Point(401, 386);
+            this.btnVender.Name = "btnVender";
+            this.btnVender.Size = new System.Drawing.Size(108, 52);
+            this.btnVender.TabIndex = 2;
+            this.btnVender.Text = "Vender";
+            this.btnVender.UseVisualStyleBackColor = true;
+            this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
+            // 
+            // ComprarOVender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVender);
+            this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.label1);
-            this.Name = "IniciasteSesion";
+            this.Name = "ComprarOVender";
             this.Text = "IniciasteSesion";
+            this.Load += new System.EventHandler(this.ComprarOVender_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -57,5 +82,7 @@ namespace PruebaConectarAccess
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnComprar;
+        private System.Windows.Forms.Button btnVender;
     }
 }
