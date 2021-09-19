@@ -27,7 +27,6 @@ namespace PruebaConectarAccess
             llEditorial.Hide(); txtEditorial.Hide(); //libro
             llMateriaApunte.Hide(); cbxMateriaApunte.Hide(); //apunte
             llMateriaLibro.Hide(); cbxMateriaLibro.Hide(); //libro
-            llMateriaUtil.Hide(); cbxMateriaUtil.Hide(); //util
             llPrecioApunte.Hide(); numPrecioApunte.Hide(); //apunte
             llPrecioLibro.Hide(); numPrecioLibro.Hide(); //libro
             llPrecioUtil.Hide(); numPrecioUtil.Hide(); //util
@@ -50,7 +49,6 @@ namespace PruebaConectarAccess
                 llDescApunte.Hide(); txtDescApunte.Hide();
                 llDescUtil.Hide(); txtDescUtil.Hide();
                 llMateriaApunte.Hide(); cbxMateriaApunte.Hide();
-                llMateriaUtil.Hide(); cbxMateriaUtil.Hide();
                 llPrecioApunte.Hide(); numPrecioApunte.Hide();
                 llPrecioUtil.Hide(); numPrecioUtil.Hide();
                 llTemasApunte.Hide(); txtTemasApunte.Hide();
@@ -63,7 +61,7 @@ namespace PruebaConectarAccess
                 llPrecioLibro.Show(); numPrecioLibro.Show();
                 llTituloLibro.Show(); txtTituloLibro.Show();
 
-                btnPublicar.Hide();
+                btnPublicar.Show();
             }
             else if (cbxQueEs.Text == "Apunte")
             {
@@ -72,7 +70,6 @@ namespace PruebaConectarAccess
                 llDescUtil.Hide(); txtDescUtil.Hide();
                 llEditorial.Hide(); txtEditorial.Hide();
                 llMateriaLibro.Hide(); cbxMateriaLibro.Hide();
-                llMateriaUtil.Hide(); cbxMateriaUtil.Hide();
                 llPrecioLibro.Hide(); numPrecioLibro.Hide();
                 llPrecioUtil.Hide(); numPrecioUtil.Hide();
                 llTituloLibro.Hide(); txtTituloLibro.Hide();
@@ -84,7 +81,7 @@ namespace PruebaConectarAccess
                 llTemasApunte.Show(); txtTemasApunte.Show();
                 llTituloApunte.Show(); txtTituloApunte.Show();
 
-                btnPublicar.Hide();
+                btnPublicar.Show();
             }
             else if (cbxQueEs.Text == "Util")
             {
@@ -101,11 +98,62 @@ namespace PruebaConectarAccess
 
                 llColorUtil.Show(); cbxColorUtil.Show();
                 llDescUtil.Show(); txtDescUtil.Show();
-                llMateriaUtil.Show(); cbxMateriaUtil.Show();
                 llPrecioUtil.Show(); numPrecioUtil.Show();
                 llTituloUtil.Show(); txtTituloUtil.Show();
 
-                btnPublicar.Hide();
+                btnPublicar.Show();
+            }
+        }
+
+        private void btnPublicar_Click(object sender, EventArgs e)
+        {
+            if (cbxQueEs.Text == "Libro")
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+
+                command.CommandText = "insert into Libros (TituloLibro,EditorialLibro,MateriaLibro,DescripcionLibro,PrecioLibro,IDCurso) " +
+                "values ('" + txtTituloLibro.Text + "','" + txtEditorial.Text + "','" + cbxMateriaLibro.Text + "','"
+                + txtDescLibro.Text + "','" + numPrecioLibro.Text + "','" + 1 + "')";
+
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("Publicacion realizada con exito!");
+                connection.Close();
+                return;
+            }
+            else if (cbxQueEs.Text == "Util")
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+
+                command.CommandText = "insert into Utiles (TituloUtiles,ColorUtiles,DescripcionUtiles,PrecioUtiles,MateriaUtiles) " +
+                "values ('" + txtTituloUtil.Text + "','" + cbxColorUtil.Text + "','" + txtDescUtil.Text + "','"
+                + numPrecioUtil.Text + "',)";
+
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("Publicacion realizada con exito!");
+                connection.Close();
+                return;
+            }
+            else if (cbxQueEs.Text == "Apunte")
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+
+                command.CommandText = "insert into Apuntes (TituloApuntes,DescripcionApuntes,MateriaApuntes,PrecioApuntes,IDUsuario,TemasApuntes) " +
+                "values ('" + txtTituloApunte.Text + "','" + txtDescApunte.Text + "','" + cbxMateriaApunte.Text + "','"
+                + numPrecioApunte.Text + "','" + 1 + "','" + txtTemasApunte.Text + "')";
+
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("Publicacion realizada con exito!");
+                connection.Close();
+                return;
             }
         }
     }

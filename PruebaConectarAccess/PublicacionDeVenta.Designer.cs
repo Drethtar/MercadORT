@@ -45,8 +45,6 @@ namespace PruebaConectarAccess
             this.cbxColorUtil = new System.Windows.Forms.ComboBox();
             this.llMateriaApunte = new System.Windows.Forms.Label();
             this.cbxMateriaApunte = new System.Windows.Forms.ComboBox();
-            this.cbxMateriaUtil = new System.Windows.Forms.ComboBox();
-            this.llMateriaUtil = new System.Windows.Forms.Label();
             this.txtTemasApunte = new System.Windows.Forms.TextBox();
             this.llTemasApunte = new System.Windows.Forms.Label();
             this.numPrecioLibro = new System.Windows.Forms.NumericUpDown();
@@ -200,7 +198,7 @@ namespace PruebaConectarAccess
             // llColorUtil
             // 
             this.llColorUtil.AutoSize = true;
-            this.llColorUtil.Location = new System.Drawing.Point(320, 212);
+            this.llColorUtil.Location = new System.Drawing.Point(322, 143);
             this.llColorUtil.Name = "llColorUtil";
             this.llColorUtil.Size = new System.Drawing.Size(88, 17);
             this.llColorUtil.TabIndex = 14;
@@ -224,7 +222,7 @@ namespace PruebaConectarAccess
             "Naranja",
             "Rosa",
             "Transparente"});
-            this.cbxColorUtil.Location = new System.Drawing.Point(322, 232);
+            this.cbxColorUtil.Location = new System.Drawing.Point(324, 163);
             this.cbxColorUtil.Name = "cbxColorUtil";
             this.cbxColorUtil.Size = new System.Drawing.Size(156, 24);
             this.cbxColorUtil.TabIndex = 15;
@@ -273,51 +271,6 @@ namespace PruebaConectarAccess
             this.cbxMateriaApunte.Size = new System.Drawing.Size(151, 24);
             this.cbxMateriaApunte.TabIndex = 17;
             // 
-            // cbxMateriaUtil
-            // 
-            this.cbxMateriaUtil.FormattingEnabled = true;
-            this.cbxMateriaUtil.Items.AddRange(new object[] {
-            "Ciencia y Tecnologia",
-            "Ciencias Naturales",
-            "Ciencias Sociales",
-            "Lengua",
-            "Matematica",
-            "Hebreo",
-            "Ingles",
-            "Historia",
-            "Geografia",
-            "Formacion Etica y Ciudadana",
-            "Arte",
-            "Biologia",
-            "Educacion Tecnologica",
-            "Economia",
-            "Fisico Quimica",
-            "Cultura Judia",
-            "Historia Judia",
-            "Quimica",
-            "Fisica",
-            "Filosofia",
-            "Marketing",
-            "TIC",
-            "Diseño",
-            "Medios",
-            "Humanidades",
-            "Gestion",
-            "Sin Materia en Particular"});
-            this.cbxMateriaUtil.Location = new System.Drawing.Point(322, 164);
-            this.cbxMateriaUtil.Name = "cbxMateriaUtil";
-            this.cbxMateriaUtil.Size = new System.Drawing.Size(156, 24);
-            this.cbxMateriaUtil.TabIndex = 19;
-            // 
-            // llMateriaUtil
-            // 
-            this.llMateriaUtil.AutoSize = true;
-            this.llMateriaUtil.Location = new System.Drawing.Point(319, 144);
-            this.llMateriaUtil.Name = "llMateriaUtil";
-            this.llMateriaUtil.Size = new System.Drawing.Size(102, 17);
-            this.llMateriaUtil.TabIndex = 18;
-            this.llMateriaUtil.Text = "Materia del Util";
-            // 
             // txtTemasApunte
             // 
             this.txtTemasApunte.Location = new System.Drawing.Point(637, 232);
@@ -365,7 +318,7 @@ namespace PruebaConectarAccess
             // numPrecioUtil
             // 
             this.numPrecioUtil.DecimalPlaces = 2;
-            this.numPrecioUtil.Location = new System.Drawing.Point(322, 303);
+            this.numPrecioUtil.Location = new System.Drawing.Point(322, 232);
             this.numPrecioUtil.Maximum = new decimal(new int[] {
             -469762049,
             -590869294,
@@ -388,7 +341,7 @@ namespace PruebaConectarAccess
             // llPrecioUtil
             // 
             this.llPrecioUtil.AutoSize = true;
-            this.llPrecioUtil.Location = new System.Drawing.Point(319, 283);
+            this.llPrecioUtil.Location = new System.Drawing.Point(322, 212);
             this.llPrecioUtil.Name = "llPrecioUtil";
             this.llPrecioUtil.Size = new System.Drawing.Size(95, 17);
             this.llPrecioUtil.TabIndex = 26;
@@ -415,7 +368,7 @@ namespace PruebaConectarAccess
             // llDescUtil
             // 
             this.llDescUtil.AutoSize = true;
-            this.llDescUtil.Location = new System.Drawing.Point(319, 346);
+            this.llDescUtil.Location = new System.Drawing.Point(321, 283);
             this.llDescUtil.Name = "llDescUtil";
             this.llDescUtil.Size = new System.Drawing.Size(82, 17);
             this.llDescUtil.TabIndex = 29;
@@ -439,7 +392,7 @@ namespace PruebaConectarAccess
             // 
             // txtDescUtil
             // 
-            this.txtDescUtil.Location = new System.Drawing.Point(322, 367);
+            this.txtDescUtil.Location = new System.Drawing.Point(324, 303);
             this.txtDescUtil.Name = "txtDescUtil";
             this.txtDescUtil.Size = new System.Drawing.Size(156, 22);
             this.txtDescUtil.TabIndex = 32;
@@ -459,6 +412,7 @@ namespace PruebaConectarAccess
             this.btnPublicar.TabIndex = 34;
             this.btnPublicar.Text = "Publicar";
             this.btnPublicar.UseVisualStyleBackColor = true;
+            this.btnPublicar.Click += new System.EventHandler(this.btnPublicar_Click);
             // 
             // PublicacionDeVenta
             // 
@@ -480,8 +434,6 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.numPrecioLibro);
             this.Controls.Add(this.llTemasApunte);
             this.Controls.Add(this.txtTemasApunte);
-            this.Controls.Add(this.cbxMateriaUtil);
-            this.Controls.Add(this.llMateriaUtil);
             this.Controls.Add(this.cbxMateriaApunte);
             this.Controls.Add(this.llMateriaApunte);
             this.Controls.Add(this.cbxColorUtil);
@@ -527,8 +479,6 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.ComboBox cbxColorUtil;
         private System.Windows.Forms.Label llMateriaApunte;
         private System.Windows.Forms.ComboBox cbxMateriaApunte;
-        private System.Windows.Forms.ComboBox cbxMateriaUtil;
-        private System.Windows.Forms.Label llMateriaUtil;
         private System.Windows.Forms.TextBox txtTemasApunte;
         private System.Windows.Forms.Label llTemasApunte;
         private System.Windows.Forms.NumericUpDown numPrecioLibro;
