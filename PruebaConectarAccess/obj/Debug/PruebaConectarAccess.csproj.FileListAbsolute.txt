@@ -48,7 +48,6 @@ C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\Cl
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.pdb
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll.config
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csprojAssemblyReference.cache
-C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.IniciasteSesion.resources
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Login.resources
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CrearCuenta.resources
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Properties.Resources.resources
@@ -63,3 +62,5 @@ C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAcc
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CambiarMiPassword.resources
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.OlvideMiContra.resources
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionDeVenta.resources
+C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.ComprarOVender.resources
+C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionDeVenta.resources

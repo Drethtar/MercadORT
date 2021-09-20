@@ -113,9 +113,9 @@ namespace PruebaConectarAccess
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
 
-                command.CommandText = "insert into Libros (TituloLibro,EditorialLibro,MateriaLibro,DescripcionLibro,PrecioLibro,IDCurso) " +
+                command.CommandText = "insert into Libros (TituloLibro,EditorialLibro,MateriaLibro,DescripcionLibro,PrecioLibro) " +
                 "values ('" + txtTituloLibro.Text + "','" + txtEditorial.Text + "','" + cbxMateriaLibro.Text + "','"
-                + txtDescLibro.Text + "','" + numPrecioLibro.Text + "','" + 1 + "')";
+                + txtDescLibro.Text + "','" + numPrecioLibro.Text + "')";
 
                 command.ExecuteNonQuery();
 

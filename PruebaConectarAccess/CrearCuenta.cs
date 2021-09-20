@@ -41,7 +41,7 @@ namespace PruebaConectarAccess
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 int count = 0;
-
+                
                 //chequear que no exista el user en la db
                 command.CommandText = "select * from Usuario where NombreUsuario='" + txtNombre.Text + "' or MailUsuario='" + txtMail.Text+ "'";
 
@@ -87,7 +87,7 @@ namespace PruebaConectarAccess
                 command.ExecuteNonQuery();
 
 
-                MessageBox.Show("Saved");
+                MessageBox.Show("Tu cuenta se creo exitosamente!");
 
                 this.Hide();
                 new Login().ShowDialog();
