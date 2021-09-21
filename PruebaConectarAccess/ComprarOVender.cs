@@ -27,7 +27,6 @@ namespace PruebaConectarAccess
 
             llNombreUsuario.Text = Login.ObtenerDatosUsuario.NombreDelUsuario;
 
-            
         }
 
         private void btnComprar_Click(object sender, EventArgs e)
@@ -43,5 +42,6 @@ namespace PruebaConectarAccess
             new PublicacionDeVenta().ShowDialog();
             this.Show();
         }
+
     }
 }

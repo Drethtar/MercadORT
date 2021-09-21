@@ -38,9 +38,10 @@ namespace PruebaConectarAccess
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(339, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(296, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 17);
+            this.label1.Size = new System.Drawing.Size(178, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenid@!";
             // 
@@ -67,10 +68,12 @@ namespace PruebaConectarAccess
             // llNombreUsuario
             // 
             this.llNombreUsuario.AutoSize = true;
-            this.llNombreUsuario.Location = new System.Drawing.Point(358, 35);
+            this.llNombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llNombreUsuario.Location = new System.Drawing.Point(353, 54);
             this.llNombreUsuario.Name = "llNombreUsuario";
-            this.llNombreUsuario.Size = new System.Drawing.Size(0, 17);
+            this.llNombreUsuario.Size = new System.Drawing.Size(63, 32);
             this.llNombreUsuario.TabIndex = 3;
+            this.llNombreUsuario.Text = "123";
             this.llNombreUsuario.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ComprarOVender
