@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace PruebaConectarAccess
 {
     public partial class ComprarOVender : Form
     {
+
+        private OleDbConnection connection = new OleDbConnection();
         public ComprarOVender()
         {
             InitializeComponent();
@@ -19,7 +22,12 @@ namespace PruebaConectarAccess
 
         private void ComprarOVender_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
 
+            llNombreUsuario.Text = Login.ObtenerDatosUsuario.NombreDelUsuario;
+
+            
         }
 
         private void btnComprar_Click(object sender, EventArgs e)

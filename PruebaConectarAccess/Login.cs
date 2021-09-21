@@ -22,11 +22,18 @@ namespace PruebaConectarAccess
             InitializeComponent();
         }
 
+        public static class ObtenerDatosUsuario
+        {
+            public static string NombreDelUsuario = "";
+
+            public static string IDdelUsuario = "";
+        }
 
         private void Login_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
+            
         }
 
         private void llCrearCuenta_Click(object sender, EventArgs e)
@@ -53,9 +60,26 @@ namespace PruebaConectarAccess
                 {
                     count += 1;
                 }
-
+                
+                connection.Close();
+                
                 if (count == 1)
                 {
+                    connection.Open();
+                    OleDbCommand command2 = new OleDbCommand();
+                    command2.Connection = connection;
+
+                    command2.CommandText = "select * from Usuario where NombreUsuario='" + txtUsuario.Text + "' and PasswordUsuario='" + txtContra.Text + "'";
+                    
+                    OleDbDataReader reader2 = command2.ExecuteReader();
+                    reader2.Read();
+
+                    string NombreObtenidoDelUsuario = reader2["NombreUsuario"].ToString();
+                    string IDObtenidoDelUsuario = reader2["ID"].ToString();
+
+                    Login.ObtenerDatosUsuario.NombreDelUsuario = NombreObtenidoDelUsuario;
+                    Login.ObtenerDatosUsuario.IDdelUsuario = IDObtenidoDelUsuario;
+
                     this.Hide();
                     new ComprarOVender().ShowDialog();
                     this.Show();
@@ -75,13 +99,14 @@ namespace PruebaConectarAccess
             {
                 MessageBox.Show("Upa algo salio mal... " + ex);
             }
+            
         }
-
         private void llOlvideMiPassword_Click(object sender, EventArgs e)
         {
             this.Hide();
             new CambiarMiPassword().ShowDialog();
             this.Show();
+            
         }
 
         private void llOlvideMiPassword_Click_1(object sender, EventArgs e)

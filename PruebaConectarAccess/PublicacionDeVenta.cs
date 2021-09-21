@@ -119,6 +119,23 @@ namespace PruebaConectarAccess
 
                 command.ExecuteNonQuery();
 
+                connection.Close();
+                connection.Open();
+
+                command.CommandText = "select * from Libros where TituloLibro='" + txtTituloLibro.Text + "' and EditorialLibro='" + txtEditorial.Text + "' and MateriaLibro='" + cbxMateriaLibro.Text + "' and DescripcionLibro='" + txtDescLibro.Text + "'";
+
+                OleDbDataReader reader = command.ExecuteReader();
+                reader.Read();
+
+                string IDDelLibro = reader["ID"].ToString();
+
+                connection.Close();
+                connection.Open();
+
+                command.CommandText = "insert into RelacionUsuarioLibros (IDUsuario,IDLibros) " + "values ('" + Login.ObtenerDatosUsuario.IDdelUsuario + "','" + IDDelLibro + "')";
+                
+                command.ExecuteNonQuery();
+                
                 MessageBox.Show("Publicacion realizada con exito!");
                 connection.Close();
                 return;
@@ -129,12 +146,28 @@ namespace PruebaConectarAccess
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
 
-                command.CommandText = "insert into Utiles (TituloUtiles,ColorUtiles,DescripcionUtiles,PrecioUtiles,MateriaUtiles) " +
-                "values ('" + txtTituloUtil.Text + "','" + cbxColorUtil.Text + "','" + txtDescUtil.Text + "','"
-                + numPrecioUtil.Text + "',)";
+                command.CommandText = "insert into Utiles (TituloUtiles,ColorUtiles,DescripcionUtiles,PrecioUtiles) " + "values ('" + txtTituloUtil.Text + "','" + cbxColorUtil.Text + "','" + txtDescUtil.Text + "','" + numPrecioUtil.Text + "')";
 
                 command.ExecuteNonQuery();
 
+                connection.Close();
+                connection.Open();
+
+                command.CommandText = "select * from Utiles where TituloUtiles='" + txtTituloUtil.Text + "' and ColorUtiles='" + cbxColorUtil.Text + "' and DescripcionUtiles='" + txtDescUtil.Text + "'";
+
+                OleDbDataReader reader = command.ExecuteReader();
+                reader.Read();
+
+                string IDDelUtil = reader["ID"].ToString();
+
+                connection.Close();
+                connection.Open();
+
+                command.CommandText = "insert into RelacionUsuarioUtiles (IDUsuario, IDUtiles) " + "values ('" + Login.ObtenerDatosUsuario.IDdelUsuario + "','" + IDDelUtil + "')";
+
+                command.ExecuteNonQuery();
+
+                //
                 MessageBox.Show("Publicacion realizada con exito!");
                 connection.Close();
                 return;
@@ -147,7 +180,7 @@ namespace PruebaConectarAccess
 
                 command.CommandText = "insert into Apuntes (TituloApuntes,DescripcionApuntes,MateriaApuntes,PrecioApuntes,IDUsuario,TemasApuntes) " +
                 "values ('" + txtTituloApunte.Text + "','" + txtDescApunte.Text + "','" + cbxMateriaApunte.Text + "','"
-                + numPrecioApunte.Text + "','" + 1 + "','" + txtTemasApunte.Text + "')";
+                + numPrecioApunte.Text + "','" + Login.ObtenerDatosUsuario.IDdelUsuario + "','" + txtTemasApunte.Text + "')";
 
                 command.ExecuteNonQuery();
 
