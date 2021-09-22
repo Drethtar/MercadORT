@@ -29,21 +29,11 @@ namespace PruebaConectarAccess
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.btnComprar = new System.Windows.Forms.Button();
             this.btnVender = new System.Windows.Forms.Button();
             this.llNombreUsuario = new System.Windows.Forms.Label();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(296, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bienvenid@!";
             // 
             // btnComprar
             // 
@@ -69,22 +59,33 @@ namespace PruebaConectarAccess
             // 
             this.llNombreUsuario.AutoSize = true;
             this.llNombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llNombreUsuario.Location = new System.Drawing.Point(353, 54);
+            this.llNombreUsuario.Location = new System.Drawing.Point(345, 9);
             this.llNombreUsuario.Name = "llNombreUsuario";
+            this.llNombreUsuario.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.llNombreUsuario.Size = new System.Drawing.Size(63, 32);
             this.llNombreUsuario.TabIndex = 3;
             this.llNombreUsuario.Text = "123";
             this.llNombreUsuario.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Location = new System.Drawing.Point(672, 406);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(116, 32);
+            this.btnCerrarSesion.TabIndex = 4;
+            this.btnCerrarSesion.Text = "Cerrar Sesion";
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // ComprarOVender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.llNombreUsuario);
             this.Controls.Add(this.btnVender);
             this.Controls.Add(this.btnComprar);
-            this.Controls.Add(this.label1);
             this.Name = "ComprarOVender";
             this.Text = "IniciasteSesion";
             this.Load += new System.EventHandler(this.ComprarOVender_Load);
@@ -94,10 +95,9 @@ namespace PruebaConectarAccess
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnComprar;
         private System.Windows.Forms.Button btnVender;
         private System.Windows.Forms.Label llNombreUsuario;
+        private System.Windows.Forms.Button btnCerrarSesion;
     }
 }

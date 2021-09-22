@@ -16,5 +16,17 @@ namespace PruebaConectarAccess
         {
             InitializeComponent();
         }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ComprarOVender().ShowDialog();
+            this.Show();
+        }
+
+        private void Publicaciones_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }

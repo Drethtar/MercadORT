@@ -138,7 +138,10 @@ namespace PruebaConectarAccess
                 
                 MessageBox.Show("Publicacion realizada con exito!");
                 connection.Close();
-                return;
+                
+                this.Hide();
+                new ComprarOVender().ShowDialog();
+                this.Show();
             }
             else if (cbxQueEs.Text == "Util")
             {
@@ -170,7 +173,10 @@ namespace PruebaConectarAccess
                 //
                 MessageBox.Show("Publicacion realizada con exito!");
                 connection.Close();
-                return;
+
+                this.Hide();
+                new ComprarOVender().ShowDialog();
+                this.Show();
             }
             else if (cbxQueEs.Text == "Apunte")
             {
@@ -186,8 +192,18 @@ namespace PruebaConectarAccess
 
                 MessageBox.Show("Publicacion realizada con exito!");
                 connection.Close();
-                return;
+
+                this.Hide();
+                new ComprarOVender().ShowDialog();
+                this.Show();
             }
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ComprarOVender().ShowDialog();
+            this.Show();
         }
     }
 }

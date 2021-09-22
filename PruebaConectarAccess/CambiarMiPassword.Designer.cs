@@ -40,6 +40,7 @@ namespace PruebaConectarAccess
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNuevaPassword = new System.Windows.Forms.TextBox();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtContraOlvidada1
@@ -132,11 +133,22 @@ namespace PruebaConectarAccess
             this.txtNuevaPassword.Size = new System.Drawing.Size(205, 22);
             this.txtNuevaPassword.TabIndex = 10;
             // 
-            // OlvideMiPassword
+            // btnAtras
+            // 
+            this.btnAtras.Location = new System.Drawing.Point(359, 395);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 11;
+            this.btnAtras.Text = "Atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            // 
+            // CambiarMiPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.txtNuevaPassword);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -148,7 +160,7 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.txtNombrePerdiPassword);
             this.Controls.Add(this.txtContraOlvidada2);
             this.Controls.Add(this.txtContraOlvidada1);
-            this.Name = "OlvideMiPassword";
+            this.Name = "CambiarMiPassword";
             this.Text = "OlvideMiPassword";
             this.Load += new System.EventHandler(this.OlvideMiPassword_Load);
             this.ResumeLayout(false);
@@ -169,5 +181,6 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNuevaPassword;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

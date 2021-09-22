@@ -89,11 +89,12 @@ namespace PruebaConectarAccess
 
                 MessageBox.Show("Tu cuenta se creo exitosamente!");
 
+                connection.Close();
+                
                 this.Hide();
                 new Login().ShowDialog();
-                this.Show();
-                                
-                connection.Close();
+                this.Show();            
+                
             }
             catch (Exception ex)
             {
@@ -241,6 +242,13 @@ namespace PruebaConectarAccess
             }
             cbxLetra.Show();
             llLetra.Show();
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Login().ShowDialog();
+            this.Show();
         }
     }
 }

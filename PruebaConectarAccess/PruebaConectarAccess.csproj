@@ -118,6 +118,9 @@
     <EmbeddedResource Include="PublicacionDeVenta.resx">
       <DependentUpon>PublicacionDeVenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Publicaciones.resx">
+      <DependentUpon>Publicaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

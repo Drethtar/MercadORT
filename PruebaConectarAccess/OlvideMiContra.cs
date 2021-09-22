@@ -79,5 +79,12 @@ namespace PruebaConectarAccess
 
             }
         }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Login().ShowDialog();
+            this.Show();
+        }
     }
 }

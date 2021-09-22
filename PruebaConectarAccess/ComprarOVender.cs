@@ -25,7 +25,7 @@ namespace PruebaConectarAccess
             this.WindowState = FormWindowState.Maximized;
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
 
-            llNombreUsuario.Text = Login.ObtenerDatosUsuario.NombreDelUsuario;
+            llNombreUsuario.Text = "Bienvenid@! " + Login.ObtenerDatosUsuario.NombreDelUsuario;
 
         }
 
@@ -43,5 +43,11 @@ namespace PruebaConectarAccess
             this.Show();
         }
 
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Login().ShowDialog();
+            this.Show();
+        }
     }
 }

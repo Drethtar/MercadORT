@@ -39,6 +39,7 @@ namespace PruebaConectarAccess
                 else
                 {
                     MessageBox.Show("Las contraseñas no son iguales");
+                    return;
                 }
             
 
@@ -81,7 +82,7 @@ namespace PruebaConectarAccess
 
 
                 
-                MessageBox.Show("Data edited bien");
+                MessageBox.Show("Su contraseña fue cambiada con exito!");
                 connection.Close();
 
             }
@@ -89,6 +90,13 @@ namespace PruebaConectarAccess
             {
                 MessageBox.Show("Upa algo salio mal... " + ex);
             }
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Login().ShowDialog();
+            this.Show();
         }
     }
 }
