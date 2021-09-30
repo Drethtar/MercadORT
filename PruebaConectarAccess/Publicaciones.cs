@@ -24,9 +24,17 @@ namespace PruebaConectarAccess
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
 
             int CantidadRows = ComprarOVender.CantidadDePublicaciones.CantidadPublicaciones / 3;
-
             DondeSePublicanLasCosas.RowCount = CantidadRows;
 
+            for (int i = 0; i < CantidadRows - 1; i++)
+            {
+                RowStyle newRowStyle = new RowStyle();
+                newRowStyle.SizeType = SizeType.Absolute;
+                newRowStyle.Height = 50;
+                DondeSePublicanLasCosas.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            }
+
+            
 
         }
         private void btnAtras_Click(object sender, EventArgs e)
@@ -43,6 +51,6 @@ namespace PruebaConectarAccess
             this.Show();
         }
 
-
+ 
     }
 }
