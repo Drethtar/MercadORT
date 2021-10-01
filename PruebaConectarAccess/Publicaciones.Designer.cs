@@ -43,15 +43,17 @@ namespace PruebaConectarAccess
             this.lblMateria = new System.Windows.Forms.Label();
             this.publicationsPanel = new System.Windows.Forms.Panel();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.cbxColor = new System.Windows.Forms.ComboBox();
+            this.lbQueColor = new System.Windows.Forms.Label();
             this.publicationsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(12, 404);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAtras.Location = new System.Drawing.Point(9, 328);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(99, 34);
+            this.btnAtras.Size = new System.Drawing.Size(74, 28);
             this.btnAtras.TabIndex = 0;
             this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -64,10 +66,10 @@ namespace PruebaConectarAccess
             "Libro",
             "Apunte",
             "Util"});
-            this.cbxMaterial.Location = new System.Drawing.Point(164, 12);
-            this.cbxMaterial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxMaterial.Location = new System.Drawing.Point(123, 10);
+            this.cbxMaterial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbxMaterial.Name = "cbxMaterial";
-            this.cbxMaterial.Size = new System.Drawing.Size(135, 24);
+            this.cbxMaterial.Size = new System.Drawing.Size(102, 21);
             this.cbxMaterial.TabIndex = 2;
             this.cbxMaterial.SelectedIndexChanged += new System.EventHandler(this.cbxMaterial_SelectedIndexChanged);
             // 
@@ -101,18 +103,18 @@ namespace PruebaConectarAccess
             "Medios",
             "Humanidades",
             "Gestion"});
-            this.cbxMateria.Location = new System.Drawing.Point(590, 12);
-            this.cbxMateria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxMateria.Location = new System.Drawing.Point(442, 10);
+            this.cbxMateria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbxMateria.Name = "cbxMateria";
-            this.cbxMateria.Size = new System.Drawing.Size(183, 24);
+            this.cbxMateria.Size = new System.Drawing.Size(138, 21);
             this.cbxMateria.TabIndex = 4;
             // 
             // btnCerrarSesion
             // 
-            this.btnCerrarSesion.Location = new System.Drawing.Point(12, 352);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(9, 286);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(99, 46);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(74, 37);
             this.btnCerrarSesion.TabIndex = 5;
             this.btnCerrarSesion.Text = "Cerrar Sesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
@@ -121,18 +123,20 @@ namespace PruebaConectarAccess
             // lblQueEs
             // 
             this.lblQueEs.AutoSize = true;
-            this.lblQueEs.Location = new System.Drawing.Point(304, 15);
+            this.lblQueEs.Location = new System.Drawing.Point(228, 12);
+            this.lblQueEs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQueEs.Name = "lblQueEs";
-            this.lblQueEs.Size = new System.Drawing.Size(63, 17);
+            this.lblQueEs.Size = new System.Drawing.Size(48, 13);
             this.lblQueEs.TabIndex = 6;
             this.lblQueEs.Text = "Que Es?";
             // 
             // lblMateria
             // 
             this.lblMateria.AutoSize = true;
-            this.lblMateria.Location = new System.Drawing.Point(530, 15);
+            this.lblMateria.Location = new System.Drawing.Point(398, 12);
+            this.lblMateria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMateria.Name = "lblMateria";
-            this.lblMateria.Size = new System.Drawing.Size(55, 17);
+            this.lblMateria.Size = new System.Drawing.Size(42, 13);
             this.lblMateria.TabIndex = 7;
             this.lblMateria.Text = "Materia";
             // 
@@ -140,25 +144,62 @@ namespace PruebaConectarAccess
             // 
             this.publicationsPanel.AutoScroll = true;
             this.publicationsPanel.Controls.Add(this.vScrollBar1);
-            this.publicationsPanel.Location = new System.Drawing.Point(117, 43);
+            this.publicationsPanel.Location = new System.Drawing.Point(88, 35);
+            this.publicationsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.publicationsPanel.Name = "publicationsPanel";
-            this.publicationsPanel.Size = new System.Drawing.Size(681, 410);
+            this.publicationsPanel.Size = new System.Drawing.Size(511, 333);
             this.publicationsPanel.TabIndex = 10;
             this.publicationsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.publicationsPanel_Paint);
             // 
             // vScrollBar1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(660, -46);
+            this.vScrollBar1.Location = new System.Drawing.Point(495, -37);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(21, 43);
+            this.vScrollBar1.Size = new System.Drawing.Size(21, 35);
             this.vScrollBar1.TabIndex = 11;
+            // 
+            // cbxColor
+            // 
+            this.cbxColor.FormattingEnabled = true;
+            this.cbxColor.Items.AddRange(new object[] {
+            "Rojo",
+            "Amarillo",
+            "Azul",
+            "Verde",
+            "Marron",
+            "Violeta",
+            "Magenta",
+            "Cian",
+            "Gris",
+            "Negro",
+            "Blanco",
+            "Naranja",
+            "Rosa",
+            "Transparente",
+            "No Importa"});
+            this.cbxColor.Location = new System.Drawing.Point(442, 10);
+            this.cbxColor.Name = "cbxColor";
+            this.cbxColor.Size = new System.Drawing.Size(138, 21);
+            this.cbxColor.TabIndex = 11;
+            // 
+            // lbQueColor
+            // 
+            this.lbQueColor.AutoSize = true;
+            this.lbQueColor.Location = new System.Drawing.Point(349, 13);
+            this.lbQueColor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbQueColor.Name = "lbQueColor";
+            this.lbQueColor.Size = new System.Drawing.Size(88, 13);
+            this.lbQueColor.TabIndex = 12;
+            this.lbQueColor.Text = "De que color es?";
             // 
             // Publicaciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.lbQueColor);
+            this.Controls.Add(this.cbxColor);
             this.Controls.Add(this.publicationsPanel);
             this.Controls.Add(this.lblMateria);
             this.Controls.Add(this.lblQueEs);
@@ -166,7 +207,7 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.cbxMateria);
             this.Controls.Add(this.cbxMaterial);
             this.Controls.Add(this.btnAtras);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Publicaciones";
             this.Text = "Publicaciones";
             this.Load += new System.EventHandler(this.Publicaciones_Load);
@@ -186,5 +227,7 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.Label lblMateria;
         private System.Windows.Forms.Panel publicationsPanel;
         private VScrollBar vScrollBar1;
+        private ComboBox cbxColor;
+        private Label lbQueColor;
     }
 }

@@ -32,43 +32,58 @@ namespace PruebaConectarAccess
             this.lblPrecioApunte = new System.Windows.Forms.Label();
             this.lblDescriptionApunte = new System.Windows.Forms.Label();
             this.lblTitleApunte = new System.Windows.Forms.Label();
+            this.btnQuieroComprar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPrecioApunte
             // 
             this.lblPrecioApunte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioApunte.Location = new System.Drawing.Point(553, 40);
+            this.lblPrecioApunte.Location = new System.Drawing.Point(415, 32);
+            this.lblPrecioApunte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecioApunte.Name = "lblPrecioApunte";
-            this.lblPrecioApunte.Size = new System.Drawing.Size(85, 27);
+            this.lblPrecioApunte.Size = new System.Drawing.Size(64, 22);
             this.lblPrecioApunte.TabIndex = 5;
             this.lblPrecioApunte.Text = "label3";
             // 
             // lblDescriptionApunte
             // 
-            this.lblDescriptionApunte.Location = new System.Drawing.Point(41, 69);
+            this.lblDescriptionApunte.Location = new System.Drawing.Point(31, 56);
+            this.lblDescriptionApunte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescriptionApunte.Name = "lblDescriptionApunte";
-            this.lblDescriptionApunte.Size = new System.Drawing.Size(597, 47);
+            this.lblDescriptionApunte.Size = new System.Drawing.Size(379, 38);
             this.lblDescriptionApunte.TabIndex = 4;
             this.lblDescriptionApunte.Text = "label2";
             // 
             // lblTitleApunte
             // 
             this.lblTitleApunte.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleApunte.Location = new System.Drawing.Point(36, 23);
+            this.lblTitleApunte.Location = new System.Drawing.Point(27, 19);
+            this.lblTitleApunte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitleApunte.Name = "lblTitleApunte";
-            this.lblTitleApunte.Size = new System.Drawing.Size(511, 46);
+            this.lblTitleApunte.Size = new System.Drawing.Size(383, 37);
             this.lblTitleApunte.TabIndex = 3;
             this.lblTitleApunte.Text = "Apunte";
             // 
+            // btnQuieroComprar
+            // 
+            this.btnQuieroComprar.Location = new System.Drawing.Point(415, 56);
+            this.btnQuieroComprar.Name = "btnQuieroComprar";
+            this.btnQuieroComprar.Size = new System.Drawing.Size(63, 37);
+            this.btnQuieroComprar.TabIndex = 6;
+            this.btnQuieroComprar.Text = "Quiero Comprarlo!";
+            this.btnQuieroComprar.UseVisualStyleBackColor = true;
+            // 
             // Apuntes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnQuieroComprar);
             this.Controls.Add(this.lblPrecioApunte);
             this.Controls.Add(this.lblDescriptionApunte);
             this.Controls.Add(this.lblTitleApunte);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Apuntes";
-            this.Size = new System.Drawing.Size(650, 126);
+            this.Size = new System.Drawing.Size(488, 102);
             this.Load += new System.EventHandler(this.Apuntes_Load);
             this.ResumeLayout(false);
 
@@ -79,5 +94,6 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.Label lblPrecioApunte;
         private System.Windows.Forms.Label lblDescriptionApunte;
         private System.Windows.Forms.Label lblTitleApunte;
+        private System.Windows.Forms.Button btnQuieroComprar;
     }
 }

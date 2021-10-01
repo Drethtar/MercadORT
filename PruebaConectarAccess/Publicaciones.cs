@@ -49,6 +49,11 @@ namespace PruebaConectarAccess
             addLibrosFromDatabase();
             addApuntesFromDatabase();
             addUtilesFromDatabase();
+
+            lblMateria.Hide();
+            cbxMateria.Hide();
+            lbQueColor.Hide();
+            cbxColor.Hide();
         }
 
         private void addLibrosFromDatabase()
@@ -69,6 +74,7 @@ namespace PruebaConectarAccess
                 publication.Precio = reader["PrecioLibro"].ToString() + "$";
                 publication.Dock = DockStyle.Top;
                 publicationsPanel.Controls.Add(publication);
+                string QueMateriaLibros = reader["MateriaLibro"].ToString();
             }
 
             connection.Close();
@@ -92,6 +98,7 @@ namespace PruebaConectarAccess
                 PublicacionApuntes.PrecioApunte = reader["PrecioApuntes"].ToString() + "$";
                 PublicacionApuntes.Dock = DockStyle.Top;
                 publicationsPanel.Controls.Add(PublicacionApuntes);
+                string QueMateriaApuntes = reader["MateriaApuntes"].ToString();
             }
 
             connection.Close();
@@ -115,6 +122,7 @@ namespace PruebaConectarAccess
                 PublicacionUtiles.PrecioApunte = reader["PrecioUtiles"].ToString() + "$";
                 PublicacionUtiles.Dock = DockStyle.Top;
                 publicationsPanel.Controls.Add(PublicacionUtiles);
+                string QueColorEs = reader["ColorUtiles"].ToString();
             }
 
             connection.Close();
@@ -122,8 +130,115 @@ namespace PruebaConectarAccess
 
         private void cbxMaterial_SelectedIndexChanged(object sender, EventArgs e)
         {
-            publicationsPanel.Controls.Clear();
-            //Borra todas las publicaciones para volverlas a cargar
+            if (cbxMaterial.Text == "Libro")
+            {
+                lbQueColor.Hide();
+                cbxColor.Hide();
+                lblMateria.Show();
+                cbxMateria.Show();
+
+                publicationsPanel.Controls.Clear();
+
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+
+
+                command.CommandText = "select * from Libros";
+                OleDbDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    PublicationItem publication = new PublicationItem();
+                    publication.Title = reader["TituloLibro"].ToString();
+                    publication.Description = reader["DescripcionLibro"].ToString();
+                    publication.Precio = reader["PrecioLibro"].ToString() + "$";
+                    publication.Dock = DockStyle.Top;
+                    publicationsPanel.Controls.Add(publication);
+                    string QueMateriaLibros = reader["MateriaLibro"].ToString();
+                }
+
+                connection.Close();
+
+                if (cbxMaterial.Text == "Libro" || cbxMateria.Text != null)
+                {
+                    //hacer una query que selectee los libros donde MateriaLibro sea el
+                    //string QueMateriaLibro. Despues lo mismo con utiles y apuntes
+                }
+            }
+            else if (cbxMaterial.Text == "Util")
+            {
+                lblMateria.Hide();
+                cbxMateria.Hide();
+                lbQueColor.Show();
+                cbxColor.Show();
+
+                publicationsPanel.Controls.Clear();
+
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+
+
+                command.CommandText = "select * from Utiles";
+                OleDbDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Apuntes PublicacionUtiles = new Apuntes();
+                    PublicacionUtiles.TitleApunte = reader["TituloUtiles"].ToString();
+                    PublicacionUtiles.DescriptionApunte = reader["DescripcionUtiles"].ToString();
+                    PublicacionUtiles.PrecioApunte = reader["PrecioUtiles"].ToString() + "$";
+                    PublicacionUtiles.Dock = DockStyle.Top;
+                    publicationsPanel.Controls.Add(PublicacionUtiles);
+                    string QueColorEs = reader["ColorUtiles"].ToString();
+                }
+
+                connection.Close();
+
+                if (cbxMaterial.Text == "Util" || cbxColor.Text != null)
+                {
+
+                }
+            }
+            else if (cbxMaterial.Text == "Apunte")
+            {
+                lbQueColor.Hide();
+                cbxColor.Hide();
+                lblMateria.Show();
+                cbxMateria.Show();
+
+                publicationsPanel.Controls.Clear();
+
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+
+
+                command.CommandText = "select * from Apuntes";
+                OleDbDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Apuntes PublicacionApuntes = new Apuntes();
+                    PublicacionApuntes.TitleApunte = reader["TituloApuntes"].ToString();
+                    PublicacionApuntes.DescriptionApunte = reader["DescripcionApuntes"].ToString();
+                    PublicacionApuntes.PrecioApunte = reader["PrecioApuntes"].ToString() + "$";
+                    PublicacionApuntes.Dock = DockStyle.Top;
+                    publicationsPanel.Controls.Add(PublicacionApuntes);
+                    string QueMateriaApuntes = reader["MateriaApuntes"].ToString();
+                }
+
+                connection.Close();
+
+                if (cbxMaterial.Text == "Apunte" || cbxMateria.Text != null)
+                {
+
+                }
+            }
+
+
+
         }
     }
 }

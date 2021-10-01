@@ -24,13 +24,13 @@ namespace PruebaConectarAccess
             llDescApunte.Hide(); txtDescApunte.Hide(); //apunte
             llDescLibro.Hide(); txtDescLibro.Hide(); //libro
             llDescUtil.Hide(); txtDescUtil.Hide(); //util
-            llEditorial.Hide(); txtEditorial.Hide(); //libro
+
             llMateriaApunte.Hide(); cbxMateriaApunte.Hide(); //apunte
             llMateriaLibro.Hide(); cbxMateriaLibro.Hide(); //libro
             llPrecioApunte.Hide(); numPrecioApunte.Hide(); //apunte
             llPrecioLibro.Hide(); numPrecioLibro.Hide(); //libro
             llPrecioUtil.Hide(); numPrecioUtil.Hide(); //util
-            llTemasApunte.Hide(); txtTemasApunte.Hide(); //apunte
+ 
             llTituloApunte.Hide(); txtTituloApunte.Hide(); //apunte
             llTituloLibro.Hide(); txtTituloLibro.Hide(); //libro
             llTituloUtil.Hide(); txtTituloUtil.Hide(); //util
@@ -51,12 +51,12 @@ namespace PruebaConectarAccess
                 llMateriaApunte.Hide(); cbxMateriaApunte.Hide();
                 llPrecioApunte.Hide(); numPrecioApunte.Hide();
                 llPrecioUtil.Hide(); numPrecioUtil.Hide();
-                llTemasApunte.Hide(); txtTemasApunte.Hide();
+
                 llTituloApunte.Hide(); txtTituloApunte.Hide();
                 llTituloUtil.Hide(); txtTituloUtil.Hide();
 
                 llDescLibro.Show(); txtDescLibro.Show();
-                llEditorial.Show(); txtEditorial.Show();
+ 
                 llMateriaLibro.Show(); cbxMateriaLibro.Show();
                 llPrecioLibro.Show(); numPrecioLibro.Show();
                 llTituloLibro.Show(); txtTituloLibro.Show();
@@ -68,7 +68,7 @@ namespace PruebaConectarAccess
                 llColorUtil.Hide(); cbxColorUtil.Hide();
                 llDescLibro.Hide(); txtDescLibro.Hide();
                 llDescUtil.Hide(); txtDescUtil.Hide();
-                llEditorial.Hide(); txtEditorial.Hide();
+
                 llMateriaLibro.Hide(); cbxMateriaLibro.Hide();
                 llPrecioLibro.Hide(); numPrecioLibro.Hide();
                 llPrecioUtil.Hide(); numPrecioUtil.Hide();
@@ -78,7 +78,7 @@ namespace PruebaConectarAccess
                 llDescApunte.Show(); txtDescApunte.Show();
                 llMateriaApunte.Show(); cbxMateriaApunte.Show();
                 llPrecioApunte.Show(); numPrecioApunte.Show();
-                llTemasApunte.Show(); txtTemasApunte.Show();
+
                 llTituloApunte.Show(); txtTituloApunte.Show();
 
                 btnPublicar.Show();
@@ -87,12 +87,12 @@ namespace PruebaConectarAccess
             {
                 llDescApunte.Hide(); txtDescApunte.Hide();
                 llDescLibro.Hide(); txtDescLibro.Hide();
-                llEditorial.Hide(); txtEditorial.Hide(); 
+
                 llMateriaApunte.Hide(); cbxMateriaApunte.Hide(); 
                 llMateriaLibro.Hide(); cbxMateriaLibro.Hide(); 
                 llPrecioApunte.Hide(); numPrecioApunte.Hide();
                 llPrecioLibro.Hide(); numPrecioLibro.Hide();
-                llTemasApunte.Hide(); txtTemasApunte.Hide(); 
+
                 llTituloApunte.Hide(); txtTituloApunte.Hide();
                 llTituloLibro.Hide(); txtTituloLibro.Hide();
 
@@ -116,8 +116,8 @@ namespace PruebaConectarAccess
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
 
-                command.CommandText = "insert into Libros (TituloLibro,EditorialLibro,MateriaLibro,DescripcionLibro,PrecioLibro) " +
-                "values ('" + txtTituloLibro.Text + "','" + txtEditorial.Text + "','" + cbxMateriaLibro.Text + "','"
+                command.CommandText = "insert into Libros (TituloLibro,MateriaLibro,DescripcionLibro,PrecioLibro) " +
+                "values ('" + txtTituloLibro.Text + "','" + cbxMateriaLibro.Text + "','"
                 + txtDescLibro.Text + "','" + numPrecioLibro.Text + "')";
 
                 command.ExecuteNonQuery();
@@ -125,7 +125,7 @@ namespace PruebaConectarAccess
                 connection.Close();
                 connection.Open();
 
-                command.CommandText = "select * from Libros where TituloLibro='" + txtTituloLibro.Text + "' and EditorialLibro='" + txtEditorial.Text + "' and MateriaLibro='" + cbxMateriaLibro.Text + "' and DescripcionLibro='" + txtDescLibro.Text + "'";
+                command.CommandText = "select * from Libros where TituloLibro='" + txtTituloLibro.Text + "' and MateriaLibro='" + cbxMateriaLibro.Text + "' and DescripcionLibro='" + txtDescLibro.Text + "'";
 
                 OleDbDataReader reader = command.ExecuteReader();
                 reader.Read();
@@ -187,9 +187,9 @@ namespace PruebaConectarAccess
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
 
-                command.CommandText = "insert into Apuntes (TituloApuntes,DescripcionApuntes,MateriaApuntes,PrecioApuntes,IDUsuario,TemasApuntes) " +
+                command.CommandText = "insert into Apuntes (TituloApuntes,DescripcionApuntes,MateriaApuntes,PrecioApuntes,IDUsuario) " +
                 "values ('" + txtTituloApunte.Text + "','" + txtDescApunte.Text + "','" + cbxMateriaApunte.Text + "','"
-                + numPrecioApunte.Text + "','" + Login.ObtenerDatosUsuario.IDdelUsuario + "','" + txtTemasApunte.Text + "')";
+                + numPrecioApunte.Text + "','" + Login.ObtenerDatosUsuario.IDdelUsuario + "')";
 
                 command.ExecuteNonQuery();
 
