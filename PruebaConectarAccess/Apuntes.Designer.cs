@@ -36,32 +36,29 @@ namespace PruebaConectarAccess
             // 
             // lblPrecioApunte
             // 
-            this.lblPrecioApunte.AutoSize = true;
             this.lblPrecioApunte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioApunte.Location = new System.Drawing.Point(553, 44);
+            this.lblPrecioApunte.Location = new System.Drawing.Point(553, 40);
             this.lblPrecioApunte.Name = "lblPrecioApunte";
-            this.lblPrecioApunte.Size = new System.Drawing.Size(64, 25);
+            this.lblPrecioApunte.Size = new System.Drawing.Size(85, 27);
             this.lblPrecioApunte.TabIndex = 5;
             this.lblPrecioApunte.Text = "label3";
             // 
             // lblDescriptionApunte
             // 
-            this.lblDescriptionApunte.AutoSize = true;
-            this.lblDescriptionApunte.Location = new System.Drawing.Point(41, 86);
+            this.lblDescriptionApunte.Location = new System.Drawing.Point(41, 69);
             this.lblDescriptionApunte.Name = "lblDescriptionApunte";
-            this.lblDescriptionApunte.Size = new System.Drawing.Size(46, 17);
+            this.lblDescriptionApunte.Size = new System.Drawing.Size(597, 47);
             this.lblDescriptionApunte.TabIndex = 4;
             this.lblDescriptionApunte.Text = "label2";
             // 
             // lblTitleApunte
             // 
-            this.lblTitleApunte.AutoSize = true;
             this.lblTitleApunte.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleApunte.Location = new System.Drawing.Point(36, 23);
             this.lblTitleApunte.Name = "lblTitleApunte";
-            this.lblTitleApunte.Size = new System.Drawing.Size(126, 46);
+            this.lblTitleApunte.Size = new System.Drawing.Size(511, 46);
             this.lblTitleApunte.TabIndex = 3;
-            this.lblTitleApunte.Text = "label1";
+            this.lblTitleApunte.Text = "Apunte";
             // 
             // Apuntes
             // 
@@ -74,7 +71,6 @@ namespace PruebaConectarAccess
             this.Size = new System.Drawing.Size(650, 126);
             this.Load += new System.EventHandler(this.Apuntes_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

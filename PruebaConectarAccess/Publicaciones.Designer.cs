@@ -42,6 +42,8 @@ namespace PruebaConectarAccess
             this.lblQueEs = new System.Windows.Forms.Label();
             this.lblMateria = new System.Windows.Forms.Label();
             this.publicationsPanel = new System.Windows.Forms.Panel();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.publicationsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAtras
@@ -62,11 +64,12 @@ namespace PruebaConectarAccess
             "Libro",
             "Apunte",
             "Util"});
-            this.cbxMaterial.Location = new System.Drawing.Point(117, 12);
+            this.cbxMaterial.Location = new System.Drawing.Point(164, 12);
             this.cbxMaterial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxMaterial.Name = "cbxMaterial";
             this.cbxMaterial.Size = new System.Drawing.Size(135, 24);
             this.cbxMaterial.TabIndex = 2;
+            this.cbxMaterial.SelectedIndexChanged += new System.EventHandler(this.cbxMaterial_SelectedIndexChanged);
             // 
             // cbxMateria
             // 
@@ -98,7 +101,7 @@ namespace PruebaConectarAccess
             "Medios",
             "Humanidades",
             "Gestion"});
-            this.cbxMateria.Location = new System.Drawing.Point(615, 12);
+            this.cbxMateria.Location = new System.Drawing.Point(590, 12);
             this.cbxMateria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxMateria.Name = "cbxMateria";
             this.cbxMateria.Size = new System.Drawing.Size(183, 24);
@@ -118,7 +121,7 @@ namespace PruebaConectarAccess
             // lblQueEs
             // 
             this.lblQueEs.AutoSize = true;
-            this.lblQueEs.Location = new System.Drawing.Point(257, 15);
+            this.lblQueEs.Location = new System.Drawing.Point(304, 15);
             this.lblQueEs.Name = "lblQueEs";
             this.lblQueEs.Size = new System.Drawing.Size(63, 17);
             this.lblQueEs.TabIndex = 6;
@@ -127,7 +130,7 @@ namespace PruebaConectarAccess
             // lblMateria
             // 
             this.lblMateria.AutoSize = true;
-            this.lblMateria.Location = new System.Drawing.Point(555, 15);
+            this.lblMateria.Location = new System.Drawing.Point(530, 15);
             this.lblMateria.Name = "lblMateria";
             this.lblMateria.Size = new System.Drawing.Size(55, 17);
             this.lblMateria.TabIndex = 7;
@@ -136,11 +139,19 @@ namespace PruebaConectarAccess
             // publicationsPanel
             // 
             this.publicationsPanel.AutoScroll = true;
+            this.publicationsPanel.Controls.Add(this.vScrollBar1);
             this.publicationsPanel.Location = new System.Drawing.Point(117, 43);
             this.publicationsPanel.Name = "publicationsPanel";
             this.publicationsPanel.Size = new System.Drawing.Size(681, 410);
             this.publicationsPanel.TabIndex = 10;
             this.publicationsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.publicationsPanel_Paint);
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(660, -46);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(21, 43);
+            this.vScrollBar1.TabIndex = 11;
             // 
             // Publicaciones
             // 
@@ -159,6 +170,7 @@ namespace PruebaConectarAccess
             this.Name = "Publicaciones";
             this.Text = "Publicaciones";
             this.Load += new System.EventHandler(this.Publicaciones_Load);
+            this.publicationsPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,5 +185,6 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.Label lblQueEs;
         private System.Windows.Forms.Label lblMateria;
         private System.Windows.Forms.Panel publicationsPanel;
+        private VScrollBar vScrollBar1;
     }
 }

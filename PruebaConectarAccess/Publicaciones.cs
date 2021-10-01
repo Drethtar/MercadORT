@@ -109,15 +109,21 @@ namespace PruebaConectarAccess
 
             while (reader.Read())
             {
-                Apuntes PublicacionApuntes = new Apuntes();
-                PublicacionApuntes.TitleApunte = reader["TituloUtiles"].ToString();
-                PublicacionApuntes.DescriptionApunte = reader["DescripcionUtiles"].ToString();
-                PublicacionApuntes.PrecioApunte = reader["PrecioUtiles"].ToString() + "$";
-                PublicacionApuntes.Dock = DockStyle.Top;
-                publicationsPanel.Controls.Add(PublicacionApuntes);
+                Apuntes PublicacionUtiles = new Apuntes();
+                PublicacionUtiles.TitleApunte = reader["TituloUtiles"].ToString();
+                PublicacionUtiles.DescriptionApunte = reader["DescripcionUtiles"].ToString();
+                PublicacionUtiles.PrecioApunte = reader["PrecioUtiles"].ToString() + "$";
+                PublicacionUtiles.Dock = DockStyle.Top;
+                publicationsPanel.Controls.Add(PublicacionUtiles);
             }
 
             connection.Close();
+        }
+
+        private void cbxMaterial_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            publicationsPanel.Controls.Clear();
+            //Borra todas las publicaciones para volverlas a cargar
         }
     }
 }

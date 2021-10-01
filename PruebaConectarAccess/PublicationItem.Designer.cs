@@ -36,32 +36,29 @@ namespace PruebaConectarAccess
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(36, 23);
+            this.lblTitle.Location = new System.Drawing.Point(35, 23);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(126, 46);
+            this.lblTitle.Size = new System.Drawing.Size(512, 46);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "label1";
+            this.lblTitle.Text = "Libros";
             this.lblTitle.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblDescription
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(41, 86);
+            this.lblDescription.Location = new System.Drawing.Point(43, 69);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(46, 17);
+            this.lblDescription.Size = new System.Drawing.Size(595, 45);
             this.lblDescription.TabIndex = 1;
             this.lblDescription.Text = "label2";
             this.lblDescription.Click += new System.EventHandler(this.description_Click);
             // 
             // lblPrecio
             // 
-            this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(553, 44);
+            this.lblPrecio.Location = new System.Drawing.Point(553, 40);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(64, 25);
+            this.lblPrecio.Size = new System.Drawing.Size(85, 29);
             this.lblPrecio.TabIndex = 2;
             this.lblPrecio.Text = "label3";
             // 
@@ -76,7 +73,6 @@ namespace PruebaConectarAccess
             this.Size = new System.Drawing.Size(650, 126);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

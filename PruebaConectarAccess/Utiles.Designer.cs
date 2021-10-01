@@ -36,32 +36,29 @@ namespace PruebaConectarAccess
             // 
             // lblPrecioUtil
             // 
-            this.lblPrecioUtil.AutoSize = true;
             this.lblPrecioUtil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioUtil.Location = new System.Drawing.Point(552, 44);
+            this.lblPrecioUtil.Location = new System.Drawing.Point(552, 40);
             this.lblPrecioUtil.Name = "lblPrecioUtil";
-            this.lblPrecioUtil.Size = new System.Drawing.Size(64, 25);
+            this.lblPrecioUtil.Size = new System.Drawing.Size(83, 29);
             this.lblPrecioUtil.TabIndex = 5;
             this.lblPrecioUtil.Text = "label3";
             // 
             // lblDescriptionUtil
             // 
-            this.lblDescriptionUtil.AutoSize = true;
-            this.lblDescriptionUtil.Location = new System.Drawing.Point(40, 86);
+            this.lblDescriptionUtil.Location = new System.Drawing.Point(40, 69);
             this.lblDescriptionUtil.Name = "lblDescriptionUtil";
-            this.lblDescriptionUtil.Size = new System.Drawing.Size(46, 17);
+            this.lblDescriptionUtil.Size = new System.Drawing.Size(595, 46);
             this.lblDescriptionUtil.TabIndex = 4;
             this.lblDescriptionUtil.Text = "label2";
             // 
             // lblTitleUtil
             // 
-            this.lblTitleUtil.AutoSize = true;
             this.lblTitleUtil.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleUtil.Location = new System.Drawing.Point(35, 23);
             this.lblTitleUtil.Name = "lblTitleUtil";
-            this.lblTitleUtil.Size = new System.Drawing.Size(126, 46);
+            this.lblTitleUtil.Size = new System.Drawing.Size(511, 46);
             this.lblTitleUtil.TabIndex = 3;
-            this.lblTitleUtil.Text = "label1";
+            this.lblTitleUtil.Text = "Utiles";
             // 
             // Utiles
             // 
@@ -74,7 +71,6 @@ namespace PruebaConectarAccess
             this.Size = new System.Drawing.Size(650, 126);
             this.Load += new System.EventHandler(this.Utiles_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
