@@ -18,25 +18,7 @@ namespace PruebaConectarAccess
         {
             InitializeComponent();
         }
-        private void Publicaciones_Load(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
-
-            int CantidadRows = ComprarOVender.CantidadDePublicaciones.CantidadPublicaciones / 3;
-            DondeSePublicanLasCosas.RowCount = CantidadRows;
-
-            for (int i = 0; i < CantidadRows - 1; i++)
-            {
-                RowStyle newRowStyle = new RowStyle();
-                newRowStyle.SizeType = SizeType.Absolute;
-                newRowStyle.Height = 50;
-                DondeSePublicanLasCosas.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            }
-
-            
-
-        }
+        
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -51,6 +33,91 @@ namespace PruebaConectarAccess
             this.Show();
         }
 
- 
+        private void DondeSePublicanLasCosas_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void publicationsPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Publicaciones_Load(object sender, EventArgs e)
+        {
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
+            addLibrosFromDatabase();
+            addApuntesFromDatabase();
+            addUtilesFromDatabase();
+        }
+
+        private void addLibrosFromDatabase()
+        {
+            connection.Open();
+            OleDbCommand command = new OleDbCommand();
+            command.Connection = connection;
+
+            
+            command.CommandText = "select * from Libros";
+            OleDbDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                PublicationItem publication = new PublicationItem();
+                publication.Title = reader["TituloLibro"].ToString();
+                publication.Description = reader["DescripcionLibro"].ToString();
+                publication.Precio = reader["PrecioLibro"].ToString() + "$";
+                publication.Dock = DockStyle.Top;
+                publicationsPanel.Controls.Add(publication);
+            }
+
+            connection.Close();
+        }
+
+        private void addApuntesFromDatabase()
+        {
+            connection.Open();
+            OleDbCommand command = new OleDbCommand();
+            command.Connection = connection;
+
+            
+            command.CommandText = "select * from Apuntes";
+            OleDbDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Apuntes PublicacionApuntes = new Apuntes();
+                PublicacionApuntes.TitleApunte = reader["TituloApuntes"].ToString();
+                PublicacionApuntes.DescriptionApunte = reader["DescripcionApuntes"].ToString();
+                PublicacionApuntes.PrecioApunte = reader["PrecioApuntes"].ToString() + "$";
+                PublicacionApuntes.Dock = DockStyle.Top;
+                publicationsPanel.Controls.Add(PublicacionApuntes);
+            }
+
+            connection.Close();
+        }
+
+        private void addUtilesFromDatabase()
+        {
+            connection.Open();
+            OleDbCommand command = new OleDbCommand();
+            command.Connection = connection;
+
+
+            command.CommandText = "select * from Utiles";
+            OleDbDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Apuntes PublicacionApuntes = new Apuntes();
+                PublicacionApuntes.TitleApunte = reader["TituloUtiles"].ToString();
+                PublicacionApuntes.DescriptionApunte = reader["DescripcionUtiles"].ToString();
+                PublicacionApuntes.PrecioApunte = reader["PrecioUtiles"].ToString() + "$";
+                PublicacionApuntes.Dock = DockStyle.Top;
+                publicationsPanel.Controls.Add(PublicacionApuntes);
+            }
+
+            connection.Close();
+        }
     }
 }

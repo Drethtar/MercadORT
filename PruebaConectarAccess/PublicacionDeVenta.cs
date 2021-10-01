@@ -109,6 +109,9 @@ namespace PruebaConectarAccess
         {
             if (cbxQueEs.Text == "Libro")
             {
+
+                
+
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;

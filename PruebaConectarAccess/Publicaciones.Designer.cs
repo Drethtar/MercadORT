@@ -1,4 +1,9 @@
 ﻿
+using System;
+using System.Data.OleDb;
+using System.Drawing;
+using System.Windows.Forms;
+
 namespace PruebaConectarAccess
 {
     partial class Publicaciones
@@ -21,6 +26,7 @@ namespace PruebaConectarAccess
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -35,18 +41,15 @@ namespace PruebaConectarAccess
             this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.lblQueEs = new System.Windows.Forms.Label();
             this.lblMateria = new System.Windows.Forms.Label();
-            this.DondeSePublicanLasCosas = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.BarritaMagica = new System.Windows.Forms.VScrollBar();
-            this.DondeSePublicanLasCosas.SuspendLayout();
+            this.publicationsPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(9, 328);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtras.Location = new System.Drawing.Point(12, 404);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(74, 28);
+            this.btnAtras.Size = new System.Drawing.Size(99, 34);
             this.btnAtras.TabIndex = 0;
             this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -59,10 +62,10 @@ namespace PruebaConectarAccess
             "Libro",
             "Apunte",
             "Util"});
-            this.cbxMaterial.Location = new System.Drawing.Point(88, 10);
-            this.cbxMaterial.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxMaterial.Location = new System.Drawing.Point(117, 12);
+            this.cbxMaterial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxMaterial.Name = "cbxMaterial";
-            this.cbxMaterial.Size = new System.Drawing.Size(102, 21);
+            this.cbxMaterial.Size = new System.Drawing.Size(135, 24);
             this.cbxMaterial.TabIndex = 2;
             // 
             // cbxMateria
@@ -95,18 +98,18 @@ namespace PruebaConectarAccess
             "Medios",
             "Humanidades",
             "Gestion"});
-            this.cbxMateria.Location = new System.Drawing.Point(461, 10);
-            this.cbxMateria.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxMateria.Location = new System.Drawing.Point(615, 12);
+            this.cbxMateria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxMateria.Name = "cbxMateria";
-            this.cbxMateria.Size = new System.Drawing.Size(138, 21);
+            this.cbxMateria.Size = new System.Drawing.Size(183, 24);
             this.cbxMateria.TabIndex = 4;
             // 
             // btnCerrarSesion
             // 
-            this.btnCerrarSesion.Location = new System.Drawing.Point(9, 286);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(12, 352);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(74, 37);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(99, 46);
             this.btnCerrarSesion.TabIndex = 5;
             this.btnCerrarSesion.Text = "Cerrar Sesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
@@ -115,179 +118,47 @@ namespace PruebaConectarAccess
             // lblQueEs
             // 
             this.lblQueEs.AutoSize = true;
-            this.lblQueEs.Location = new System.Drawing.Point(193, 12);
-            this.lblQueEs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblQueEs.Location = new System.Drawing.Point(257, 15);
             this.lblQueEs.Name = "lblQueEs";
-            this.lblQueEs.Size = new System.Drawing.Size(48, 13);
+            this.lblQueEs.Size = new System.Drawing.Size(63, 17);
             this.lblQueEs.TabIndex = 6;
             this.lblQueEs.Text = "Que Es?";
             // 
             // lblMateria
             // 
             this.lblMateria.AutoSize = true;
-            this.lblMateria.Location = new System.Drawing.Point(416, 12);
-            this.lblMateria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMateria.Location = new System.Drawing.Point(555, 15);
             this.lblMateria.Name = "lblMateria";
-            this.lblMateria.Size = new System.Drawing.Size(42, 13);
+            this.lblMateria.Size = new System.Drawing.Size(55, 17);
             this.lblMateria.TabIndex = 7;
             this.lblMateria.Text = "Materia";
             // 
-            // DondeSePublicanLasCosas
+            // publicationsPanel
             // 
-            this.DondeSePublicanLasCosas.AutoScroll = true;
-            this.DondeSePublicanLasCosas.AutoScrollMargin = new System.Drawing.Size(1, 1);
-            this.DondeSePublicanLasCosas.AutoScrollMinSize = new System.Drawing.Size(1, 1);
-            this.DondeSePublicanLasCosas.AutoSize = true;
-            this.DondeSePublicanLasCosas.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.DondeSePublicanLasCosas.ColumnCount = 3;
-            this.DondeSePublicanLasCosas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.DondeSePublicanLasCosas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.DondeSePublicanLasCosas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.DondeSePublicanLasCosas.Controls.Add(this.BarritaMagica, 2, 0);
-            this.DondeSePublicanLasCosas.Location = new System.Drawing.Point(88, 35);
-            this.DondeSePublicanLasCosas.Margin = new System.Windows.Forms.Padding(2);
-            this.DondeSePublicanLasCosas.Name = "DondeSePublicanLasCosas";
-            this.DondeSePublicanLasCosas.RowCount = 1;
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 321F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 321F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.DondeSePublicanLasCosas.Size = new System.Drawing.Size(510, 729);
-            this.DondeSePublicanLasCosas.TabIndex = 8;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(9, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 100);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // BarritaMagica
-            // 
-            this.BarritaMagica.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BarritaMagica.Location = new System.Drawing.Point(492, 1);
-            this.BarritaMagica.Name = "BarritaMagica";
-            this.DondeSePublicanLasCosas.SetRowSpan(this.BarritaMagica, 6);
-            this.BarritaMagica.Size = new System.Drawing.Size(17, 727);
-            this.BarritaMagica.TabIndex = 0;
+            this.publicationsPanel.AutoScroll = true;
+            this.publicationsPanel.Location = new System.Drawing.Point(117, 43);
+            this.publicationsPanel.Name = "publicationsPanel";
+            this.publicationsPanel.Size = new System.Drawing.Size(681, 410);
+            this.publicationsPanel.TabIndex = 10;
+            this.publicationsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.publicationsPanel_Paint);
             // 
             // Publicaciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.DondeSePublicanLasCosas);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.publicationsPanel);
             this.Controls.Add(this.lblMateria);
             this.Controls.Add(this.lblQueEs);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.cbxMateria);
             this.Controls.Add(this.cbxMaterial);
             this.Controls.Add(this.btnAtras);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Publicaciones";
             this.Text = "Publicaciones";
             this.Load += new System.EventHandler(this.Publicaciones_Load);
-            this.DondeSePublicanLasCosas.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,8 +172,6 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Label lblQueEs;
         private System.Windows.Forms.Label lblMateria;
-        private System.Windows.Forms.TableLayoutPanel DondeSePublicanLasCosas;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.VScrollBar BarritaMagica;
+        private System.Windows.Forms.Panel publicationsPanel;
     }
 }
