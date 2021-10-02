@@ -73,7 +73,7 @@
             this.txtContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContra.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContra.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtContra.Location = new System.Drawing.Point(557, 343);
+            this.txtContra.Location = new System.Drawing.Point(557, 331);
             this.txtContra.Margin = new System.Windows.Forms.Padding(2);
             this.txtContra.Multiline = true;
             this.txtContra.Name = "txtContra";
@@ -104,7 +104,7 @@
             this.btnIniciarSesion.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(508, 415);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(508, 413);
             this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(0);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(307, 54);
@@ -181,7 +181,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox5.Location = new System.Drawing.Point(510, 343);
+            this.pictureBox5.Location = new System.Drawing.Point(510, 331);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(47, 54);
             this.pictureBox5.TabIndex = 15;
@@ -201,7 +201,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.Location = new System.Drawing.Point(527, 358);
+            this.pictureBox7.Location = new System.Drawing.Point(524, 348);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(20, 24);
             this.pictureBox7.TabIndex = 17;

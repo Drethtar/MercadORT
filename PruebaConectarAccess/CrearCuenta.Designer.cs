@@ -202,12 +202,13 @@
             // btnAtras
             // 
             this.btnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtras.BackgroundImage")));
-            this.btnAtras.Location = new System.Drawing.Point(11, 651);
+            this.btnAtras.FlatAppearance.BorderSize = 0;
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.Location = new System.Drawing.Point(26, 651);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(270, 53);
+            this.btnAtras.Size = new System.Drawing.Size(148, 53);
             this.btnAtras.TabIndex = 17;
-            this.btnAtras.Text = "Atras";
             this.btnAtras.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
