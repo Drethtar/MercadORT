@@ -33,6 +33,7 @@ namespace PruebaConectarAccess
             this.btnVender = new System.Windows.Forms.Button();
             this.llNombreUsuario = new System.Windows.Forms.Label();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.btnMisPublicaciones = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnComprar
@@ -77,11 +78,22 @@ namespace PruebaConectarAccess
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
+            // btnMisPublicaciones
+            // 
+            this.btnMisPublicaciones.Location = new System.Drawing.Point(12, 406);
+            this.btnMisPublicaciones.Name = "btnMisPublicaciones";
+            this.btnMisPublicaciones.Size = new System.Drawing.Size(137, 32);
+            this.btnMisPublicaciones.TabIndex = 5;
+            this.btnMisPublicaciones.Text = "Mis Publicaciones";
+            this.btnMisPublicaciones.UseVisualStyleBackColor = true;
+            this.btnMisPublicaciones.Click += new System.EventHandler(this.btnMisPublicaciones_Click);
+            // 
             // ComprarOVender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnMisPublicaciones);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.llNombreUsuario);
             this.Controls.Add(this.btnVender);
@@ -99,5 +111,6 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.Button btnVender;
         private System.Windows.Forms.Label llNombreUsuario;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Button btnMisPublicaciones;
     }
 }

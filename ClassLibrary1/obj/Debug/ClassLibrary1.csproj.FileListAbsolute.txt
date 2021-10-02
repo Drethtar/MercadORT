@@ -26,3 +26,4 @@ C:\Users\TEMP\Desktop\PruebaConectarAccess\ClassLibrary1\obj\Debug\ClassLibrary1
 C:\Users\TEMP\Desktop\PruebaConectarAccess\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
 C:\Users\TEMP\Desktop\PruebaConectarAccess\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\TEMP\Desktop\PruebaConectarAccess\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache

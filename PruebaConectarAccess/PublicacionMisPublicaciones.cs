@@ -8,33 +8,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace PruebaConectarAccess
 {
-    public partial class Apuntes : UserControl
+    public partial class PublicacionMisPublicaciones : UserControl
     {
-        public Apuntes()
+        
+        public PublicacionMisPublicaciones()
         {
             InitializeComponent();
         }
 
         [Category("Custom Props")]
 
-        public string TitleApunte
+        public string Title
         {
-            get { return lblTitleApunte.Text; }
-            set { lblTitleApunte.Text = value; }
+            get { return lblTitle.Text; }
+            set { lblTitle.Text = value; }
         }
 
-        public string DescriptionApunte
+        public string Description
         {
-            get { return lblDescriptionApunte.Text; }
-            set { lblDescriptionApunte.Text = value; }
+            get { return lblDescription.Text; }
+            set { lblDescription.Text = value; }
         }
 
-        public string PrecioApunte
+        public string Precio
         {
-            get { return lblPrecioApunte.Text; }
-            set { lblPrecioApunte.Text = value; }
+            get { return lblPrecio.Text; }
+            set { lblPrecio.Text = value; }
         }
 
         private string idUsuario;
@@ -43,7 +45,8 @@ namespace PruebaConectarAccess
             get { return idUsuario; }
             set { idUsuario = value; }
         }
-        private void Apuntes_Load(object sender, EventArgs e)
+
+        private void PublicacionMisPublicaciones_Load(object sender, EventArgs e)
         {
 
         }

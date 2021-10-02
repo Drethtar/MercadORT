@@ -70,6 +70,12 @@
     <Compile Include="CrearCuenta.Designer.cs">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="MisPublicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MisPublicaciones.Designer.cs">
+      <DependentUpon>MisPublicaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="OlvideMiContra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,12 @@
     </Compile>
     <Compile Include="Publicaciones.Designer.cs">
       <DependentUpon>Publicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PublicacionMisPublicaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PublicacionMisPublicaciones.Designer.cs">
+      <DependentUpon>PublicacionMisPublicaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="PublicationItem.cs">
       <SubType>UserControl</SubType>
@@ -123,6 +135,9 @@
     <EmbeddedResource Include="CambiarMiPassword.resx">
       <DependentUpon>CambiarMiPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MisPublicaciones.resx">
+      <DependentUpon>MisPublicaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OlvideMiContra.resx">
       <DependentUpon>OlvideMiContra.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Publicaciones.resx">
       <DependentUpon>Publicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PublicacionMisPublicaciones.resx">
+      <DependentUpon>PublicacionMisPublicaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PublicationItem.resx">
       <DependentUpon>PublicationItem.cs</DependentUpon>

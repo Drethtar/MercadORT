@@ -27,6 +27,8 @@ namespace PruebaConectarAccess
             public static string NombreDelUsuario = "";
 
             public static string IDdelUsuario = "";
+
+            public static string MailDelUsuario = "";
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -76,9 +78,11 @@ namespace PruebaConectarAccess
 
                     string NombreObtenidoDelUsuario = reader2["NombreUsuario"].ToString();
                     string IDObtenidoDelUsuario = reader2["ID"].ToString();
+                    string MailUsuario = reader2["MailUsuario"].ToString();
 
                     Login.ObtenerDatosUsuario.NombreDelUsuario = NombreObtenidoDelUsuario;
                     Login.ObtenerDatosUsuario.IDdelUsuario = IDObtenidoDelUsuario;
+                    Login.ObtenerDatosUsuario.MailDelUsuario = MailUsuario;
 
                     this.Hide();
                     new ComprarOVender().ShowDialog();

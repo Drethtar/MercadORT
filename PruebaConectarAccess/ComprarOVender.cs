@@ -118,5 +118,12 @@ namespace PruebaConectarAccess
             new Login().ShowDialog();
             this.Show();
         }
+
+        private void btnMisPublicaciones_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MisPublicaciones().ShowDialog();
+            this.Show();
+        }
     }
 }

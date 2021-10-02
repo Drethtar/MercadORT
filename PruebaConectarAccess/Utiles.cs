@@ -37,7 +37,12 @@ namespace PruebaConectarAccess
             set { lblPrecioUtil.Text = value; }
         }
 
-
+        private string idUsuario;
+        public string IdUsuario
+        {
+            get { return idUsuario; }
+            set { idUsuario = value; }
+        }
 
         private void Utiles_Load(object sender, EventArgs e)
         {
