@@ -29,6 +29,7 @@ namespace PruebaConectarAccess
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PublicacionDeVenta));
             this.label1 = new System.Windows.Forms.Label();
             this.cbxQueEs = new System.Windows.Forms.ComboBox();
             this.txtTituloLibro = new System.Windows.Forms.TextBox();
@@ -421,6 +422,7 @@ namespace PruebaConectarAccess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnPublicar);

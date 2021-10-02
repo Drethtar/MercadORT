@@ -250,5 +250,71 @@ namespace PruebaConectarAccess
             new Login().ShowDialog();
             this.Show();
         }
+
+        private void txtNombre_Enter(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "Usuario")
+            {
+                txtNombre.Text = "";
+
+                txtNombre.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtNombre_Leave(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "")
+            {
+                txtNombre.Text = "Usuario";
+
+                txtNombre.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtMail_Leave(object sender, EventArgs e)
+        {
+            if (txtMail.Text == "")
+            {
+                txtMail.Text = "ejemplo@gmail.com";
+
+                txtMail.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtMail_Enter(object sender, EventArgs e)
+        {
+            if (txtMail.Text == "ejemplo@gmail.com")
+            {
+                txtMail.Text = "";
+
+                txtMail.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtContra_Leave(object sender, EventArgs e)
+        {
+            if (txtContra.Text == "")
+            {
+                txtContra.Text = "Contraseña";
+
+                txtContra.ForeColor = Color.DarkGray;
+
+                txtContra.PasswordChar = (char)0;
+            }
+        }
+
+        private void txtContra_Enter(object sender, EventArgs e)
+        {
+            if (txtContra.Text == "Contraseña")
+            {
+                txtContra.Text = "";
+
+                txtContra.ForeColor = Color.Black;
+
+                txtContra.PasswordChar = '*';
+            }
+        }
+
+
     }
 }
