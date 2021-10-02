@@ -32,7 +32,9 @@ namespace PruebaConectarAccess
             this.lblPrecioApunte = new System.Windows.Forms.Label();
             this.lblDescriptionApunte = new System.Windows.Forms.Label();
             this.lblTitleApunte = new System.Windows.Forms.Label();
-            this.btnQuieroComprar = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.lblQueEs = new System.Windows.Forms.Label();
+            this.lblIDdelaPublicacion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblPrecioApunte
@@ -61,29 +63,52 @@ namespace PruebaConectarAccess
             this.lblTitleApunte.TabIndex = 3;
             this.lblTitleApunte.Text = "Apunte";
             // 
-            // btnQuieroComprar
+            // btnBorrar
             // 
-            this.btnQuieroComprar.Location = new System.Drawing.Point(553, 69);
-            this.btnQuieroComprar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnQuieroComprar.Name = "btnQuieroComprar";
-            this.btnQuieroComprar.Size = new System.Drawing.Size(84, 46);
-            this.btnQuieroComprar.TabIndex = 6;
-            this.btnQuieroComprar.Text = "Quiero Comprarlo!";
-            this.btnQuieroComprar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Location = new System.Drawing.Point(553, 69);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(84, 46);
+            this.btnBorrar.TabIndex = 6;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
+            // lblQueEs
+            // 
+            this.lblQueEs.AutoSize = true;
+            this.lblQueEs.Location = new System.Drawing.Point(0, 108);
+            this.lblQueEs.Name = "lblQueEs";
+            this.lblQueEs.Size = new System.Drawing.Size(16, 17);
+            this.lblQueEs.TabIndex = 7;
+            this.lblQueEs.Text = "a";
+            this.lblQueEs.Visible = false;
+            // 
+            // lblIDdelaPublicacion
+            // 
+            this.lblIDdelaPublicacion.AutoSize = true;
+            this.lblIDdelaPublicacion.Location = new System.Drawing.Point(0, 88);
+            this.lblIDdelaPublicacion.Name = "lblIDdelaPublicacion";
+            this.lblIDdelaPublicacion.Size = new System.Drawing.Size(16, 17);
+            this.lblIDdelaPublicacion.TabIndex = 8;
+            this.lblIDdelaPublicacion.Text = "a";
+            this.lblIDdelaPublicacion.Visible = false;
             // 
             // Apuntes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnQuieroComprar);
+            this.Controls.Add(this.lblIDdelaPublicacion);
+            this.Controls.Add(this.lblQueEs);
+            this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.lblPrecioApunte);
             this.Controls.Add(this.lblDescriptionApunte);
             this.Controls.Add(this.lblTitleApunte);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Apuntes";
             this.Size = new System.Drawing.Size(651, 126);
-            this.Load += new System.EventHandler(this.Apuntes_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,6 +117,8 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.Label lblPrecioApunte;
         private System.Windows.Forms.Label lblDescriptionApunte;
         private System.Windows.Forms.Label lblTitleApunte;
-        private System.Windows.Forms.Button btnQuieroComprar;
+        private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Label lblQueEs;
+        private System.Windows.Forms.Label lblIDdelaPublicacion;
     }
 }

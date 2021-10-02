@@ -29,7 +29,7 @@ namespace PruebaConectarAccess
         {
             public static string NombreDelUsuario = "";
 
-            public static string IDdelUsuario = "";
+            public static int IDdelUsuario = 0;
 
             public static string MailDelUsuario = "";
         }
@@ -84,7 +84,7 @@ namespace PruebaConectarAccess
                     string MailUsuario = reader2["MailUsuario"].ToString();
 
                     Login.ObtenerDatosUsuario.NombreDelUsuario = NombreObtenidoDelUsuario;
-                    Login.ObtenerDatosUsuario.IDdelUsuario = IDObtenidoDelUsuario;
+                    Login.ObtenerDatosUsuario.IDdelUsuario = Convert.ToInt32(IDObtenidoDelUsuario);
                     Login.ObtenerDatosUsuario.MailDelUsuario = MailUsuario;
 
                     this.Hide();
@@ -172,6 +172,9 @@ namespace PruebaConectarAccess
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

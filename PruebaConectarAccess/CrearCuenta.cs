@@ -27,10 +27,25 @@ namespace PruebaConectarAccess
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
             
             cbxOrientacion.Hide();
-            llOrientacion.Hide();
-            cbxLetra.Hide();
-            llLetra.Hide();
             
+            cbxLetra.Hide();
+            
+
+            if (string.IsNullOrWhiteSpace(cbxCurso.Text))
+            {
+                cbxCurso.Text = "Curso";
+            }
+
+            if (string.IsNullOrWhiteSpace(cbxLetra.Text))
+            {
+                cbxLetra.Text = "Letra";
+            }
+
+            if (string.IsNullOrWhiteSpace(cbxOrientacion.Text))
+            {
+                cbxOrientacion.Text = "Orientacion";
+            }
+
         }
 
         private void btnInsertarDatos_Click(object sender, EventArgs e)
@@ -108,7 +123,7 @@ namespace PruebaConectarAccess
             
             if (cbxCurso.Text == "7mo" || cbxCurso.Text == "1ro" || cbxCurso.Text == "2do")
             {
-                cbxOrientacion.Items.Add("Ninguna");
+                cbxOrientacion.Items.Add("Sin Orientacion");
             }
             else if (cbxCurso.Text == "3ro" || cbxCurso.Text == "4to" || cbxCurso.Text == "5to")
             {
@@ -121,24 +136,24 @@ namespace PruebaConectarAccess
             }
 
             cbxOrientacion.Show();
-            llOrientacion.Show();
+            
         }
 
         private void cbxOrientacion_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbxLetra.Items.Clear();
             
-            if (cbxCurso.Text == "7mo" && cbxOrientacion.Text == "Ninguna")
+            if (cbxCurso.Text == "7mo" && cbxOrientacion.Text == "Sin Orientacion")
             {
                 cbxLetra.Items.Add("A"); cbxLetra.Items.Add("B"); cbxLetra.Items.Add("C"); cbxLetra.Items.Add("D"); cbxLetra.Items.Add("E"); cbxLetra.Items.Add("F"); cbxLetra.Items.Add("G");
             }
-            else if (cbxCurso.Text == "1ro" && cbxOrientacion.Text == "Ninguna")
+            else if (cbxCurso.Text == "1ro" && cbxOrientacion.Text == "Sin Orientacion")
             {
                 cbxLetra.Items.Add("A"); cbxLetra.Items.Add("B"); cbxLetra.Items.Add("C"); cbxLetra.Items.Add("D"); cbxLetra.Items.Add("E"); cbxLetra.Items.Add("F"); cbxLetra.Items.Add("G");
                 cbxLetra.Items.Add("H"); cbxLetra.Items.Add("I"); cbxLetra.Items.Add("J"); cbxLetra.Items.Add("K"); cbxLetra.Items.Add("L"); cbxLetra.Items.Add("M"); cbxLetra.Items.Add("N");
                 cbxLetra.Items.Add("O"); cbxLetra.Items.Add("P"); cbxLetra.Items.Add("Q"); cbxLetra.Items.Add("R"); cbxLetra.Items.Add("S"); cbxLetra.Items.Add("T");
             }
-            else if (cbxCurso.Text == "2do" && cbxOrientacion.Text == "Ninguna")
+            else if (cbxCurso.Text == "2do" && cbxOrientacion.Text == "Sin Orientacion")
             {
                 cbxLetra.Items.Add("A"); cbxLetra.Items.Add("B"); cbxLetra.Items.Add("C"); cbxLetra.Items.Add("D"); cbxLetra.Items.Add("E"); cbxLetra.Items.Add("F"); cbxLetra.Items.Add("G");
                 cbxLetra.Items.Add("H"); cbxLetra.Items.Add("I"); cbxLetra.Items.Add("J"); cbxLetra.Items.Add("K"); cbxLetra.Items.Add("L"); cbxLetra.Items.Add("M"); cbxLetra.Items.Add("N");
@@ -241,7 +256,7 @@ namespace PruebaConectarAccess
                 cbxLetra.Items.Add("B");
             }
             cbxLetra.Show();
-            llLetra.Show();
+            
         }
 
         private void btnAtras_Click(object sender, EventArgs e)

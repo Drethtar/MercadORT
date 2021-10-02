@@ -29,29 +29,68 @@ namespace PruebaConectarAccess
         private void MisPublicaciones_Load(object sender, EventArgs e)
         {
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
+            this.WindowState = FormWindowState.Maximized;
 
             connection.Open();
             OleDbCommand command = new OleDbCommand();
             command.Connection = connection;
 
 
-            command.CommandText = "SELECT Libros.*, RelacionUsuarioLibros.IDUsuario FROM(Libros INNER JOIN RelacionUsuarioLibros ON Libros.ID = RelacionUsuarioLibros.IDLibros)";
+            command.CommandText = "SELECT Libros.ID, Libros.TituloLibro, Libros.MateriaLibro, Libros.PrecioLibro, RelacionUsuarioLibros.IDUsuario, Libros.DescripcionLibro FROM     (Libros INNER JOIN RelacionUsuarioLibros ON Libros.ID = RelacionUsuarioLibros.IDLibros) WHERE  (RelacionUsuarioLibros.IDUsuario = " + Login.ObtenerDatosUsuario.IDdelUsuario+ ")";
             OleDbDataReader reader = command.ExecuteReader();
 
             while (reader.Read())
             {
-                PublicacionMisPublicaciones publicationMisPublicaciones = new PublicacionMisPublicaciones();
-                publicationMisPublicaciones.Title = reader["TituloLibro"].ToString();
-                publicationMisPublicaciones.Description = reader["DescripcionLibro"].ToString();
-                publicationMisPublicaciones.Precio = reader["PrecioLibro"].ToString() + "$";
-                publicationMisPublicaciones.IdUsuario = reader["IDUsuario"].ToString();
-                publicationMisPublicaciones.Dock = DockStyle.Top;
-                MyPublicationsPanel.Controls.Add(publicationMisPublicaciones);
+                Apuntes publicationMisPublicacionesLibros = new Apuntes();
+                publicationMisPublicacionesLibros.Title = reader["TituloLibro"].ToString();
+                publicationMisPublicacionesLibros.Description = reader["DescripcionLibro"].ToString();
+                publicationMisPublicacionesLibros.Precio = reader["PrecioLibro"].ToString() + "$";
+                publicationMisPublicacionesLibros.IdUsuario = reader["IDUsuario"].ToString();
+                publicationMisPublicacionesLibros.QueEs = "Libro";
+                publicationMisPublicacionesLibros.IDPublicacion = reader["ID"].ToString();
+                publicationMisPublicacionesLibros.Dock = DockStyle.Top;
+                MyPublicationsPanel.Controls.Add(publicationMisPublicacionesLibros);
+            } 
+            
+            connection.Close();
+            connection.Open();
+
+            command.CommandText = "SELECT Utiles.ID, Utiles.TituloUtiles, Utiles.ColorUtiles, Utiles.DescripcionUtiles, Utiles.PrecioUtiles, RelacionUsuarioUtiles.IDUsuario FROM     (Utiles INNER JOIN RelacionUsuarioUtiles ON Utiles.ID = RelacionUsuarioUtiles.IDUtiles) WHERE  (RelacionUsuarioUtiles.IDUsuario = "+ Login.ObtenerDatosUsuario.IDdelUsuario +")";
+            reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Apuntes publicationMisPublicacionesUtiles = new Apuntes();
+                publicationMisPublicacionesUtiles.Title = reader["TituloUtiles"].ToString();
+                publicationMisPublicacionesUtiles.Description = reader["DescripcionUtiles"].ToString();
+                publicationMisPublicacionesUtiles.Precio = reader["PrecioUtiles"].ToString() + "$";
+                publicationMisPublicacionesUtiles.IdUsuario = reader["IDUsuario"].ToString();
+                publicationMisPublicacionesUtiles.QueEs = "Util";
+                publicationMisPublicacionesUtiles.IDPublicacion = reader["ID"].ToString();
+                publicationMisPublicacionesUtiles.Dock = DockStyle.Top;
+                MyPublicationsPanel.Controls.Add(publicationMisPublicacionesUtiles);
             }
 
             connection.Close();
+            connection.Open();
 
-            //carga mal las cosas, fijate bauty del futuro
+            command.CommandText = "SELECT * from Apuntes Where IDUsuario = "+ Login.ObtenerDatosUsuario.IDdelUsuario +"";
+            reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Apuntes publicationMisPublicacionesApuntes = new Apuntes();
+                publicationMisPublicacionesApuntes.Title = reader["TituloApuntes"].ToString();
+                publicationMisPublicacionesApuntes.Description = reader["DescripcionApuntes"].ToString();
+                publicationMisPublicacionesApuntes.Precio = reader["PrecioApuntes"].ToString() + "$";
+                publicationMisPublicacionesApuntes.IdUsuario = reader["IDUsuario"].ToString();
+                publicationMisPublicacionesApuntes.QueEs = "Apunte";
+                publicationMisPublicacionesApuntes.IDPublicacion = reader["ID"].ToString();
+                publicationMisPublicacionesApuntes.Dock = DockStyle.Top;
+                MyPublicationsPanel.Controls.Add(publicationMisPublicacionesApuntes);
+            }
+
+            connection.Close();
         }
     }
 }

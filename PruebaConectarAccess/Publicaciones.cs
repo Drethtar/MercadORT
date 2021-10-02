@@ -33,19 +33,11 @@ namespace PruebaConectarAccess
             this.Show();
         }
 
-        private void DondeSePublicanLasCosas_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void publicationsPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Publicaciones_Load(object sender, EventArgs e)
         {
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
+            this.WindowState = FormWindowState.Maximized;
+
             addLibrosFromDatabase();
             addApuntesFromDatabase();
             addUtilesFromDatabase();
@@ -92,13 +84,13 @@ namespace PruebaConectarAccess
 
             while (reader.Read())
             {
-                Apuntes PublicacionApuntes = new Apuntes();
-                PublicacionApuntes.TitleApunte = reader["TituloApuntes"].ToString();
-                PublicacionApuntes.DescriptionApunte = reader["DescripcionApuntes"].ToString();
-                PublicacionApuntes.PrecioApunte = reader["PrecioApuntes"].ToString() + "$";
-                PublicacionApuntes.IdUsuario = reader["IDUsuario"].ToString();
-                PublicacionApuntes.Dock = DockStyle.Top;
-                publicationsPanel.Controls.Add(PublicacionApuntes);
+                PublicationItem publication = new PublicationItem();
+                publication.Title = reader["TituloApuntes"].ToString();
+                publication.Description = reader["DescripcionApuntes"].ToString();
+                publication.Precio = reader["PrecioApuntes"].ToString() + "$";
+                publication.IdUsuario = reader["IDUsuario"].ToString();
+                publication.Dock = DockStyle.Top;
+                publicationsPanel.Controls.Add(publication);
             }
 
             connection.Close();
@@ -116,19 +108,19 @@ namespace PruebaConectarAccess
 
             while (reader.Read())
             {
-                Apuntes PublicacionUtiles = new Apuntes();
-                PublicacionUtiles.TitleApunte = reader["TituloUtiles"].ToString();
-                PublicacionUtiles.DescriptionApunte = reader["DescripcionUtiles"].ToString();
-                PublicacionUtiles.PrecioApunte = reader["PrecioUtiles"].ToString() + "$";
-                PublicacionUtiles.IdUsuario = reader["IDUsuario"].ToString();
-                PublicacionUtiles.Dock = DockStyle.Top;
-                publicationsPanel.Controls.Add(PublicacionUtiles);
+                PublicationItem publication = new PublicationItem();
+                publication.Title = reader["TituloUtiles"].ToString();
+                publication.Description = reader["DescripcionUtiles"].ToString();
+                publication.Precio = reader["PrecioUtiles"].ToString() + "$";
+                publication.IdUsuario = reader["IDUsuario"].ToString();
+                publication.Dock = DockStyle.Top;
+                publicationsPanel.Controls.Add(publication);
             }
 
             connection.Close();
         }
 
-        //Filtro De que materia es
+        //Filtro que material es
         private void cbxMaterial_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbxMaterial.Text == "Libro")
@@ -137,6 +129,8 @@ namespace PruebaConectarAccess
                 cbxColor.Hide();
                 lblMateria.Show();
                 cbxMateria.Show();
+
+                publicationsPanel.Controls.Clear();
 
                 addLibrosFromDatabase();
 
@@ -179,7 +173,7 @@ namespace PruebaConectarAccess
                 OleDbCommand FiltroLibroMateria = new OleDbCommand();
                 FiltroLibroMateria.Connection = connection;
 
-                FiltroLibroMateria.CommandText = "select * from Libros where MateriaLibro='" + cbxMateria.Text + "'";
+                FiltroLibroMateria.CommandText = "SELECT Libros.ID, Libros.TituloLibro, Libros.MateriaLibro, Libros.PrecioLibro, RelacionUsuarioLibros.IDUsuario, Libros.DescripcionLibro FROM     (Libros INNER JOIN RelacionUsuarioLibros ON Libros.ID = RelacionUsuarioLibros.IDLibros) WHERE  (Libros.MateriaLibro = '"+cbxMateria.Text+"')";
                 OleDbDataReader LectorFiltroLibroMateria = FiltroLibroMateria.ExecuteReader();
 
                 while (LectorFiltroLibroMateria.Read())
@@ -192,7 +186,7 @@ namespace PruebaConectarAccess
                     publication.Dock = DockStyle.Top;
                     publicationsPanel.Controls.Add(publication);
                 }
-
+                
                 connection.Close();
             }
             else if (cbxMaterial.Text == "Apunte" && cbxMateria.Text != null)
@@ -208,13 +202,13 @@ namespace PruebaConectarAccess
 
                 while (LectorFiltroApunteMateria.Read())
                 {
-                    PublicationItem publicationApuntes = new PublicationItem();
-                    publicationApuntes.Title = LectorFiltroApunteMateria["TituloApuntes"].ToString();
-                    publicationApuntes.Description = LectorFiltroApunteMateria["DescripcionApuntes"].ToString();
-                    publicationApuntes.Precio = LectorFiltroApunteMateria["PrecioApuntes"].ToString() + "$";
-                    publicationApuntes.IdUsuario = LectorFiltroApunteMateria["IDUsuario"].ToString();
-                    publicationApuntes.Dock = DockStyle.Top;
-                    publicationsPanel.Controls.Add(publicationApuntes);
+                    PublicationItem publication = new PublicationItem();
+                    publication.Title = LectorFiltroApunteMateria["TituloApuntes"].ToString();
+                    publication.Description = LectorFiltroApunteMateria["DescripcionApuntes"].ToString();
+                    publication.Precio = LectorFiltroApunteMateria["PrecioApuntes"].ToString() + "$";
+                    publication.IdUsuario = LectorFiltroApunteMateria["IDUsuario"].ToString();
+                    publication.Dock = DockStyle.Top;
+                    publicationsPanel.Controls.Add(publication);
                 }
 
                 connection.Close();
@@ -231,18 +225,18 @@ namespace PruebaConectarAccess
                 OleDbCommand FiltroUtilColor = new OleDbCommand();
                 FiltroUtilColor.Connection = connection;
 
-                FiltroUtilColor.CommandText = "select * from Utiles where ColorUtiles='" + cbxColor.Text + "'";
+                FiltroUtilColor.CommandText = "SELECT RelacionUsuarioUtiles.IDUsuario, Utiles.ID, Utiles.TituloUtiles, Utiles.ColorUtiles, Utiles.DescripcionUtiles, Utiles.PrecioUtiles FROM (Utiles INNER JOIN RelacionUsuarioUtiles ON Utiles.ID = RelacionUsuarioUtiles.IDUtiles) WHERE  (Utiles.ColorUtiles = '" + cbxColor.Text + "')";
                 OleDbDataReader LectorFiltroUtilColor = FiltroUtilColor.ExecuteReader();
 
                 while (LectorFiltroUtilColor.Read())
                 {
-                    PublicationItem publicationUtiles = new PublicationItem();
-                    publicationUtiles.Title = LectorFiltroUtilColor["TituloUtiles"].ToString();
-                    publicationUtiles.Description = LectorFiltroUtilColor["DescripcionUtiles"].ToString();
-                    publicationUtiles.Precio = LectorFiltroUtilColor["PrecioUtiles"].ToString() + "$";
-                    publicationUtiles.IdUsuario = LectorFiltroUtilColor["IDUsuario"].ToString();
-                    publicationUtiles.Dock = DockStyle.Top;
-                    publicationsPanel.Controls.Add(publicationUtiles);
+                    PublicationItem publication = new PublicationItem();
+                    publication.Title = LectorFiltroUtilColor["TituloUtiles"].ToString();
+                    publication.Description = LectorFiltroUtilColor["DescripcionUtiles"].ToString();
+                    publication.Precio = LectorFiltroUtilColor["PrecioUtiles"].ToString() + "$";
+                    publication.IdUsuario = LectorFiltroUtilColor["IDUsuario"].ToString();
+                    publication.Dock = DockStyle.Top;
+                    publicationsPanel.Controls.Add(publication);
                 }
 
                 connection.Close();

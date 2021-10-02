@@ -150,7 +150,6 @@ namespace PruebaConectarAccess
             this.publicationsPanel.Name = "publicationsPanel";
             this.publicationsPanel.Size = new System.Drawing.Size(511, 333);
             this.publicationsPanel.TabIndex = 10;
-            this.publicationsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.publicationsPanel_Paint);
             // 
             // vScrollBar1
             // 
