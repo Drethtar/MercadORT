@@ -35,9 +35,10 @@ namespace PruebaConectarAccess
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(12, 406);
+            this.btnAtras.Location = new System.Drawing.Point(9, 330);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(100, 32);
+            this.btnAtras.Size = new System.Drawing.Size(75, 26);
             this.btnAtras.TabIndex = 5;
             this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -46,18 +47,20 @@ namespace PruebaConectarAccess
             // MyPublicationsPanel
             // 
             this.MyPublicationsPanel.AutoScroll = true;
-            this.MyPublicationsPanel.Location = new System.Drawing.Point(127, 12);
+            this.MyPublicationsPanel.Location = new System.Drawing.Point(95, 10);
+            this.MyPublicationsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MyPublicationsPanel.Name = "MyPublicationsPanel";
-            this.MyPublicationsPanel.Size = new System.Drawing.Size(661, 426);
+            this.MyPublicationsPanel.Size = new System.Drawing.Size(496, 346);
             this.MyPublicationsPanel.TabIndex = 6;
             // 
             // MisPublicaciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.MyPublicationsPanel);
             this.Controls.Add(this.btnAtras);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MisPublicaciones";
             this.Text = "MisPublicaciones";
             this.Load += new System.EventHandler(this.MisPublicaciones_Load);

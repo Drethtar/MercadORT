@@ -38,9 +38,10 @@ namespace PruebaConectarAccess
             // 
             // btnComprar
             // 
-            this.btnComprar.Location = new System.Drawing.Point(263, 386);
+            this.btnComprar.Location = new System.Drawing.Point(197, 314);
+            this.btnComprar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(108, 52);
+            this.btnComprar.Size = new System.Drawing.Size(81, 42);
             this.btnComprar.TabIndex = 1;
             this.btnComprar.Text = "Comprar";
             this.btnComprar.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@ namespace PruebaConectarAccess
             // 
             // btnVender
             // 
-            this.btnVender.Location = new System.Drawing.Point(401, 386);
+            this.btnVender.Location = new System.Drawing.Point(301, 314);
+            this.btnVender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVender.Name = "btnVender";
-            this.btnVender.Size = new System.Drawing.Size(108, 52);
+            this.btnVender.Size = new System.Drawing.Size(81, 42);
             this.btnVender.TabIndex = 2;
             this.btnVender.Text = "Vender";
             this.btnVender.UseVisualStyleBackColor = true;
@@ -60,19 +62,21 @@ namespace PruebaConectarAccess
             // 
             this.llNombreUsuario.AutoSize = true;
             this.llNombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llNombreUsuario.Location = new System.Drawing.Point(345, 9);
+            this.llNombreUsuario.Location = new System.Drawing.Point(259, 7);
+            this.llNombreUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llNombreUsuario.Name = "llNombreUsuario";
             this.llNombreUsuario.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.llNombreUsuario.Size = new System.Drawing.Size(63, 32);
+            this.llNombreUsuario.Size = new System.Drawing.Size(48, 26);
             this.llNombreUsuario.TabIndex = 3;
             this.llNombreUsuario.Text = "123";
             this.llNombreUsuario.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnCerrarSesion
             // 
-            this.btnCerrarSesion.Location = new System.Drawing.Point(672, 406);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(504, 330);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(116, 32);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(87, 26);
             this.btnCerrarSesion.TabIndex = 4;
             this.btnCerrarSesion.Text = "Cerrar Sesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
@@ -80,9 +84,10 @@ namespace PruebaConectarAccess
             // 
             // btnMisPublicaciones
             // 
-            this.btnMisPublicaciones.Location = new System.Drawing.Point(12, 406);
+            this.btnMisPublicaciones.Location = new System.Drawing.Point(9, 330);
+            this.btnMisPublicaciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMisPublicaciones.Name = "btnMisPublicaciones";
-            this.btnMisPublicaciones.Size = new System.Drawing.Size(137, 32);
+            this.btnMisPublicaciones.Size = new System.Drawing.Size(103, 26);
             this.btnMisPublicaciones.TabIndex = 5;
             this.btnMisPublicaciones.Text = "Mis Publicaciones";
             this.btnMisPublicaciones.UseVisualStyleBackColor = true;
@@ -90,14 +95,15 @@ namespace PruebaConectarAccess
             // 
             // ComprarOVender
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.btnMisPublicaciones);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.llNombreUsuario);
             this.Controls.Add(this.btnVender);
             this.Controls.Add(this.btnComprar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ComprarOVender";
             this.Text = "IniciasteSesion";
             this.Load += new System.EventHandler(this.ComprarOVender_Load);

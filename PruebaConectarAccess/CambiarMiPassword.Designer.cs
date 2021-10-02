@@ -45,30 +45,34 @@ namespace PruebaConectarAccess
             // 
             // txtContraOlvidada1
             // 
-            this.txtContraOlvidada1.Location = new System.Drawing.Point(303, 184);
+            this.txtContraOlvidada1.Location = new System.Drawing.Point(227, 150);
+            this.txtContraOlvidada1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtContraOlvidada1.Name = "txtContraOlvidada1";
-            this.txtContraOlvidada1.Size = new System.Drawing.Size(205, 22);
+            this.txtContraOlvidada1.Size = new System.Drawing.Size(155, 20);
             this.txtContraOlvidada1.TabIndex = 0;
             // 
             // txtContraOlvidada2
             // 
-            this.txtContraOlvidada2.Location = new System.Drawing.Point(303, 244);
+            this.txtContraOlvidada2.Location = new System.Drawing.Point(227, 198);
+            this.txtContraOlvidada2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtContraOlvidada2.Name = "txtContraOlvidada2";
-            this.txtContraOlvidada2.Size = new System.Drawing.Size(205, 22);
+            this.txtContraOlvidada2.Size = new System.Drawing.Size(155, 20);
             this.txtContraOlvidada2.TabIndex = 1;
             // 
             // txtNombrePerdiPassword
             // 
-            this.txtNombrePerdiPassword.Location = new System.Drawing.Point(303, 67);
+            this.txtNombrePerdiPassword.Location = new System.Drawing.Point(227, 54);
+            this.txtNombrePerdiPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombrePerdiPassword.Name = "txtNombrePerdiPassword";
-            this.txtNombrePerdiPassword.Size = new System.Drawing.Size(205, 22);
+            this.txtNombrePerdiPassword.Size = new System.Drawing.Size(155, 20);
             this.txtNombrePerdiPassword.TabIndex = 2;
             // 
             // btnCambiarPassword
             // 
-            this.btnCambiarPassword.Location = new System.Drawing.Point(344, 342);
+            this.btnCambiarPassword.Location = new System.Drawing.Point(258, 278);
+            this.btnCambiarPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCambiarPassword.Name = "btnCambiarPassword";
-            this.btnCambiarPassword.Size = new System.Drawing.Size(110, 47);
+            this.btnCambiarPassword.Size = new System.Drawing.Size(82, 38);
             this.btnCambiarPassword.TabIndex = 3;
             this.btnCambiarPassword.Text = "Cambiar mi Contraseña";
             this.btnCambiarPassword.UseVisualStyleBackColor = true;
@@ -76,68 +80,76 @@ namespace PruebaConectarAccess
             // 
             // txtMailPerdiPassword
             // 
-            this.txtMailPerdiPassword.Location = new System.Drawing.Point(303, 125);
+            this.txtMailPerdiPassword.Location = new System.Drawing.Point(227, 102);
+            this.txtMailPerdiPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMailPerdiPassword.Name = "txtMailPerdiPassword";
-            this.txtMailPerdiPassword.Size = new System.Drawing.Size(205, 22);
+            this.txtMailPerdiPassword.Size = new System.Drawing.Size(155, 20);
             this.txtMailPerdiPassword.TabIndex = 4;
             // 
             // llNombrePerdiPassword
             // 
             this.llNombrePerdiPassword.AutoSize = true;
-            this.llNombrePerdiPassword.Location = new System.Drawing.Point(303, 44);
+            this.llNombrePerdiPassword.Location = new System.Drawing.Point(227, 36);
+            this.llNombrePerdiPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llNombrePerdiPassword.Name = "llNombrePerdiPassword";
-            this.llNombrePerdiPassword.Size = new System.Drawing.Size(131, 17);
+            this.llNombrePerdiPassword.Size = new System.Drawing.Size(98, 13);
             this.llNombrePerdiPassword.TabIndex = 5;
             this.llNombrePerdiPassword.Text = "Nombre de Usuario";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(303, 164);
+            this.label1.Location = new System.Drawing.Point(227, 133);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 17);
+            this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Contraseña";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(300, 105);
+            this.label2.Location = new System.Drawing.Point(225, 85);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 17);
+            this.label2.Size = new System.Drawing.Size(157, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Direccion de Correo Electronico";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(303, 221);
+            this.label3.Location = new System.Drawing.Point(227, 180);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 17);
+            this.label3.Size = new System.Drawing.Size(106, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "Repita la Contraseña";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(303, 277);
+            this.label4.Location = new System.Drawing.Point(227, 225);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 17);
+            this.label4.Size = new System.Drawing.Size(96, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "Nueva Contraseña";
             // 
             // txtNuevaPassword
             // 
-            this.txtNuevaPassword.Location = new System.Drawing.Point(303, 297);
+            this.txtNuevaPassword.Location = new System.Drawing.Point(227, 241);
+            this.txtNuevaPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNuevaPassword.Name = "txtNuevaPassword";
-            this.txtNuevaPassword.Size = new System.Drawing.Size(205, 22);
+            this.txtNuevaPassword.Size = new System.Drawing.Size(155, 20);
             this.txtNuevaPassword.TabIndex = 10;
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(359, 395);
+            this.btnAtras.Location = new System.Drawing.Point(269, 321);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.Size = new System.Drawing.Size(56, 19);
             this.btnAtras.TabIndex = 11;
             this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -145,9 +157,9 @@ namespace PruebaConectarAccess
             // 
             // CambiarMiPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.txtNuevaPassword);
             this.Controls.Add(this.label4);
@@ -160,6 +172,7 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.txtNombrePerdiPassword);
             this.Controls.Add(this.txtContraOlvidada2);
             this.Controls.Add(this.txtContraOlvidada1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CambiarMiPassword";
             this.Text = "OlvideMiPassword";
             this.Load += new System.EventHandler(this.OlvideMiPassword_Load);

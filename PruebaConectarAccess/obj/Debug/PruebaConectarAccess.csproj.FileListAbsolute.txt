@@ -94,3 +94,28 @@ C:\Users\TEMP\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\Prueba
 C:\Users\TEMP\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.MisPublicaciones.resources
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionMisPublicaciones.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe.config
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.pdb
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.pdb
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll.config
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csprojAssemblyReference.cache
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Apuntes.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.ComprarOVender.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Login.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CrearCuenta.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CambiarMiPassword.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.MisPublicaciones.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.OlvideMiContra.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Properties.Resources.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionDeVenta.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Publicaciones.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionMisPublicaciones.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicationItem.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Utiles.resources
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.GenerateResource.cache
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CoreCompileInputs.cache
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CopyComplete
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.exe
+C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb

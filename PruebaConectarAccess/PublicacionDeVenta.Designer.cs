@@ -421,7 +421,7 @@ namespace PruebaConectarAccess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnPublicar);
             this.Controls.Add(this.txtDescApunte);
