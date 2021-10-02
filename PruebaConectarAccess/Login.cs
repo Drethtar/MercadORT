@@ -125,8 +125,9 @@ namespace PruebaConectarAccess
 
 
 
-        private void Usuariotxt_Leave(object sender, EventArgs e)
+        private void txtUsuario_Leave(object sender, EventArgs e)
         {
+
             if (txtUsuario.Text == "")
             {
                 txtUsuario.Text = "Usuario";
@@ -152,22 +153,25 @@ namespace PruebaConectarAccess
                 txtContra.Text = "";
 
                 txtContra.ForeColor = Color.Black;
-            }
 
-            else if (txtContra.Text != "Contraseña" && txtContra.Text != "")
-            {
-             txtContra.PasswordChar = '*'; 
+                txtContra.PasswordChar = '*';
             }
         }
 
         private void txtContra_Leave(object sender, EventArgs e)
         {
-            if (txtContra.Text == "")
-            {
-                txtContra.Text = "Contraseña";
+            
+        if (txtContra.Text == "")
+           {
+               txtContra.Text = "Contraseña";
 
-                txtContra.ForeColor = Color.DarkGray;
-            }
+               txtContra.ForeColor = Color.DarkGray;
+
+               txtContra.PasswordChar = (char)0;
+           }
+
         }
+
+
     }
 }
