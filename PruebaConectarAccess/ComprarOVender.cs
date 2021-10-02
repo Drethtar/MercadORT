@@ -100,30 +100,34 @@ namespace PruebaConectarAccess
 
         private void btnComprar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Publicaciones().ShowDialog();
+            new Publicaciones().ShowDialog(); 
             this.Show();
+            new ComprarOVender();
+            this.Close();
         }
 
         private void btnVender_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new PublicacionDeVenta().ShowDialog();
             this.Show();
+            new ComprarOVender();
+            this.Close();
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new Login().ShowDialog();
             this.Show();
+            new ComprarOVender();
+            this.Close();
         }
 
         private void btnMisPublicaciones_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new MisPublicaciones().ShowDialog();
+            new MisPublicaciones().ShowDialog(); 
             this.Show();
+            new ComprarOVender();
+            this.Close();
         }
     }
 }

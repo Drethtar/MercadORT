@@ -78,13 +78,19 @@ namespace PruebaConectarAccess
                 MessageBox.Show("Se envio tu mail");
 
             }
+
+            new Login().ShowDialog();
+            this.Show();
+            new OlvideMiContra();
+            this.Close();
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new Login().ShowDialog();
             this.Show();
+            new OlvideMiContra();
+            this.Close();
         }
     }
 }

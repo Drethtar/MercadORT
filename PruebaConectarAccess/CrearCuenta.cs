@@ -106,10 +106,11 @@ namespace PruebaConectarAccess
 
                 connection.Close();
                 
-                this.Hide();
                 new Login().ShowDialog();
-                this.Show();            
-                
+                this.Show();
+                new CrearCuenta();
+                this.Close();
+
             }
             catch (Exception ex)
             {
@@ -261,9 +262,10 @@ namespace PruebaConectarAccess
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Login().ShowDialog();
+            new Login().ShowDialog(); 
             this.Show();
+            new CrearCuenta(); 
+            this.Close();
         }
 
         private void txtNombre_Enter(object sender, EventArgs e)

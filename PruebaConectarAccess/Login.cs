@@ -43,9 +43,10 @@ namespace PruebaConectarAccess
 
         private void llCrearCuenta_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new CrearCuenta().ShowDialog();
+            new CrearCuenta().ShowDialog(); //Ventana que queres abrir
             this.Show();
+            new Login(); //Ventana actual
+            this.Close();
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
@@ -87,9 +88,10 @@ namespace PruebaConectarAccess
                     Login.ObtenerDatosUsuario.IDdelUsuario = Convert.ToInt32(IDObtenidoDelUsuario);
                     Login.ObtenerDatosUsuario.MailDelUsuario = MailUsuario;
 
-                    this.Hide();
-                    new ComprarOVender().ShowDialog();
+                    new ComprarOVender().ShowDialog(); 
                     this.Show();
+                    new Login(); 
+                    this.Close();
                 }
                 else if (count > 1)
                 {
@@ -110,17 +112,19 @@ namespace PruebaConectarAccess
         }
         private void llOlvideMiPassword_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new CambiarMiPassword().ShowDialog();
+            new CambiarMiPassword().ShowDialog(); 
             this.Show();
-            
+            new Login(); 
+            this.Close();
+
         }
 
         private void llOlvideMiPassword_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            new OlvideMiContra().ShowDialog();
+            new OlvideMiContra().ShowDialog(); 
             this.Show();
+            new Login();
+            this.Close();
         }
 
 
@@ -172,9 +176,5 @@ namespace PruebaConectarAccess
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

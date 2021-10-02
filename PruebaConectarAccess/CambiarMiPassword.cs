@@ -85,6 +85,11 @@ namespace PruebaConectarAccess
                 MessageBox.Show("Su contraseña fue cambiada con exito!");
                 connection.Close();
 
+                new Login().ShowDialog();
+                this.Show();
+                new CambiarMiPassword();
+                this.Close();
+
             }
             catch(Exception ex)
             {
@@ -94,9 +99,10 @@ namespace PruebaConectarAccess
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Login().ShowDialog();
+            new Login().ShowDialog(); 
             this.Show();
+            new CambiarMiPassword(); 
+            this.Close();
         }
     }
 }

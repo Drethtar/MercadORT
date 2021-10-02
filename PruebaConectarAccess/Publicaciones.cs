@@ -21,16 +21,18 @@ namespace PruebaConectarAccess
         
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new ComprarOVender().ShowDialog();
             this.Show();
+            new Publicaciones();
+            this.Close();
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Login().ShowDialog();
+            new Login().ShowDialog(); 
             this.Show();
+            new Publicaciones(); 
+            this.Close();
         }
 
         private void Publicaciones_Load(object sender, EventArgs e)

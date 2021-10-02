@@ -141,10 +141,11 @@ namespace PruebaConectarAccess
                 
                 MessageBox.Show("Publicacion realizada con exito!");
                 connection.Close();
-                
-                this.Hide();
+
                 new ComprarOVender().ShowDialog();
                 this.Show();
+                new PublicacionDeVenta();
+                this.Close();
             }
             else if (cbxQueEs.Text == "Util")
             {
@@ -177,9 +178,10 @@ namespace PruebaConectarAccess
                 MessageBox.Show("Publicacion realizada con exito!");
                 connection.Close();
 
-                this.Hide();
                 new ComprarOVender().ShowDialog();
                 this.Show();
+                new PublicacionDeVenta();
+                this.Close();
             }
             else if (cbxQueEs.Text == "Apunte")
             {
@@ -196,17 +198,20 @@ namespace PruebaConectarAccess
                 MessageBox.Show("Publicacion realizada con exito!");
                 connection.Close();
 
-                this.Hide();
                 new ComprarOVender().ShowDialog();
                 this.Show();
+                new PublicacionDeVenta();
+                this.Close();
             }
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new ComprarOVender().ShowDialog();
+            new ComprarOVender().ShowDialog(); 
             this.Show();
+            new PublicacionDeVenta(); 
+            this.Close();
+
         }
     }
 }

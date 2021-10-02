@@ -80,6 +80,7 @@ namespace PruebaConectarAccess
                 this.Hide();
                 new ComprarOVender().ShowDialog();
                 this.Show();
+                
             }
             else if (lblQueEs.Text == "Util")
             {
@@ -116,6 +117,11 @@ namespace PruebaConectarAccess
                 new ComprarOVender().ShowDialog();
                 this.Show();
             }
+        }
+
+        private void Apuntes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

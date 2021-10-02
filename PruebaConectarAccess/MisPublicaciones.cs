@@ -21,9 +21,10 @@ namespace PruebaConectarAccess
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new ComprarOVender().ShowDialog();
+            new ComprarOVender().ShowDialog(); 
             this.Show();
+            new MisPublicaciones(); 
+            this.Close();
         }
 
         private void MisPublicaciones_Load(object sender, EventArgs e)
