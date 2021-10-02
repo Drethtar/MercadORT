@@ -29,55 +29,97 @@ namespace PruebaConectarAccess
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblPrecioApunte = new System.Windows.Forms.Label();
+            this.lblDescriptionApunte = new System.Windows.Forms.Label();
+            this.lblTitleApunte = new System.Windows.Forms.Label();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.lblQueEs = new System.Windows.Forms.Label();
+            this.lblIDdelaPublicacion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblPrecio
+            // lblPrecioApunte
             // 
-            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(542, 33);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(85, 30);
-            this.lblPrecio.TabIndex = 5;
-            this.lblPrecio.Text = "label3";
+            this.lblPrecioApunte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioApunte.Location = new System.Drawing.Point(553, 39);
+            this.lblPrecioApunte.Name = "lblPrecioApunte";
+            this.lblPrecioApunte.Size = new System.Drawing.Size(85, 27);
+            this.lblPrecioApunte.TabIndex = 5;
+            this.lblPrecioApunte.Text = "label3";
             // 
-            // lblDescription
+            // lblDescriptionApunte
             // 
-            this.lblDescription.Location = new System.Drawing.Point(32, 63);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(505, 46);
-            this.lblDescription.TabIndex = 4;
-            this.lblDescription.Text = "label2";
+            this.lblDescriptionApunte.Location = new System.Drawing.Point(41, 69);
+            this.lblDescriptionApunte.Name = "lblDescriptionApunte";
+            this.lblDescriptionApunte.Size = new System.Drawing.Size(505, 47);
+            this.lblDescriptionApunte.TabIndex = 4;
+            this.lblDescriptionApunte.Text = "label2";
             // 
-            // lblTitle
+            // lblTitleApunte
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(24, 17);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(512, 46);
-            this.lblTitle.TabIndex = 3;
-            this.lblTitle.Text = "Libros";
+            this.lblTitleApunte.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleApunte.Location = new System.Drawing.Point(36, 23);
+            this.lblTitleApunte.Name = "lblTitleApunte";
+            this.lblTitleApunte.Size = new System.Drawing.Size(511, 46);
+            this.lblTitleApunte.TabIndex = 3;
+            this.lblTitleApunte.Text = "Apunte";
             // 
-            // PublicacionMisPublicaciones
+            // btnBorrar
+            // 
+            this.btnBorrar.Location = new System.Drawing.Point(553, 69);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(84, 46);
+            this.btnBorrar.TabIndex = 6;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
+            // lblQueEs
+            // 
+            this.lblQueEs.AutoSize = true;
+            this.lblQueEs.Location = new System.Drawing.Point(0, 108);
+            this.lblQueEs.Name = "lblQueEs";
+            this.lblQueEs.Size = new System.Drawing.Size(16, 17);
+            this.lblQueEs.TabIndex = 7;
+            this.lblQueEs.Text = "a";
+            this.lblQueEs.Visible = false;
+            // 
+            // lblIDdelaPublicacion
+            // 
+            this.lblIDdelaPublicacion.AutoSize = true;
+            this.lblIDdelaPublicacion.Location = new System.Drawing.Point(0, 88);
+            this.lblIDdelaPublicacion.Name = "lblIDdelaPublicacion";
+            this.lblIDdelaPublicacion.Size = new System.Drawing.Size(16, 17);
+            this.lblIDdelaPublicacion.TabIndex = 8;
+            this.lblIDdelaPublicacion.Text = "a";
+            this.lblIDdelaPublicacion.Visible = false;
+            // 
+            // Apuntes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lblPrecio);
-            this.Controls.Add(this.lblDescription);
-            this.Controls.Add(this.lblTitle);
-            this.Name = "PublicacionMisPublicaciones";
+            this.Controls.Add(this.lblIDdelaPublicacion);
+            this.Controls.Add(this.lblQueEs);
+            this.Controls.Add(this.btnBorrar);
+            this.Controls.Add(this.lblPrecioApunte);
+            this.Controls.Add(this.lblDescriptionApunte);
+            this.Controls.Add(this.lblTitleApunte);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "Apuntes";
             this.Size = new System.Drawing.Size(651, 126);
-            this.Load += new System.EventHandler(this.PublicacionMisPublicaciones_Load);
+            this.Load += new System.EventHandler(this.Apuntes_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.Label lblDescription;
-        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblPrecioApunte;
+        private System.Windows.Forms.Label lblDescriptionApunte;
+        private System.Windows.Forms.Label lblTitleApunte;
+        private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Label lblQueEs;
+        private System.Windows.Forms.Label lblIDdelaPublicacion;
     }
 }

@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Apuntes.cs">
+    <Compile Include="PublicacionMisPublicaciones.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Apuntes.Designer.cs">
-      <DependentUpon>Apuntes.cs</DependentUpon>
+    <Compile Include="PublicacionMisPublicaciones.Designer.cs">
+      <DependentUpon>PublicacionMisPublicaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="ComprarOVender.cs">
       <SubType>Form</SubType>
@@ -102,26 +102,14 @@
     <Compile Include="Publicaciones.Designer.cs">
       <DependentUpon>Publicaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="PublicacionMisPublicaciones.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PublicacionMisPublicaciones.Designer.cs">
-      <DependentUpon>PublicacionMisPublicaciones.cs</DependentUpon>
-    </Compile>
     <Compile Include="PublicationItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PublicationItem.Designer.cs">
       <DependentUpon>PublicationItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utiles.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Utiles.Designer.cs">
-      <DependentUpon>Utiles.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Apuntes.resx">
-      <DependentUpon>Apuntes.cs</DependentUpon>
+    <EmbeddedResource Include="PublicacionMisPublicaciones.resx">
+      <DependentUpon>PublicacionMisPublicaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ComprarOVender.resx">
       <DependentUpon>ComprarOVender.cs</DependentUpon>
@@ -157,14 +145,8 @@
     <EmbeddedResource Include="Publicaciones.resx">
       <DependentUpon>Publicaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PublicacionMisPublicaciones.resx">
-      <DependentUpon>PublicacionMisPublicaciones.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PublicationItem.resx">
       <DependentUpon>PublicationItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Utiles.resx">
-      <DependentUpon>Utiles.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

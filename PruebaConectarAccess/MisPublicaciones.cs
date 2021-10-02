@@ -42,7 +42,7 @@ namespace PruebaConectarAccess
 
             while (reader.Read())
             {
-                Apuntes publicationMisPublicacionesLibros = new Apuntes();
+                PublicacionMisPublicaciones publicationMisPublicacionesLibros = new PublicacionMisPublicaciones();
                 publicationMisPublicacionesLibros.Title = reader["TituloLibro"].ToString();
                 publicationMisPublicacionesLibros.Description = reader["DescripcionLibro"].ToString();
                 publicationMisPublicacionesLibros.Precio = reader["PrecioLibro"].ToString() + "$";
@@ -61,7 +61,7 @@ namespace PruebaConectarAccess
 
             while (reader.Read())
             {
-                Apuntes publicationMisPublicacionesUtiles = new Apuntes();
+                PublicacionMisPublicaciones publicationMisPublicacionesUtiles = new PublicacionMisPublicaciones();
                 publicationMisPublicacionesUtiles.Title = reader["TituloUtiles"].ToString();
                 publicationMisPublicacionesUtiles.Description = reader["DescripcionUtiles"].ToString();
                 publicationMisPublicacionesUtiles.Precio = reader["PrecioUtiles"].ToString() + "$";
@@ -80,7 +80,7 @@ namespace PruebaConectarAccess
 
             while (reader.Read())
             {
-                Apuntes publicationMisPublicacionesApuntes = new Apuntes();
+                PublicacionMisPublicaciones publicationMisPublicacionesApuntes = new PublicacionMisPublicaciones();
                 publicationMisPublicacionesApuntes.Title = reader["TituloApuntes"].ToString();
                 publicationMisPublicacionesApuntes.Description = reader["DescripcionApuntes"].ToString();
                 publicationMisPublicacionesApuntes.Precio = reader["PrecioApuntes"].ToString() + "$";

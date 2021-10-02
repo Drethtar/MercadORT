@@ -66,8 +66,6 @@ C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\Pr
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Publicaciones.resources
 C:\Users\47026765\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Publicaciones.resources
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicationItem.resources
-C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Apuntes.resources
-C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Utiles.resources
 C:\Users\TEMP\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe.config
 C:\Users\TEMP\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe
 C:\Users\TEMP\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.pdb
@@ -92,7 +90,6 @@ C:\Users\TEMP\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\Prueba
 C:\Users\TEMP\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.exe
 C:\Users\TEMP\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
 C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.MisPublicaciones.resources
-C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionMisPublicaciones.resources
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe.config
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.pdb
@@ -143,3 +140,4 @@ C:\Users\Bauti\Desktop\ConectarPruebasAccess\PruebaConectarAccess\obj\Debug\Prue
 C:\Users\Bauti\Desktop\ConectarPruebasAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CopyComplete
 C:\Users\Bauti\Desktop\ConectarPruebasAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.exe
 C:\Users\Bauti\Desktop\ConectarPruebasAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
+C:\Users\Bauty Garcia\OneDrive\Escritorio\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionMisPublicaciones.resources
