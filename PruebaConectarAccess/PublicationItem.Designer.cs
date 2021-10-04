@@ -33,6 +33,7 @@ namespace PruebaConectarAccess
             this.lblDescription = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.btnQuieroComprar = new System.Windows.Forms.Button();
+            this.lblQueEs = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -74,10 +75,21 @@ namespace PruebaConectarAccess
             this.btnQuieroComprar.UseVisualStyleBackColor = true;
             this.btnQuieroComprar.Click += new System.EventHandler(this.btnQuieroComprarLibro_Click);
             // 
+            // lblQueEs
+            // 
+            this.lblQueEs.AutoSize = true;
+            this.lblQueEs.Location = new System.Drawing.Point(0, 108);
+            this.lblQueEs.Name = "lblQueEs";
+            this.lblQueEs.Size = new System.Drawing.Size(16, 17);
+            this.lblQueEs.TabIndex = 4;
+            this.lblQueEs.Text = "a";
+            this.lblQueEs.Visible = false;
+            // 
             // PublicationItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblQueEs);
             this.Controls.Add(this.btnQuieroComprar);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblDescription);
@@ -87,6 +99,7 @@ namespace PruebaConectarAccess
             this.Size = new System.Drawing.Size(651, 126);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,5 +109,6 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Button btnQuieroComprar;
+        private System.Windows.Forms.Label lblQueEs;
     }
 }

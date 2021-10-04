@@ -67,6 +67,7 @@ namespace PruebaConectarAccess
                 publication.Description = reader["DescripcionLibro"].ToString();
                 publication.Precio = reader["PrecioLibro"].ToString() + "$";
                 publication.IdUsuario = reader["IDUsuario"].ToString();
+                publication.QueEs = "Libro";
                 publication.Dock = DockStyle.Top;
                 publicationsPanel.Controls.Add(publication);
             }
@@ -91,6 +92,7 @@ namespace PruebaConectarAccess
                 publication.Description = reader["DescripcionApuntes"].ToString();
                 publication.Precio = reader["PrecioApuntes"].ToString() + "$";
                 publication.IdUsuario = reader["IDUsuario"].ToString();
+                publication.QueEs = "Apunte";
                 publication.Dock = DockStyle.Top;
                 publicationsPanel.Controls.Add(publication);
             }
@@ -115,6 +117,7 @@ namespace PruebaConectarAccess
                 publication.Description = reader["DescripcionUtiles"].ToString();
                 publication.Precio = reader["PrecioUtiles"].ToString() + "$";
                 publication.IdUsuario = reader["IDUsuario"].ToString();
+                publication.QueEs = "Util";
                 publication.Dock = DockStyle.Top;
                 publicationsPanel.Controls.Add(publication);
             }
@@ -185,6 +188,7 @@ namespace PruebaConectarAccess
                     publication.Description = LectorFiltroLibroMateria["DescripcionLibro"].ToString();
                     publication.Precio = LectorFiltroLibroMateria["PrecioLibro"].ToString() + "$";
                     publication.IdUsuario = LectorFiltroLibroMateria["IDUsuario"].ToString();
+                    publication.QueEs = "Libro";
                     publication.Dock = DockStyle.Top;
                     publicationsPanel.Controls.Add(publication);
                 }
@@ -209,6 +213,7 @@ namespace PruebaConectarAccess
                     publication.Description = LectorFiltroApunteMateria["DescripcionApuntes"].ToString();
                     publication.Precio = LectorFiltroApunteMateria["PrecioApuntes"].ToString() + "$";
                     publication.IdUsuario = LectorFiltroApunteMateria["IDUsuario"].ToString();
+                    publication.QueEs = "Apunte";
                     publication.Dock = DockStyle.Top;
                     publicationsPanel.Controls.Add(publication);
                 }
@@ -237,6 +242,7 @@ namespace PruebaConectarAccess
                     publication.Description = LectorFiltroUtilColor["DescripcionUtiles"].ToString();
                     publication.Precio = LectorFiltroUtilColor["PrecioUtiles"].ToString() + "$";
                     publication.IdUsuario = LectorFiltroUtilColor["IDUsuario"].ToString();
+                    publication.QueEs = "Util";
                     publication.Dock = DockStyle.Top;
                     publicationsPanel.Controls.Add(publication);
                 }
