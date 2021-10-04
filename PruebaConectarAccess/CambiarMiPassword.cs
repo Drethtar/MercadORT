@@ -104,5 +104,45 @@ namespace PruebaConectarAccess
             new CambiarMiPassword(); 
             this.Close();
         }
+
+        private void txtNombrePerdiPassword_Leave(object sender, EventArgs e)
+        {
+            if (txtNombrePerdiPassword.Text == "")
+            {
+                txtNombrePerdiPassword.Text = "Usuario";
+
+                txtNombrePerdiPassword.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtNombrePerdiPassword_Enter(object sender, EventArgs e)
+        {
+            if (txtNombrePerdiPassword.Text == "Usuario")
+            {
+                txtNombrePerdiPassword.Text = "";
+
+                txtNombrePerdiPassword.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtMailPerdiPassword_Leave(object sender, EventArgs e)
+        {
+            if (txtMailPerdiPassword.Text == "")
+            {
+                txtMailPerdiPassword.Text = "ejemplo@gmail.com";
+
+                txtMailPerdiPassword.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtMailPerdiPassword_Enter(object sender, EventArgs e)
+        {
+            if (txtMailPerdiPassword.Text == "ejemplo@gmail.com")
+            {
+                txtMailPerdiPassword.Text = "";
+
+                txtMailPerdiPassword.ForeColor = Color.Black;
+            }
+        }
     }
 }

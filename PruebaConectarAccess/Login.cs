@@ -176,5 +176,37 @@ namespace PruebaConectarAccess
 
         }
 
+        private void llCrearCuenta_MouseMove(object sender, MouseEventArgs e)
+        {
+            llCrearCuenta.ForeColor = Color.Blue;
+
+        }
+
+        private void llCrearCuenta_MouseLeave(object sender, EventArgs e)
+        {
+            llCrearCuenta.ForeColor = Color.Black;
+        }
+
+        private void llOlvideMiPassword_MouseLeave(object sender, EventArgs e)
+        {
+            llOlvideMiPassword.ForeColor = Color.Black;
+        }
+
+        private void llOlvideMiPassword_MouseMove(object sender, MouseEventArgs e)
+        {
+            llOlvideMiPassword.ForeColor = Color.Blue;
+        }
+
+        private void LLCambiarPassword_MouseLeave(object sender, EventArgs e)
+        {
+            LLCambiarPassword.ForeColor = Color.Black;
+        }
+
+        private void LLCambiarPassword_MouseMove(object sender, MouseEventArgs e)
+        {
+            LLCambiarPassword.ForeColor = Color.Blue;
+        }
+
+
     }
 }
