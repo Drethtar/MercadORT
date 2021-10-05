@@ -104,5 +104,25 @@ namespace PruebaConectarAccess
                 EnviarContra();
             }
         }
+
+        private void txtMailPerdiContra_Leave(object sender, EventArgs e)
+        {
+            if (txtMailPerdiContra.Text == "")
+            {
+                txtMailPerdiContra.Text = "ejemplo@gmail.com";
+
+                txtMailPerdiContra.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtMailPerdiContra_Enter(object sender, EventArgs e)
+        {
+            if (txtMailPerdiContra.Text == "ejemplo@gmail.com")
+            {
+                txtMailPerdiContra.Text = "";
+
+                txtMailPerdiContra.ForeColor = Color.Black;
+            }
+        }
     }
 }

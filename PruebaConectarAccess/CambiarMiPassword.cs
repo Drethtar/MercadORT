@@ -156,5 +156,77 @@ namespace PruebaConectarAccess
                 CambiarContra();
             }
         }
+
+        private void txtContraOlvidada1_Enter(object sender, EventArgs e)
+        {
+            if (txtContraOlvidada1.Text == "Contraseña actual")
+            {
+                txtContraOlvidada1.Text = "";
+
+                txtContraOlvidada1.ForeColor = Color.Black;
+
+                txtContraOlvidada1.PasswordChar = '*';
+            }
+        }
+
+        private void txtContraOlvidada1_Leave(object sender, EventArgs e)
+        {
+            if (txtContraOlvidada1.Text == "")
+            {
+                txtContraOlvidada1.Text = "Contraseña actual";
+
+                txtContraOlvidada1.ForeColor = Color.DarkGray;
+
+                txtContraOlvidada1.PasswordChar = (char)0;
+            }
+        }
+
+        private void txtContraOlvidada2_Leave(object sender, EventArgs e)
+        {
+            if (txtContraOlvidada2.Text == "")
+            {
+                txtContraOlvidada2.Text = "Repetir contraseña";
+
+                txtContraOlvidada2.ForeColor = Color.DarkGray;
+
+                txtContraOlvidada2.PasswordChar = (char)0;
+            }
+        }
+
+        private void txtContraOlvidada2_Enter(object sender, EventArgs e)
+        {
+            if (txtContraOlvidada2.Text == "Repetir contraseña")
+            {
+                txtContraOlvidada2.Text = "";
+
+                txtContraOlvidada2.ForeColor = Color.Black;
+
+                txtContraOlvidada2.PasswordChar = '*';
+            }
+        }
+
+        private void txtNuevaPassword_Leave(object sender, EventArgs e)
+        {
+            if (txtNuevaPassword.Text == "")
+            {
+                txtNuevaPassword.Text = "Contraseña nueva";
+
+                txtNuevaPassword.ForeColor = Color.DarkGray;
+
+                txtNuevaPassword.PasswordChar = (char)0;
+            }
+        }
+
+        private void txtNuevaPassword_Enter(object sender, EventArgs e)
+        {
+            if (txtNuevaPassword.Text == "Contraseña nueva")
+            {
+                txtNuevaPassword.Text = "";
+
+                txtNuevaPassword.ForeColor = Color.Black;
+
+                txtNuevaPassword.PasswordChar = '*';
+            }
+        }
     }
 }

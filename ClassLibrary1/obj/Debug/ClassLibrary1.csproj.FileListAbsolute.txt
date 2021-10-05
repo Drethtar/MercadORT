@@ -41,3 +41,10 @@ C:\Users\Bauti\Desktop\ConectarPruebasAccess\ClassLibrary1\obj\Debug\ClassLibrar
 C:\Users\Bauti\Desktop\ConectarPruebasAccess\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
 C:\Users\Bauti\Desktop\ConectarPruebasAccess\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\Bauti\Desktop\ConectarPruebasAccess\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\46754732\Desktop\PruebaConectarAccess\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\Users\46754732\Desktop\PruebaConectarAccess\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\46754732\Desktop\PruebaConectarAccess\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\46754732\Desktop\PruebaConectarAccess\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache
+C:\Users\46754732\Desktop\PruebaConectarAccess\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\46754732\Desktop\PruebaConectarAccess\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\46754732\Desktop\PruebaConectarAccess\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

@@ -29,6 +29,7 @@ namespace PruebaConectarAccess
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MisPublicaciones));
             this.btnAtras = new System.Windows.Forms.Button();
             this.MyPublicationsPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
@@ -36,7 +37,7 @@ namespace PruebaConectarAccess
             // btnAtras
             // 
             this.btnAtras.Location = new System.Drawing.Point(9, 330);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 26);
             this.btnAtras.TabIndex = 5;
@@ -48,7 +49,7 @@ namespace PruebaConectarAccess
             // 
             this.MyPublicationsPanel.AutoScroll = true;
             this.MyPublicationsPanel.Location = new System.Drawing.Point(95, 10);
-            this.MyPublicationsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MyPublicationsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.MyPublicationsPanel.Name = "MyPublicationsPanel";
             this.MyPublicationsPanel.Size = new System.Drawing.Size(496, 346);
             this.MyPublicationsPanel.TabIndex = 6;
@@ -60,7 +61,8 @@ namespace PruebaConectarAccess
             this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.MyPublicationsPanel);
             this.Controls.Add(this.btnAtras);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MisPublicaciones";
             this.Text = "MisPublicaciones";
             this.Load += new System.EventHandler(this.MisPublicaciones_Load);

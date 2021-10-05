@@ -35,6 +35,7 @@ namespace PruebaConectarAccess
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Publicaciones));
             this.btnAtras = new System.Windows.Forms.Button();
             this.cbxMaterial = new System.Windows.Forms.ComboBox();
             this.cbxMateria = new System.Windows.Forms.ComboBox();
@@ -51,7 +52,7 @@ namespace PruebaConectarAccess
             // btnAtras
             // 
             this.btnAtras.Location = new System.Drawing.Point(9, 328);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(74, 28);
             this.btnAtras.TabIndex = 0;
@@ -67,7 +68,7 @@ namespace PruebaConectarAccess
             "Apunte",
             "Util"});
             this.cbxMaterial.Location = new System.Drawing.Point(123, 10);
-            this.cbxMaterial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxMaterial.Margin = new System.Windows.Forms.Padding(2);
             this.cbxMaterial.Name = "cbxMaterial";
             this.cbxMaterial.Size = new System.Drawing.Size(102, 21);
             this.cbxMaterial.TabIndex = 2;
@@ -104,7 +105,7 @@ namespace PruebaConectarAccess
             "Humanidades",
             "Gestion"});
             this.cbxMateria.Location = new System.Drawing.Point(442, 10);
-            this.cbxMateria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxMateria.Margin = new System.Windows.Forms.Padding(2);
             this.cbxMateria.Name = "cbxMateria";
             this.cbxMateria.Size = new System.Drawing.Size(138, 21);
             this.cbxMateria.TabIndex = 4;
@@ -113,7 +114,7 @@ namespace PruebaConectarAccess
             // btnCerrarSesion
             // 
             this.btnCerrarSesion.Location = new System.Drawing.Point(9, 286);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(74, 37);
             this.btnCerrarSesion.TabIndex = 5;
@@ -146,7 +147,7 @@ namespace PruebaConectarAccess
             this.publicationsPanel.AutoScroll = true;
             this.publicationsPanel.Controls.Add(this.vScrollBar1);
             this.publicationsPanel.Location = new System.Drawing.Point(88, 35);
-            this.publicationsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.publicationsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.publicationsPanel.Name = "publicationsPanel";
             this.publicationsPanel.Size = new System.Drawing.Size(511, 333);
             this.publicationsPanel.TabIndex = 10;
@@ -208,7 +209,8 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.cbxMateria);
             this.Controls.Add(this.cbxMaterial);
             this.Controls.Add(this.btnAtras);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Publicaciones";
             this.Text = "Publicaciones";
             this.Load += new System.EventHandler(this.Publicaciones_Load);
