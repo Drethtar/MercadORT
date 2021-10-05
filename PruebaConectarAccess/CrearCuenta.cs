@@ -48,7 +48,7 @@ namespace PruebaConectarAccess
 
         }
 
-        private void btnInsertarDatos_Click(object sender, EventArgs e)
+        private void InsertarDatosParaCuenta()
         {
             try
             {
@@ -56,9 +56,9 @@ namespace PruebaConectarAccess
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 int count = 0;
-                
+
                 //chequear que no exista el user en la db
-                command.CommandText = "select * from Usuario where NombreUsuario='" + txtNombre.Text + "' or MailUsuario='" + txtMail.Text+ "'";
+                command.CommandText = "select * from Usuario where NombreUsuario='" + txtNombre.Text + "' or MailUsuario='" + txtMail.Text + "'";
 
                 OleDbDataReader reader = command.ExecuteReader();
 
@@ -85,7 +85,7 @@ namespace PruebaConectarAccess
                 connection.Close();
                 connection.Open();
 
-                
+
                 command.CommandText = "select ID from Curso where Orientacion='" + cbxOrientacion.Text + "' and Anio='" + cbxCurso.Text +
                 "' and Letra='" + cbxLetra.Text + "'";
 
@@ -96,7 +96,7 @@ namespace PruebaConectarAccess
                 reader2.Close();
 
                 command.CommandText = "insert into Usuario (NombreUsuario,PasswordUsuario,MailUsuario,IDCurso) " +
-                    "values ('"+txtNombre.Text+"','"+txtContra.Text+"','"+txtMail.Text+"', '" + IDdelCurso + "')";
+                    "values ('" + txtNombre.Text + "','" + txtContra.Text + "','" + txtMail.Text + "', '" + IDdelCurso + "')";
 
 
                 command.ExecuteNonQuery();
@@ -105,7 +105,7 @@ namespace PruebaConectarAccess
                 MessageBox.Show("Tu cuenta se creo exitosamente!");
 
                 connection.Close();
-                
+
                 new Login().ShowDialog();
                 this.Show();
                 new CrearCuenta();
@@ -116,6 +116,10 @@ namespace PruebaConectarAccess
             {
                 MessageBox.Show("Upa, algo salo mal... " + ex);
             }
+        }
+        private void btnInsertarDatos_Click(object sender, EventArgs e)
+        {
+            InsertarDatosParaCuenta();
         }
 
         private void cbxCurso_SelectedIndexChanged(object sender, EventArgs e)
@@ -332,6 +336,12 @@ namespace PruebaConectarAccess
             }
         }
 
-
+        private void cbxLetra_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                InsertarDatosParaCuenta();
+            }
+        }
     }
 }

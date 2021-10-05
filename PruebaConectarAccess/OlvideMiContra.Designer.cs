@@ -37,25 +37,29 @@ namespace PruebaConectarAccess
             // 
             // txtMailPerdiContra
             // 
-            this.txtMailPerdiContra.Location = new System.Drawing.Point(275, 219);
+            this.txtMailPerdiContra.Location = new System.Drawing.Point(367, 270);
+            this.txtMailPerdiContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMailPerdiContra.Name = "txtMailPerdiContra";
-            this.txtMailPerdiContra.Size = new System.Drawing.Size(172, 20);
+            this.txtMailPerdiContra.Size = new System.Drawing.Size(228, 22);
             this.txtMailPerdiContra.TabIndex = 0;
+            this.txtMailPerdiContra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMailPerdiContra_KeyPress);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(275, 200);
+            this.label1.Location = new System.Drawing.Point(367, 246);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.Size = new System.Drawing.Size(125, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Correo Electronico";
             // 
             // btnRecuperarContra
             // 
-            this.btnRecuperarContra.Location = new System.Drawing.Point(295, 260);
+            this.btnRecuperarContra.Location = new System.Drawing.Point(393, 320);
+            this.btnRecuperarContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRecuperarContra.Name = "btnRecuperarContra";
-            this.btnRecuperarContra.Size = new System.Drawing.Size(133, 23);
+            this.btnRecuperarContra.Size = new System.Drawing.Size(177, 28);
             this.btnRecuperarContra.TabIndex = 2;
             this.btnRecuperarContra.Text = "Recuperar Contraseña";
             this.btnRecuperarContra.UseVisualStyleBackColor = true;
@@ -63,10 +67,10 @@ namespace PruebaConectarAccess
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(331, 288);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Location = new System.Drawing.Point(441, 354);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(62, 23);
+            this.btnAtras.Size = new System.Drawing.Size(83, 28);
             this.btnAtras.TabIndex = 3;
             this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -74,13 +78,14 @@ namespace PruebaConectarAccess
             // 
             // OlvideMiContra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1800, 897);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnRecuperarContra);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMailPerdiContra);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "OlvideMiContra";
             this.Text = "OlvideMiContra";
             this.Load += new System.EventHandler(this.OlvideMiContra_Load);

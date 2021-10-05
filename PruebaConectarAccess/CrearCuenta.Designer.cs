@@ -79,7 +79,7 @@
             this.txtNombre.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.Color.DarkGray;
             this.txtNombre.Location = new System.Drawing.Point(677, 359);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(344, 65);
@@ -95,7 +95,7 @@
             this.txtMail.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMail.ForeColor = System.Drawing.Color.DarkGray;
             this.txtMail.Location = new System.Drawing.Point(677, 443);
-            this.txtMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMail.Margin = new System.Windows.Forms.Padding(4);
             this.txtMail.Multiline = true;
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(344, 65);
@@ -111,7 +111,7 @@
             this.txtContra.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContra.ForeColor = System.Drawing.Color.DarkGray;
             this.txtContra.Location = new System.Drawing.Point(677, 524);
-            this.txtContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(4);
             this.txtContra.Multiline = true;
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(344, 65);
@@ -165,6 +165,7 @@
             this.cbxLetra.Name = "cbxLetra";
             this.cbxLetra.Size = new System.Drawing.Size(280, 63);
             this.cbxLetra.TabIndex = 15;
+            this.cbxLetra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbxLetra_KeyPress);
             // 
             // btnAtras
             // 
@@ -184,7 +185,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(552, 49);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(820, 721);
             this.pictureBox1.TabIndex = 18;
@@ -195,7 +196,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.Location = new System.Drawing.Point(764, 267);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(408, 37);
             this.pictureBox2.TabIndex = 19;
@@ -206,7 +207,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.Location = new System.Drawing.Point(896, 102);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(153, 127);
             this.pictureBox3.TabIndex = 20;
@@ -216,7 +217,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox4.Location = new System.Drawing.Point(615, 359);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(63, 65);
             this.pictureBox4.TabIndex = 21;
@@ -226,7 +227,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox5.Location = new System.Drawing.Point(615, 443);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(63, 65);
             this.pictureBox5.TabIndex = 22;
@@ -236,7 +237,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox6.Location = new System.Drawing.Point(615, 524);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(63, 65);
             this.pictureBox6.TabIndex = 23;
@@ -247,7 +248,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.Location = new System.Drawing.Point(619, 452);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(53, 49);
             this.pictureBox7.TabIndex = 24;
@@ -258,7 +259,7 @@
             this.pictureBox8.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
             this.pictureBox8.Location = new System.Drawing.Point(633, 543);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(27, 30);
             this.pictureBox8.TabIndex = 25;
@@ -269,7 +270,7 @@
             this.pictureBox9.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
             this.pictureBox9.Location = new System.Drawing.Point(632, 379);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(27, 30);
             this.pictureBox9.TabIndex = 26;
@@ -298,7 +299,7 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnInsertarDatos);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CrearCuenta";
             this.Text = "CrearCuenta";
             this.Load += new System.EventHandler(this.CrearCuenta_Load);

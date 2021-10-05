@@ -25,7 +25,7 @@ namespace PruebaConectarAccess
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
         }
 
-        private void btnCambiarPassword_Click(object sender, EventArgs e)
+        private void CambiarContra()
         {
             try
             {
@@ -41,7 +41,7 @@ namespace PruebaConectarAccess
                     MessageBox.Show("Las contraseñas no son iguales");
                     return;
                 }
-            
+
 
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
@@ -67,21 +67,21 @@ namespace PruebaConectarAccess
                     connection.Close();
                     return;
                 }
-                else 
-                { 
+                else
+                {
                     MessageBox.Show("Contacta a oficina tecnica");
                 }
 
                 connection.Close();
                 connection.Open();
 
-                string query = "update Usuario set PasswordUsuario='" + txtNuevaPassword.Text + "' where NombreUsuario='" + txtNombrePerdiPassword.Text + "' and MailUsuario='" + txtMailPerdiPassword.Text + "' and PasswordUsuario='"+txtContraOlvidada1.Text+"'";
+                string query = "update Usuario set PasswordUsuario='" + txtNuevaPassword.Text + "' where NombreUsuario='" + txtNombrePerdiPassword.Text + "' and MailUsuario='" + txtMailPerdiPassword.Text + "' and PasswordUsuario='" + txtContraOlvidada1.Text + "'";
                 command.CommandText = query;
                 command.ExecuteNonQuery();
-                
 
 
-                
+
+
                 MessageBox.Show("Su contraseña fue cambiada con exito!");
                 connection.Close();
 
@@ -91,10 +91,14 @@ namespace PruebaConectarAccess
                 this.Close();
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Upa algo salio mal... " + ex);
             }
+        }
+        private void btnCambiarPassword_Click(object sender, EventArgs e)
+        {
+            CambiarContra();
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
@@ -142,6 +146,14 @@ namespace PruebaConectarAccess
                 txtMailPerdiPassword.Text = "";
 
                 txtMailPerdiPassword.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtNuevaPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                CambiarContra();
             }
         }
     }

@@ -34,7 +34,7 @@ namespace PruebaConectarAccess
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
         }
 
-        private void btnRecuperarContra_Click(object sender, EventArgs e)
+        private void EnviarContra()
         {
             Destination = txtMailPerdiContra.Text;
 
@@ -46,7 +46,7 @@ namespace PruebaConectarAccess
             command.CommandText = "select * from Usuario where MailUsuario='" + txtMailPerdiContra.Text + "'";
 
             OleDbDataReader reader = command.ExecuteReader();
-            
+
             command.CommandText = "select PasswordUsuario from Usuario where MailUsuario='" + txtMailPerdiContra.Text + "'";
 
             reader.Read();
@@ -54,8 +54,8 @@ namespace PruebaConectarAccess
 
             string Mail = txtMailPerdiContra.Text;
 
-            YourMessageBody = "La contraseña de la cuenta con la direccion de correo electronico " + Mail + " es " + PasswordARecuperar+".";
-        
+            YourMessageBody = "La contraseña de la cuenta con la direccion de correo electronico " + Mail + " es " + PasswordARecuperar + ".";
+
             while (reader.Read())
             {
                 count += 1;
@@ -84,6 +84,10 @@ namespace PruebaConectarAccess
             new OlvideMiContra();
             this.Close();
         }
+        private void btnRecuperarContra_Click(object sender, EventArgs e)
+        {
+            EnviarContra();
+        }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
@@ -91,6 +95,14 @@ namespace PruebaConectarAccess
             this.Show();
             new OlvideMiContra();
             this.Close();
+        }
+
+        private void txtMailPerdiContra_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                EnviarContra();
+            }
         }
     }
 }

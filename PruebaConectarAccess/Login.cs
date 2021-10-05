@@ -22,9 +22,6 @@ namespace PruebaConectarAccess
             InitializeComponent();
         }
          
-
-
-
         public static class ObtenerDatosUsuario
         {
             public static string NombreDelUsuario = "";
@@ -43,13 +40,13 @@ namespace PruebaConectarAccess
 
         private void llCrearCuenta_Click(object sender, EventArgs e)
         {
-            new CrearCuenta().ShowDialog(); //Ventana que queres abrir
+            new CrearCuenta().ShowDialog();
             this.Show();
-            new Login(); //Ventana actual
+            new Login();
             this.Close();
         }
 
-        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        private void IniciarSesion()
         {
             try
             {
@@ -57,7 +54,7 @@ namespace PruebaConectarAccess
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
 
-                command.CommandText = "select * from Usuario where NombreUsuario='" + txtUsuario.Text + "' and PasswordUsuario='" + txtContra.Text +"'";
+                command.CommandText = "select * from Usuario where NombreUsuario='" + txtUsuario.Text + "' and PasswordUsuario='" + txtContra.Text + "'";
 
                 OleDbDataReader reader = command.ExecuteReader();
                 int count = 0;
@@ -66,9 +63,9 @@ namespace PruebaConectarAccess
                 {
                     count += 1;
                 }
-                
+
                 connection.Close();
-                
+
                 if (count == 1)
                 {
                     connection.Open();
@@ -76,7 +73,7 @@ namespace PruebaConectarAccess
                     command2.Connection = connection;
 
                     command2.CommandText = "select * from Usuario where NombreUsuario='" + txtUsuario.Text + "' and PasswordUsuario='" + txtContra.Text + "'";
-                    
+
                     OleDbDataReader reader2 = command2.ExecuteReader();
                     reader2.Read();
 
@@ -88,9 +85,9 @@ namespace PruebaConectarAccess
                     Login.ObtenerDatosUsuario.IDdelUsuario = Convert.ToInt32(IDObtenidoDelUsuario);
                     Login.ObtenerDatosUsuario.MailDelUsuario = MailUsuario;
 
-                    new ComprarOVender().ShowDialog(); 
+                    new ComprarOVender().ShowDialog();
                     this.Show();
-                    new Login(); 
+                    new Login();
                     this.Close();
                 }
                 else if (count > 1)
@@ -103,11 +100,15 @@ namespace PruebaConectarAccess
                 }
 
                 connection.Close();
-            } 
+            }
             catch (Exception ex)
             {
                 MessageBox.Show("Upa algo salio mal... " + ex);
             }
+        }
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            IniciarSesion();
             
         }
         private void llOlvideMiPassword_Click(object sender, EventArgs e)
@@ -207,6 +208,12 @@ namespace PruebaConectarAccess
             LLCambiarPassword.ForeColor = Color.Blue;
         }
 
-
+        private void txtContra_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                IniciarSesion();
+            }
+        }
     }
 }
