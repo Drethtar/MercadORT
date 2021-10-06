@@ -51,11 +51,10 @@ namespace PruebaConectarAccess
             this.txtMailPerdiContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMailPerdiContra.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMailPerdiContra.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtMailPerdiContra.Location = new System.Drawing.Point(773, 393);
-            this.txtMailPerdiContra.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMailPerdiContra.Location = new System.Drawing.Point(580, 319);
             this.txtMailPerdiContra.Multiline = true;
             this.txtMailPerdiContra.Name = "txtMailPerdiContra";
-            this.txtMailPerdiContra.Size = new System.Drawing.Size(388, 65);
+            this.txtMailPerdiContra.Size = new System.Drawing.Size(291, 53);
             this.txtMailPerdiContra.TabIndex = 2;
             this.txtMailPerdiContra.Text = "ejemplo@gmail.com";
             this.txtMailPerdiContra.Enter += new System.EventHandler(this.txtMailPerdiContra_Enter);
@@ -67,32 +66,33 @@ namespace PruebaConectarAccess
             this.btnRecuperarContra.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRecuperarContra.BackgroundImage")));
             this.btnRecuperarContra.FlatAppearance.BorderSize = 0;
             this.btnRecuperarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecuperarContra.Location = new System.Drawing.Point(720, 521);
-            this.btnRecuperarContra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRecuperarContra.Location = new System.Drawing.Point(540, 423);
             this.btnRecuperarContra.Name = "btnRecuperarContra";
-            this.btnRecuperarContra.Size = new System.Drawing.Size(415, 65);
+            this.btnRecuperarContra.Size = new System.Drawing.Size(311, 53);
             this.btnRecuperarContra.TabIndex = 2;
             this.btnRecuperarContra.UseVisualStyleBackColor = true;
             this.btnRecuperarContra.Click += new System.EventHandler(this.btnRecuperarContra_Click);
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(65, 798);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAtras.BackColor = System.Drawing.Color.Transparent;
+            this.btnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtras.BackgroundImage")));
+            this.btnAtras.FlatAppearance.BorderSize = 0;
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.Location = new System.Drawing.Point(49, 648);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(83, 28);
+            this.btnAtras.Size = new System.Drawing.Size(134, 55);
             this.btnAtras.TabIndex = 3;
-            this.btnAtras.Text = "Atras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(531, 76);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(398, 62);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(775, 631);
+            this.pictureBox1.Size = new System.Drawing.Size(581, 513);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -100,20 +100,18 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(848, 112);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(636, 91);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(156, 122);
+            this.pictureBox2.Size = new System.Drawing.Size(117, 99);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox3.Location = new System.Drawing.Point(699, 393);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(524, 319);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(75, 65);
+            this.pictureBox3.Size = new System.Drawing.Size(56, 53);
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
@@ -121,10 +119,9 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(713, 402);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Location = new System.Drawing.Point(535, 327);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(45, 37);
+            this.pictureBox4.Size = new System.Drawing.Size(34, 30);
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             // 
@@ -132,19 +129,18 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(667, 278);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Location = new System.Drawing.Point(500, 226);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(520, 47);
+            this.pictureBox5.Size = new System.Drawing.Size(390, 38);
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
             // 
             // OlvideMiContra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1800, 897);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -154,7 +150,6 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.txtMailPerdiContra);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OlvideMiContra";
             this.Text = "OlvideMiContra";
             this.Load += new System.EventHandler(this.OlvideMiContra_Load);

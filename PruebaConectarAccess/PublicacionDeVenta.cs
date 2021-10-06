@@ -228,5 +228,45 @@ namespace PruebaConectarAccess
             this.Close();
 
         }
+
+        private void txtDescApunte_Leave(object sender, EventArgs e)
+        {
+            if (txtDescApunte.Text == "")
+            {
+                txtDescApunte.Text = "Ej: Si es drive o fisico, sobre que tema se trata, etc.";
+
+                txtDescApunte.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtDescApunte_Enter(object sender, EventArgs e)
+        {
+            if (txtDescApunte.Text == "Ej: Si es drive o fisico, sobre que tema se trata, etc.")
+            {
+                txtDescApunte.Text = "";
+
+                txtDescApunte.ForeColor = Color.Black; 
+            }
+        }
+
+        private void txtDescUtil_Leave(object sender, EventArgs e)
+        {
+            if (txtDescUtil.Text == "")
+            {
+                txtDescUtil.Text = "Ej: Que tan usado está, distintas descripciones segun el útil que se este vendiendo, etc.";
+
+                txtDescUtil.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtDescUtil_Enter(object sender, EventArgs e)
+        {
+            if (txtDescUtil.Text == "Ej: Que tan usado está, distintas descripciones segun el útil que se este vendiendo, etc.")
+            {
+                txtDescUtil.Text = "";
+
+                txtDescUtil.ForeColor = Color.Black;
+            }
+        }
     }
 }
