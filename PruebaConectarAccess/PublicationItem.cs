@@ -78,143 +78,152 @@ namespace PruebaConectarAccess
 
         private void btnQuieroComprarLibro_Click(object sender, EventArgs e)
         {
-            YourMessageBody = "Hola! Hoy es tu dia! " + Login.ObtenerDatosUsuario.NombreDelUsuario + " quiere comprar tu '" + lblTitle.Text + "!' El correo electronico del comprador es " + Login.ObtenerDatosUsuario.MailDelUsuario + ". Contactate con esa persona para poder concretar la compra del producto. Recuerda BORRAR tu publicacion tras finalizar la venta del producto. Muchas Gracias y buen dia :D.";
-
-            if (lblQueEs.Text == "Libro")
+            try
             {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
+                YourMessageBody = "Hola! Hoy es tu dia! " + Login.ObtenerDatosUsuario.NombreDelUsuario + " quiere comprar tu '" + lblTitle.Text + "!' El correo electronico del comprador es " + Login.ObtenerDatosUsuario.MailDelUsuario + ". Contactate con esa persona para poder concretar la compra del producto. Recuerda BORRAR tu publicacion tras finalizar la venta del producto. Muchas Gracias y buen dia :D.";
 
-                command.CommandText = "select ID from Libros where TituloLibro= '" + lblTitle.Text + "'";
-                OleDbDataReader reader = command.ExecuteReader();
-                reader.Read();
-                string IDLibroVendedor = reader["ID"].ToString();
-
-
-
-                connection.Close();
-                connection.Open();
-
-                command.CommandText = "select IDUsuario from RelacionUsuarioLibros where IDLibros= " + IDLibroVendedor + "";
-                OleDbDataReader reader2 = command.ExecuteReader();
-                reader2.Read();
-                string IDVendedorLibro = reader2["IDUsuario"].ToString();
-
-
-
-                connection.Close();
-                connection.Open();
-
-                command.CommandText = "select MailUsuario from Usuario where ID= " + IDVendedorLibro + "";
-                OleDbDataReader reader3 = command.ExecuteReader();
-                reader3.Read();
-                Destination = reader3["MailUsuario"].ToString();
-
-                
-
-                using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
+                if (lblQueEs.Text == "Libro")
                 {
-                    client.EnableSsl = true;
-                    client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                    client.UseDefaultCredentials = false;
-                    client.Credentials = new NetworkCredential(YourUsername, YourPassword);
+                    connection.Open();
+                    OleDbCommand command = new OleDbCommand();
+                    command.Connection = connection;
 
-                    MailMessage msgObj = new MailMessage();
-                    msgObj.To.Add(Destination);
-                    msgObj.From = new MailAddress(YourUsername);
-                    msgObj.Subject = YourMessageSubject;
-                    msgObj.Body = YourMessageBody;
-                    client.Send(msgObj);
+                    command.CommandText = "select ID from Libros where TituloLibro= '" + lblTitle.Text + "'";
+                    OleDbDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    string IDLibroVendedor = reader["ID"].ToString();
 
-                    MessageBox.Show("Se envio un correo electronico al comprador, seguramente te contacte dentro de poco.");
 
+
+                    connection.Close();
+                    connection.Open();
+
+                    command.CommandText = "select IDUsuario from RelacionUsuarioLibros where IDLibros= " + IDLibroVendedor + "";
+                    OleDbDataReader reader2 = command.ExecuteReader();
+                    reader2.Read();
+                    string IDVendedorLibro = reader2["IDUsuario"].ToString();
+
+
+
+                    connection.Close();
+                    connection.Open();
+
+                    command.CommandText = "select MailUsuario from Usuario where ID= " + IDVendedorLibro + "";
+                    OleDbDataReader reader3 = command.ExecuteReader();
+                    reader3.Read();
+                    Destination = reader3["MailUsuario"].ToString();
+
+
+
+                    using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
+                    {
+                        client.EnableSsl = true;
+                        client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                        client.UseDefaultCredentials = false;
+                        client.Credentials = new NetworkCredential(YourUsername, YourPassword);
+
+                        MailMessage msgObj = new MailMessage();
+                        msgObj.To.Add(Destination);
+                        msgObj.From = new MailAddress(YourUsername);
+                        msgObj.Subject = YourMessageSubject;
+                        msgObj.Body = YourMessageBody;
+                        client.Send(msgObj);
+
+                        MessageBox.Show("Se envio un correo electronico al comprador, seguramente te contacte dentro de poco.");
+
+                    }
+                    connection.Close();
                 }
-                connection.Close();
+                else if (lblQueEs.Text == "Util")
+                {
+                    connection.Open();
+                    OleDbCommand command = new OleDbCommand();
+                    command.Connection = connection;
+
+                    command.CommandText = "select ID from Utiles where TituloUtiles= '" + lblTitle.Text + "'";
+                    OleDbDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    string IDUtilVendedor = reader["ID"].ToString();
+
+                    connection.Close();
+                    connection.Open();
+
+                    command.CommandText = "select IDUsuario from RelacionUsuarioUtiles where IDUtiles= " + IDUtilVendedor + "";
+                    reader = command.ExecuteReader();
+                    reader.Read();
+                    string IDVendedorUtil = reader["IDUsuario"].ToString();
+
+                    connection.Close();
+                    connection.Open();
+
+                    command.CommandText = "select MailUsuario from Usuario where ID=" + IDVendedorUtil + "";
+                    reader = command.ExecuteReader();
+                    reader.Read();
+                    Destination = reader["MailUsuario"].ToString();
+
+                    using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
+                    {
+                        client.EnableSsl = true;
+                        client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                        client.UseDefaultCredentials = false;
+                        client.Credentials = new NetworkCredential(YourUsername, YourPassword);
+
+                        MailMessage msgObj = new MailMessage();
+                        msgObj.To.Add(Destination);
+                        msgObj.From = new MailAddress(YourUsername);
+                        msgObj.Subject = YourMessageSubject;
+                        msgObj.Body = YourMessageBody;
+                        client.Send(msgObj);
+
+                        MessageBox.Show("Se envio un correo electronico al comprador, seguramente te contacte dentro de poco.");
+
+                    }
+                    connection.Close();
+                }
+                else if (lblQueEs.Text == "Apunte")
+                {
+                    connection.Open();
+                    OleDbCommand command = new OleDbCommand();
+                    command.Connection = connection;
+
+                    command.CommandText = "select IDUsuario from Apuntes where TituloApuntes= '" + lblTitle.Text + "'";
+                    OleDbDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    string IDVendedorApunte = reader["IDUsuario"].ToString();
+
+                    connection.Close();
+                    connection.Open();
+
+                    command.CommandText = "select MailUsuario from Usuario where ID= " + IDVendedorApunte + "";
+                    reader = command.ExecuteReader();
+                    reader.Read();
+                    Destination = reader["MailUsuario"].ToString();
+
+                    using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
+                    {
+                        client.EnableSsl = true;
+                        client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                        client.UseDefaultCredentials = false;
+                        client.Credentials = new NetworkCredential(YourUsername, YourPassword);
+
+                        MailMessage msgObj = new MailMessage();
+                        msgObj.To.Add(Destination);
+                        msgObj.From = new MailAddress(YourUsername);
+                        msgObj.Subject = YourMessageSubject;
+                        msgObj.Body = YourMessageBody;
+                        client.Send(msgObj);
+
+                        MessageBox.Show("Se envio un correo electronico al comprador, seguramente te contacte dentro de poco.");
+
+                    }
+                    connection.Close();
+                }
+            
+
             }
-            else if (lblQueEs.Text == "Util")
+            catch (Exception ex)
             {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-
-                command.CommandText = "select ID from Utiles where TituloUtiles= '" + lblTitle.Text + "'";
-                OleDbDataReader reader = command.ExecuteReader();
-                reader.Read();
-                string IDUtilVendedor = reader["ID"].ToString();
-
-                connection.Close();
-                connection.Open();
-
-                command.CommandText = "select IDUsuario from RelacionUsuarioUtiles where IDUtiles= " + IDUtilVendedor + "";
-                reader = command.ExecuteReader();
-                reader.Read();
-                string IDVendedorUtil = reader["IDUsuario"].ToString();
-
-                connection.Close();
-                connection.Open();
-
-                command.CommandText = "select MailUsuario from Usuario where ID="+IDVendedorUtil+"";
-                reader = command.ExecuteReader();
-                reader.Read();
-                Destination = reader["MailUsuario"].ToString();
-
-                using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
-                {
-                    client.EnableSsl = true;
-                    client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                    client.UseDefaultCredentials = false;
-                    client.Credentials = new NetworkCredential(YourUsername, YourPassword);
-
-                    MailMessage msgObj = new MailMessage();
-                    msgObj.To.Add(Destination);
-                    msgObj.From = new MailAddress(YourUsername);
-                    msgObj.Subject = YourMessageSubject;
-                    msgObj.Body = YourMessageBody;
-                    client.Send(msgObj);
-
-                    MessageBox.Show("Se envio un correo electronico al comprador, seguramente te contacte dentro de poco.");
-
-                }
-                connection.Close();
-            }
-            else if (lblQueEs.Text == "Apunte")
-            {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-
-                command.CommandText = "select IDUsuario from Apuntes where TituloApuntes= '" + lblTitle.Text + "'";
-                OleDbDataReader reader = command.ExecuteReader();
-                reader.Read();
-                string IDVendedorApunte = reader["IDUsuario"].ToString();
-
-                connection.Close();
-                connection.Open();
-
-                command.CommandText = "select MailUsuario from Usuario where ID= " + IDVendedorApunte + "";
-                reader = command.ExecuteReader();
-                reader.Read();
-                Destination = reader["MailUsuario"].ToString();
-
-                using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
-                {
-                    client.EnableSsl = true;
-                    client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                    client.UseDefaultCredentials = false;
-                    client.Credentials = new NetworkCredential(YourUsername, YourPassword);
-
-                    MailMessage msgObj = new MailMessage();
-                    msgObj.To.Add(Destination);
-                    msgObj.From = new MailAddress(YourUsername);
-                    msgObj.Subject = YourMessageSubject;
-                    msgObj.Body = YourMessageBody;
-                    client.Send(msgObj);
-
-                    MessageBox.Show("Se envio un correo electronico al comprador, seguramente te contacte dentro de poco.");
-
-                }
-                connection.Close();
+                MessageBox.Show("Error Probablemente sea porque tu direccion de correo electronico no es valida. Error: " + ex);
             }
 
 

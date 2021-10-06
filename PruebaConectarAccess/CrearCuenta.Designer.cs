@@ -63,10 +63,10 @@
             this.btnInsertarDatos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInsertarDatos.BackgroundImage")));
             this.btnInsertarDatos.FlatAppearance.BorderSize = 0;
             this.btnInsertarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInsertarDatos.Location = new System.Drawing.Point(583, 523);
+            this.btnInsertarDatos.Location = new System.Drawing.Point(777, 644);
             this.btnInsertarDatos.Margin = new System.Windows.Forms.Padding(0);
             this.btnInsertarDatos.Name = "btnInsertarDatos";
-            this.btnInsertarDatos.Size = new System.Drawing.Size(307, 54);
+            this.btnInsertarDatos.Size = new System.Drawing.Size(409, 66);
             this.btnInsertarDatos.TabIndex = 0;
             this.btnInsertarDatos.TabStop = false;
             this.btnInsertarDatos.UseVisualStyleBackColor = false;
@@ -78,11 +78,12 @@
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtNombre.Location = new System.Drawing.Point(508, 292);
+            this.txtNombre.Location = new System.Drawing.Point(677, 359);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(258, 53);
-            this.txtNombre.TabIndex = 1;
+            this.txtNombre.Size = new System.Drawing.Size(344, 65);
+            this.txtNombre.TabIndex = 2;
             this.txtNombre.Text = "Usuario";
             this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
@@ -93,11 +94,12 @@
             this.txtMail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMail.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMail.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtMail.Location = new System.Drawing.Point(508, 360);
+            this.txtMail.Location = new System.Drawing.Point(677, 443);
+            this.txtMail.Margin = new System.Windows.Forms.Padding(4);
             this.txtMail.Multiline = true;
             this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(258, 53);
-            this.txtMail.TabIndex = 2;
+            this.txtMail.Size = new System.Drawing.Size(344, 65);
+            this.txtMail.TabIndex = 3;
             this.txtMail.Text = "ejemplo@gmail.com";
             this.txtMail.Enter += new System.EventHandler(this.txtMail_Enter);
             this.txtMail.Leave += new System.EventHandler(this.txtMail_Leave);
@@ -108,11 +110,12 @@
             this.txtContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContra.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContra.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtContra.Location = new System.Drawing.Point(508, 426);
+            this.txtContra.Location = new System.Drawing.Point(677, 524);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(4);
             this.txtContra.Multiline = true;
             this.txtContra.Name = "txtContra";
-            this.txtContra.Size = new System.Drawing.Size(258, 53);
-            this.txtContra.TabIndex = 3;
+            this.txtContra.Size = new System.Drawing.Size(344, 65);
+            this.txtContra.TabIndex = 4;
             this.txtContra.Text = "Contraseña";
             this.txtContra.Enter += new System.EventHandler(this.txtContra_Enter);
             this.txtContra.Leave += new System.EventHandler(this.txtContra_Leave);
@@ -131,11 +134,11 @@
             "3ro",
             "4to",
             "5to"});
-            this.cbxCurso.Location = new System.Drawing.Point(780, 292);
-            this.cbxCurso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxCurso.Location = new System.Drawing.Point(1040, 359);
+            this.cbxCurso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxCurso.Name = "cbxCurso";
-            this.cbxCurso.Size = new System.Drawing.Size(211, 53);
-            this.cbxCurso.TabIndex = 11;
+            this.cbxCurso.Size = new System.Drawing.Size(280, 63);
+            this.cbxCurso.TabIndex = 5;
             this.cbxCurso.SelectedIndexChanged += new System.EventHandler(this.cbxCurso_SelectedIndexChanged);
             // 
             // cbxOrientacion
@@ -144,11 +147,11 @@
             this.cbxOrientacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbxOrientacion.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxOrientacion.FormattingEnabled = true;
-            this.cbxOrientacion.Location = new System.Drawing.Point(780, 360);
-            this.cbxOrientacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxOrientacion.Location = new System.Drawing.Point(1040, 443);
+            this.cbxOrientacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxOrientacion.Name = "cbxOrientacion";
-            this.cbxOrientacion.Size = new System.Drawing.Size(211, 53);
-            this.cbxOrientacion.TabIndex = 12;
+            this.cbxOrientacion.Size = new System.Drawing.Size(280, 63);
+            this.cbxOrientacion.TabIndex = 6;
             this.cbxOrientacion.SelectedIndexChanged += new System.EventHandler(this.cbxOrientacion_SelectedIndexChanged);
             // 
             // cbxLetra
@@ -157,11 +160,12 @@
             this.cbxLetra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbxLetra.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxLetra.FormattingEnabled = true;
-            this.cbxLetra.Location = new System.Drawing.Point(780, 426);
-            this.cbxLetra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxLetra.ItemHeight = 55;
+            this.cbxLetra.Location = new System.Drawing.Point(1040, 524);
+            this.cbxLetra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxLetra.Name = "cbxLetra";
-            this.cbxLetra.Size = new System.Drawing.Size(211, 53);
-            this.cbxLetra.TabIndex = 15;
+            this.cbxLetra.Size = new System.Drawing.Size(280, 63);
+            this.cbxLetra.TabIndex = 7;
             this.cbxLetra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbxLetra_KeyPress);
             // 
             // btnAtras
@@ -169,10 +173,10 @@
             this.btnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtras.BackgroundImage")));
             this.btnAtras.FlatAppearance.BorderSize = 0;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtras.Location = new System.Drawing.Point(26, 651);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Location = new System.Drawing.Point(35, 801);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(148, 53);
+            this.btnAtras.Size = new System.Drawing.Size(197, 65);
             this.btnAtras.TabIndex = 17;
             this.btnAtras.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -181,9 +185,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(414, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(552, 49);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(615, 586);
+            this.pictureBox1.Size = new System.Drawing.Size(820, 721);
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
@@ -191,9 +196,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(573, 217);
+            this.pictureBox2.Location = new System.Drawing.Point(764, 267);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(306, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(408, 37);
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
@@ -201,36 +207,40 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(672, 83);
+            this.pictureBox3.Location = new System.Drawing.Point(896, 102);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(115, 103);
+            this.pictureBox3.Size = new System.Drawing.Size(153, 127);
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox4.Location = new System.Drawing.Point(461, 292);
+            this.pictureBox4.Location = new System.Drawing.Point(615, 359);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(47, 53);
+            this.pictureBox4.Size = new System.Drawing.Size(63, 65);
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox5.Location = new System.Drawing.Point(461, 360);
+            this.pictureBox5.Location = new System.Drawing.Point(615, 443);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(47, 53);
+            this.pictureBox5.Size = new System.Drawing.Size(63, 65);
             this.pictureBox5.TabIndex = 22;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox6.Location = new System.Drawing.Point(461, 426);
+            this.pictureBox6.Location = new System.Drawing.Point(615, 524);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(47, 53);
+            this.pictureBox6.Size = new System.Drawing.Size(63, 65);
             this.pictureBox6.TabIndex = 23;
             this.pictureBox6.TabStop = false;
             // 
@@ -238,9 +248,10 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.Location = new System.Drawing.Point(464, 367);
+            this.pictureBox7.Location = new System.Drawing.Point(619, 452);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7.Size = new System.Drawing.Size(53, 49);
             this.pictureBox7.TabIndex = 24;
             this.pictureBox7.TabStop = false;
             // 
@@ -248,9 +259,10 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.Location = new System.Drawing.Point(475, 441);
+            this.pictureBox8.Location = new System.Drawing.Point(633, 543);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(20, 24);
+            this.pictureBox8.Size = new System.Drawing.Size(27, 30);
             this.pictureBox8.TabIndex = 25;
             this.pictureBox8.TabStop = false;
             // 
@@ -258,18 +270,19 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
-            this.pictureBox9.Location = new System.Drawing.Point(474, 308);
+            this.pictureBox9.Location = new System.Drawing.Point(632, 379);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(20, 24);
+            this.pictureBox9.Size = new System.Drawing.Size(27, 30);
             this.pictureBox9.TabIndex = 26;
             this.pictureBox9.TabStop = false;
             // 
             // CrearCuenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1800, 897);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -288,6 +301,7 @@
             this.Controls.Add(this.btnInsertarDatos);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CrearCuenta";
             this.Text = "CrearCuenta";
             this.Load += new System.EventHandler(this.CrearCuenta_Load);

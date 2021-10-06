@@ -62,6 +62,11 @@ namespace PruebaConectarAccess
                 llTituloLibro.Show(); txtTituloLibro.Show();
 
                 btnPublicar.Show();
+
+                txtTituloLibro.TabIndex = 2;
+                cbxMateriaLibro.TabIndex = 3;
+                numPrecioLibro.TabIndex = 4;
+                txtDescLibro.TabIndex = 5;
             }
             else if (cbxQueEs.Text == "Apunte")
             {
@@ -82,6 +87,11 @@ namespace PruebaConectarAccess
                 llTituloApunte.Show(); txtTituloApunte.Show();
 
                 btnPublicar.Show();
+
+                txtTituloApunte.TabIndex = 2;
+                cbxMateriaApunte.TabIndex = 3;
+                numPrecioApunte.TabIndex = 4;
+                txtDescApunte.TabIndex = 5;
             }
             else if (cbxQueEs.Text == "Util")
             {
@@ -102,6 +112,11 @@ namespace PruebaConectarAccess
                 llTituloUtil.Show(); txtTituloUtil.Show();
 
                 btnPublicar.Show();
+
+                txtTituloUtil.TabIndex = 2;
+                cbxColorUtil.TabIndex = 3;
+                numPrecioUtil.TabIndex = 4;
+                txtDescUtil.TabIndex = 5;
             }
         }
 

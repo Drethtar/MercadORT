@@ -52,6 +52,18 @@ namespace PruebaConectarAccess
         {
             try
             {
+                if (txtMail.Text.Contains("@") && txtMail.Text.Contains("."))
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Su direccion de correo electronico no tiene @");
+                    return;
+                }
+                
+                
+                
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
@@ -343,5 +355,6 @@ namespace PruebaConectarAccess
                 InsertarDatosParaCuenta();
             }
         }
+
     }
 }

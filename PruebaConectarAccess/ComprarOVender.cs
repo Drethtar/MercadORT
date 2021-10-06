@@ -36,7 +36,7 @@ namespace PruebaConectarAccess
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
 
             llNombreUsuario.Text = "Bienvenid@! " + Login.ObtenerDatosUsuario.NombreDelUsuario;
-
+            llNombreUsuario.TextAlign = ContentAlignment.TopCenter;
             //////
 
             connection.Open();
@@ -129,5 +129,6 @@ namespace PruebaConectarAccess
             new ComprarOVender();
             this.Close();
         }
+
     }
 }

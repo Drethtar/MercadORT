@@ -36,53 +36,62 @@ namespace PruebaConectarAccess
 
         private void EnviarContra()
         {
-            Destination = txtMailPerdiContra.Text;
-
-            connection.Open();
-            OleDbCommand command = new OleDbCommand();
-            command.Connection = connection;
-            int count = 0;
-
-            command.CommandText = "select * from Usuario where MailUsuario='" + txtMailPerdiContra.Text + "'";
-
-            OleDbDataReader reader = command.ExecuteReader();
-
-            command.CommandText = "select PasswordUsuario from Usuario where MailUsuario='" + txtMailPerdiContra.Text + "'";
-
-            reader.Read();
-            string PasswordARecuperar = reader["PasswordUsuario"].ToString();
-
-            string Mail = txtMailPerdiContra.Text;
-
-            YourMessageBody = "La contraseña de la cuenta con la direccion de correo electronico " + Mail + " es " + PasswordARecuperar + ".";
-
-            while (reader.Read())
+            try
             {
-                count += 1;
-            }
+                Destination = txtMailPerdiContra.Text;
 
-            using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                int count = 0;
+
+                command.CommandText = "select * from Usuario where MailUsuario='" + txtMailPerdiContra.Text + "'";
+
+                OleDbDataReader reader = command.ExecuteReader();
+
+                command.CommandText = "select PasswordUsuario from Usuario where MailUsuario='" + txtMailPerdiContra.Text + "'";
+
+                reader.Read();
+                string PasswordARecuperar = reader["PasswordUsuario"].ToString();
+
+                string Mail = txtMailPerdiContra.Text;
+
+                YourMessageBody = "La contraseña de la cuenta con la direccion de correo electronico " + Mail + " es " + PasswordARecuperar + ".";
+
+                while (reader.Read())
+                {
+                    count += 1;
+                }
+
+                using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
+                {
+                    client.EnableSsl = true;
+                    client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    client.UseDefaultCredentials = false;
+                    client.Credentials = new NetworkCredential(YourUsername, YourPassword);
+
+                    MailMessage msgObj = new MailMessage();
+                    msgObj.To.Add(Destination);
+                    msgObj.From = new MailAddress(YourUsername);
+                    msgObj.Subject = YourMessageSubject;
+                    msgObj.Body = YourMessageBody;
+                    client.Send(msgObj);
+
+                    MessageBox.Show("Se envio tu mail");
+
+                }
+
+                new Login().ShowDialog();
+                this.Show();
+                new OlvideMiContra();
+                this.Close();
+            }
+            catch (Exception ex)
             {
-                client.EnableSsl = true;
-                client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential(YourUsername, YourPassword);
-
-                MailMessage msgObj = new MailMessage();
-                msgObj.To.Add(Destination);
-                msgObj.From = new MailAddress(YourUsername);
-                msgObj.Subject = YourMessageSubject;
-                msgObj.Body = YourMessageBody;
-                client.Send(msgObj);
-
-                MessageBox.Show("Se envio tu mail");
-
+                MessageBox.Show("Error Probablemente sea porque tu direccion de correo electronico no es valida. Error: " + ex);
             }
+            
 
-            new Login().ShowDialog();
-            this.Show();
-            new OlvideMiContra();
-            this.Close();
         }
         private void btnRecuperarContra_Click(object sender, EventArgs e)
         {
