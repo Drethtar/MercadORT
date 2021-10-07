@@ -73,10 +73,9 @@ namespace PruebaConectarAccess
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(332, 181);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(443, 223);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 45);
+            this.label1.Size = new System.Drawing.Size(349, 57);
             this.label1.TabIndex = 0;
             this.label1.Text = "¿Que Queres Vender?";
             // 
@@ -90,10 +89,10 @@ namespace PruebaConectarAccess
             "Libro",
             "Util",
             "Apunte"});
-            this.cbxQueEs.Location = new System.Drawing.Point(330, 237);
-            this.cbxQueEs.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxQueEs.Location = new System.Drawing.Point(440, 292);
+            this.cbxQueEs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxQueEs.Name = "cbxQueEs";
-            this.cbxQueEs.Size = new System.Drawing.Size(286, 53);
+            this.cbxQueEs.Size = new System.Drawing.Size(380, 63);
             this.cbxQueEs.TabIndex = 1;
             this.cbxQueEs.SelectedIndexChanged += new System.EventHandler(this.cbxQueEs_SelectedIndexChanged);
             // 
@@ -102,11 +101,11 @@ namespace PruebaConectarAccess
             this.txtTituloLibro.BackColor = System.Drawing.Color.LightGray;
             this.txtTituloLibro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTituloLibro.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTituloLibro.Location = new System.Drawing.Point(330, 353);
-            this.txtTituloLibro.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTituloLibro.Location = new System.Drawing.Point(440, 434);
+            this.txtTituloLibro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTituloLibro.Multiline = true;
             this.txtTituloLibro.Name = "txtTituloLibro";
-            this.txtTituloLibro.Size = new System.Drawing.Size(286, 53);
+            this.txtTituloLibro.Size = new System.Drawing.Size(381, 65);
             this.txtTituloLibro.TabIndex = 2;
             // 
             // txtTituloUtil
@@ -114,11 +113,11 @@ namespace PruebaConectarAccess
             this.txtTituloUtil.BackColor = System.Drawing.Color.LightGray;
             this.txtTituloUtil.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTituloUtil.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTituloUtil.Location = new System.Drawing.Point(330, 353);
-            this.txtTituloUtil.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTituloUtil.Location = new System.Drawing.Point(440, 434);
+            this.txtTituloUtil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTituloUtil.Multiline = true;
             this.txtTituloUtil.Name = "txtTituloUtil";
-            this.txtTituloUtil.Size = new System.Drawing.Size(286, 53);
+            this.txtTituloUtil.Size = new System.Drawing.Size(381, 65);
             this.txtTituloUtil.TabIndex = 4;
             // 
             // txtTituloApunte
@@ -127,11 +126,11 @@ namespace PruebaConectarAccess
             this.txtTituloApunte.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTituloApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTituloApunte.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtTituloApunte.Location = new System.Drawing.Point(330, 353);
-            this.txtTituloApunte.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTituloApunte.Location = new System.Drawing.Point(440, 434);
+            this.txtTituloApunte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTituloApunte.Multiline = true;
             this.txtTituloApunte.Name = "txtTituloApunte";
-            this.txtTituloApunte.Size = new System.Drawing.Size(286, 53);
+            this.txtTituloApunte.Size = new System.Drawing.Size(380, 65);
             this.txtTituloApunte.TabIndex = 5;
             // 
             // llTituloLibro
@@ -140,10 +139,9 @@ namespace PruebaConectarAccess
             this.llTituloLibro.BackColor = System.Drawing.Color.White;
             this.llTituloLibro.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llTituloLibro.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llTituloLibro.Location = new System.Drawing.Point(332, 306);
-            this.llTituloLibro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llTituloLibro.Location = new System.Drawing.Point(443, 377);
             this.llTituloLibro.Name = "llTituloLibro";
-            this.llTituloLibro.Size = new System.Drawing.Size(306, 45);
+            this.llTituloLibro.Size = new System.Drawing.Size(402, 57);
             this.llTituloLibro.TabIndex = 7;
             this.llTituloLibro.Text = "Titulo de la Publicación  ";
             // 
@@ -153,10 +151,9 @@ namespace PruebaConectarAccess
             this.llTituloUtil.BackColor = System.Drawing.Color.White;
             this.llTituloUtil.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llTituloUtil.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llTituloUtil.Location = new System.Drawing.Point(332, 306);
-            this.llTituloUtil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llTituloUtil.Location = new System.Drawing.Point(443, 377);
             this.llTituloUtil.Name = "llTituloUtil";
-            this.llTituloUtil.Size = new System.Drawing.Size(296, 45);
+            this.llTituloUtil.Size = new System.Drawing.Size(384, 57);
             this.llTituloUtil.TabIndex = 8;
             this.llTituloUtil.Text = "Titulo de la Publicación";
             // 
@@ -166,10 +163,9 @@ namespace PruebaConectarAccess
             this.llTituloApunte.BackColor = System.Drawing.Color.White;
             this.llTituloApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llTituloApunte.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llTituloApunte.Location = new System.Drawing.Point(332, 306);
-            this.llTituloApunte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llTituloApunte.Location = new System.Drawing.Point(443, 377);
             this.llTituloApunte.Name = "llTituloApunte";
-            this.llTituloApunte.Size = new System.Drawing.Size(296, 45);
+            this.llTituloApunte.Size = new System.Drawing.Size(384, 57);
             this.llTituloApunte.TabIndex = 9;
             this.llTituloApunte.Text = "Titulo de la Publicación";
             // 
@@ -179,10 +175,9 @@ namespace PruebaConectarAccess
             this.llMateriaLibro.BackColor = System.Drawing.Color.White;
             this.llMateriaLibro.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llMateriaLibro.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llMateriaLibro.Location = new System.Drawing.Point(815, 181);
-            this.llMateriaLibro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llMateriaLibro.Location = new System.Drawing.Point(1087, 223);
             this.llMateriaLibro.Name = "llMateriaLibro";
-            this.llMateriaLibro.Size = new System.Drawing.Size(224, 45);
+            this.llMateriaLibro.Size = new System.Drawing.Size(287, 57);
             this.llMateriaLibro.TabIndex = 12;
             this.llMateriaLibro.Text = "Materia del Libro";
             // 
@@ -219,10 +214,10 @@ namespace PruebaConectarAccess
             "Medios",
             "Humanidades",
             "Gestion"});
-            this.cbxMateriaLibro.Location = new System.Drawing.Point(813, 237);
-            this.cbxMateriaLibro.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxMateriaLibro.Location = new System.Drawing.Point(1083, 292);
+            this.cbxMateriaLibro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxMateriaLibro.Name = "cbxMateriaLibro";
-            this.cbxMateriaLibro.Size = new System.Drawing.Size(286, 33);
+            this.cbxMateriaLibro.Size = new System.Drawing.Size(380, 39);
             this.cbxMateriaLibro.TabIndex = 13;
             // 
             // llColorUtil
@@ -231,10 +226,9 @@ namespace PruebaConectarAccess
             this.llColorUtil.BackColor = System.Drawing.Color.White;
             this.llColorUtil.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llColorUtil.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llColorUtil.Location = new System.Drawing.Point(815, 181);
-            this.llColorUtil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llColorUtil.Location = new System.Drawing.Point(1087, 223);
             this.llColorUtil.Name = "llColorUtil";
-            this.llColorUtil.Size = new System.Drawing.Size(173, 45);
+            this.llColorUtil.Size = new System.Drawing.Size(224, 57);
             this.llColorUtil.TabIndex = 14;
             this.llColorUtil.Text = "Color del Util";
             // 
@@ -261,10 +255,10 @@ namespace PruebaConectarAccess
             "Transparente",
             "No Importa",
             "Otro"});
-            this.cbxColorUtil.Location = new System.Drawing.Point(813, 237);
-            this.cbxColorUtil.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxColorUtil.Location = new System.Drawing.Point(1083, 292);
+            this.cbxColorUtil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxColorUtil.Name = "cbxColorUtil";
-            this.cbxColorUtil.Size = new System.Drawing.Size(286, 33);
+            this.cbxColorUtil.Size = new System.Drawing.Size(380, 39);
             this.cbxColorUtil.TabIndex = 15;
             // 
             // llMateriaApunte
@@ -273,10 +267,9 @@ namespace PruebaConectarAccess
             this.llMateriaApunte.BackColor = System.Drawing.Color.White;
             this.llMateriaApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llMateriaApunte.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llMateriaApunte.Location = new System.Drawing.Point(805, 181);
-            this.llMateriaApunte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llMateriaApunte.Location = new System.Drawing.Point(1073, 223);
             this.llMateriaApunte.Name = "llMateriaApunte";
-            this.llMateriaApunte.Size = new System.Drawing.Size(247, 45);
+            this.llMateriaApunte.Size = new System.Drawing.Size(317, 57);
             this.llMateriaApunte.TabIndex = 16;
             this.llMateriaApunte.Text = "Materia del Apunte";
             // 
@@ -313,10 +306,10 @@ namespace PruebaConectarAccess
             "Medios",
             "Humanidades",
             "Gestion"});
-            this.cbxMateriaApunte.Location = new System.Drawing.Point(813, 237);
-            this.cbxMateriaApunte.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxMateriaApunte.Location = new System.Drawing.Point(1083, 292);
+            this.cbxMateriaApunte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxMateriaApunte.Name = "cbxMateriaApunte";
-            this.cbxMateriaApunte.Size = new System.Drawing.Size(286, 33);
+            this.cbxMateriaApunte.Size = new System.Drawing.Size(380, 39);
             this.cbxMateriaApunte.TabIndex = 17;
             // 
             // numPrecioLibro
@@ -325,15 +318,15 @@ namespace PruebaConectarAccess
             this.numPrecioLibro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numPrecioLibro.DecimalPlaces = 2;
             this.numPrecioLibro.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numPrecioLibro.Location = new System.Drawing.Point(330, 474);
-            this.numPrecioLibro.Margin = new System.Windows.Forms.Padding(2);
+            this.numPrecioLibro.Location = new System.Drawing.Point(440, 583);
+            this.numPrecioLibro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numPrecioLibro.Maximum = new decimal(new int[] {
             -469762049,
             -590869294,
             5421010,
             0});
             this.numPrecioLibro.Name = "numPrecioLibro";
-            this.numPrecioLibro.Size = new System.Drawing.Size(221, 48);
+            this.numPrecioLibro.Size = new System.Drawing.Size(380, 59);
             this.numPrecioLibro.TabIndex = 22;
             this.numPrecioLibro.ThousandsSeparator = true;
             // 
@@ -343,15 +336,15 @@ namespace PruebaConectarAccess
             this.numPrecioApunte.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numPrecioApunte.DecimalPlaces = 2;
             this.numPrecioApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numPrecioApunte.Location = new System.Drawing.Point(330, 473);
-            this.numPrecioApunte.Margin = new System.Windows.Forms.Padding(2);
+            this.numPrecioApunte.Location = new System.Drawing.Point(440, 582);
+            this.numPrecioApunte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numPrecioApunte.Maximum = new decimal(new int[] {
             -469762049,
             -590869294,
             5421010,
             0});
             this.numPrecioApunte.Name = "numPrecioApunte";
-            this.numPrecioApunte.Size = new System.Drawing.Size(221, 48);
+            this.numPrecioApunte.Size = new System.Drawing.Size(380, 59);
             this.numPrecioApunte.TabIndex = 23;
             this.numPrecioApunte.ThousandsSeparator = true;
             // 
@@ -361,15 +354,15 @@ namespace PruebaConectarAccess
             this.numPrecioUtil.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numPrecioUtil.DecimalPlaces = 2;
             this.numPrecioUtil.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numPrecioUtil.Location = new System.Drawing.Point(330, 473);
-            this.numPrecioUtil.Margin = new System.Windows.Forms.Padding(2);
+            this.numPrecioUtil.Location = new System.Drawing.Point(440, 582);
+            this.numPrecioUtil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numPrecioUtil.Maximum = new decimal(new int[] {
             -469762049,
             -590869294,
             5421010,
             0});
             this.numPrecioUtil.Name = "numPrecioUtil";
-            this.numPrecioUtil.Size = new System.Drawing.Size(221, 48);
+            this.numPrecioUtil.Size = new System.Drawing.Size(380, 59);
             this.numPrecioUtil.TabIndex = 24;
             this.numPrecioUtil.ThousandsSeparator = true;
             // 
@@ -379,10 +372,9 @@ namespace PruebaConectarAccess
             this.llPrecioLibro.BackColor = System.Drawing.Color.White;
             this.llPrecioLibro.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llPrecioLibro.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llPrecioLibro.Location = new System.Drawing.Point(332, 417);
-            this.llPrecioLibro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llPrecioLibro.Location = new System.Drawing.Point(443, 513);
             this.llPrecioLibro.Name = "llPrecioLibro";
-            this.llPrecioLibro.Size = new System.Drawing.Size(206, 45);
+            this.llPrecioLibro.Size = new System.Drawing.Size(267, 57);
             this.llPrecioLibro.TabIndex = 25;
             this.llPrecioLibro.Text = "Precio del Libro";
             // 
@@ -392,10 +384,9 @@ namespace PruebaConectarAccess
             this.llPrecioUtil.BackColor = System.Drawing.Color.White;
             this.llPrecioUtil.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llPrecioUtil.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llPrecioUtil.Location = new System.Drawing.Point(333, 417);
-            this.llPrecioUtil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llPrecioUtil.Location = new System.Drawing.Point(444, 513);
             this.llPrecioUtil.Name = "llPrecioUtil";
-            this.llPrecioUtil.Size = new System.Drawing.Size(185, 45);
+            this.llPrecioUtil.Size = new System.Drawing.Size(240, 57);
             this.llPrecioUtil.TabIndex = 26;
             this.llPrecioUtil.Text = "Precio del Util";
             // 
@@ -405,10 +396,9 @@ namespace PruebaConectarAccess
             this.llPrecioApunte.BackColor = System.Drawing.Color.White;
             this.llPrecioApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llPrecioApunte.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llPrecioApunte.Location = new System.Drawing.Point(333, 417);
-            this.llPrecioApunte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llPrecioApunte.Location = new System.Drawing.Point(444, 513);
             this.llPrecioApunte.Name = "llPrecioApunte";
-            this.llPrecioApunte.Size = new System.Drawing.Size(229, 45);
+            this.llPrecioApunte.Size = new System.Drawing.Size(297, 57);
             this.llPrecioApunte.TabIndex = 27;
             this.llPrecioApunte.Text = "Precio del Apunte";
             // 
@@ -418,10 +408,9 @@ namespace PruebaConectarAccess
             this.llDescLibro.BackColor = System.Drawing.Color.White;
             this.llDescLibro.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llDescLibro.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llDescLibro.Location = new System.Drawing.Point(815, 287);
-            this.llDescLibro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llDescLibro.Location = new System.Drawing.Point(1087, 353);
             this.llDescLibro.Name = "llDescLibro";
-            this.llDescLibro.Size = new System.Drawing.Size(161, 45);
+            this.llDescLibro.Size = new System.Drawing.Size(206, 57);
             this.llDescLibro.TabIndex = 28;
             this.llDescLibro.Text = "Descripcion";
             // 
@@ -431,10 +420,9 @@ namespace PruebaConectarAccess
             this.llDescUtil.BackColor = System.Drawing.Color.White;
             this.llDescUtil.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llDescUtil.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llDescUtil.Location = new System.Drawing.Point(810, 287);
-            this.llDescUtil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llDescUtil.Location = new System.Drawing.Point(1080, 353);
             this.llDescUtil.Name = "llDescUtil";
-            this.llDescUtil.Size = new System.Drawing.Size(161, 45);
+            this.llDescUtil.Size = new System.Drawing.Size(206, 57);
             this.llDescUtil.TabIndex = 29;
             this.llDescUtil.Text = "Descripcion";
             // 
@@ -444,10 +432,9 @@ namespace PruebaConectarAccess
             this.llDescApunte.BackColor = System.Drawing.Color.White;
             this.llDescApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llDescApunte.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.llDescApunte.Location = new System.Drawing.Point(810, 287);
-            this.llDescApunte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llDescApunte.Location = new System.Drawing.Point(1080, 353);
             this.llDescApunte.Name = "llDescApunte";
-            this.llDescApunte.Size = new System.Drawing.Size(161, 45);
+            this.llDescApunte.Size = new System.Drawing.Size(206, 57);
             this.llDescApunte.TabIndex = 30;
             this.llDescApunte.Text = "Descripcion";
             // 
@@ -457,11 +444,11 @@ namespace PruebaConectarAccess
             this.txtDescLibro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescLibro.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescLibro.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtDescLibro.Location = new System.Drawing.Point(818, 334);
-            this.txtDescLibro.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescLibro.Location = new System.Drawing.Point(1083, 412);
+            this.txtDescLibro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescLibro.Multiline = true;
             this.txtDescLibro.Name = "txtDescLibro";
-            this.txtDescLibro.Size = new System.Drawing.Size(265, 187);
+            this.txtDescLibro.Size = new System.Drawing.Size(353, 230);
             this.txtDescLibro.TabIndex = 31;
             this.txtDescLibro.Text = "Ej: Que tan usado está, editorial, etc.";
             this.txtDescLibro.Enter += new System.EventHandler(this.txtDescLibro_Enter);
@@ -473,11 +460,11 @@ namespace PruebaConectarAccess
             this.txtDescUtil.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescUtil.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescUtil.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtDescUtil.Location = new System.Drawing.Point(818, 334);
-            this.txtDescUtil.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescUtil.Location = new System.Drawing.Point(1083, 411);
+            this.txtDescUtil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescUtil.Multiline = true;
             this.txtDescUtil.Name = "txtDescUtil";
-            this.txtDescUtil.Size = new System.Drawing.Size(265, 188);
+            this.txtDescUtil.Size = new System.Drawing.Size(353, 231);
             this.txtDescUtil.TabIndex = 32;
             this.txtDescUtil.Text = "Ej: Que tan usado está, distintas descripciones segun el útil que se este vendien" +
     "do, etc.";
@@ -490,13 +477,13 @@ namespace PruebaConectarAccess
             this.txtDescApunte.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescApunte.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtDescApunte.Location = new System.Drawing.Point(818, 334);
-            this.txtDescApunte.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescApunte.Location = new System.Drawing.Point(1083, 410);
+            this.txtDescApunte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescApunte.Multiline = true;
             this.txtDescApunte.Name = "txtDescApunte";
-            this.txtDescApunte.Size = new System.Drawing.Size(265, 188);
+            this.txtDescApunte.Size = new System.Drawing.Size(353, 231);
             this.txtDescApunte.TabIndex = 33;
-            this.txtDescApunte.Text = "Ej: Si es drive o fisico, sobre que tema se trata, etc.";
+            this.txtDescApunte.Text = "Ej: Si es digital o fisico, sobre que tema se trata, etc.";
             this.txtDescApunte.Enter += new System.EventHandler(this.txtDescApunte_Enter);
             this.txtDescApunte.Leave += new System.EventHandler(this.txtDescApunte_Leave);
             // 
@@ -505,10 +492,10 @@ namespace PruebaConectarAccess
             this.btnPublicar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPublicar.BackgroundImage")));
             this.btnPublicar.FlatAppearance.BorderSize = 0;
             this.btnPublicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPublicar.Location = new System.Drawing.Point(659, 561);
-            this.btnPublicar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPublicar.Location = new System.Drawing.Point(879, 690);
+            this.btnPublicar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPublicar.Name = "btnPublicar";
-            this.btnPublicar.Size = new System.Drawing.Size(115, 48);
+            this.btnPublicar.Size = new System.Drawing.Size(153, 59);
             this.btnPublicar.TabIndex = 34;
             this.btnPublicar.UseVisualStyleBackColor = true;
             this.btnPublicar.Click += new System.EventHandler(this.btnPublicar_Click);
@@ -519,10 +506,10 @@ namespace PruebaConectarAccess
             this.btnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtras.BackgroundImage")));
             this.btnAtras.FlatAppearance.BorderSize = 0;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtras.Location = new System.Drawing.Point(56, 662);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtras.Location = new System.Drawing.Point(75, 815);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(134, 55);
+            this.btnAtras.Size = new System.Drawing.Size(179, 68);
             this.btnAtras.TabIndex = 35;
             this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
@@ -530,9 +517,10 @@ namespace PruebaConectarAccess
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(263, 48);
+            this.pictureBox1.Location = new System.Drawing.Point(351, 59);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(880, 609);
+            this.pictureBox1.Size = new System.Drawing.Size(1173, 750);
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
@@ -540,18 +528,19 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(658, 76);
+            this.pictureBox2.Location = new System.Drawing.Point(877, 94);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(115, 99);
+            this.pictureBox2.Size = new System.Drawing.Size(153, 122);
             this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
             // 
             // PublicacionDeVenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1800, 897);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnPublicar);
@@ -583,7 +572,7 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PublicacionDeVenta";
             this.Text = "PublicacionDeVenta";
             this.Load += new System.EventHandler(this.PublicacionDeVenta_Load);
