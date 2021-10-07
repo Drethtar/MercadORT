@@ -268,5 +268,26 @@ namespace PruebaConectarAccess
                 txtDescUtil.ForeColor = Color.Black;
             }
         }
+
+        private void txtDescLibro_Leave(object sender, EventArgs e)
+        {
+            if (txtDescLibro.Text == "")
+            {
+                txtDescLibro.Text = "Ej: Que tan usado está, editorial, etc.";
+
+                txtDescLibro.ForeColor = Color.DarkGray;
+            }
+        }
+      
+
+        private void txtDescLibro_Enter(object sender, EventArgs e)
+        {
+            if (txtDescLibro.Text == "Ej: Que tan usado está, editorial, etc.")
+            {
+                txtDescLibro.Text = "";
+
+                txtDescLibro.ForeColor = Color.Black;
+            }
+        }
     }
 }

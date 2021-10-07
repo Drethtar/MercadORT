@@ -49,7 +49,7 @@ namespace PruebaConectarAccess
             this.btnComprar.FlatAppearance.BorderSize = 0;
             this.btnComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComprar.Location = new System.Drawing.Point(438, 444);
-            this.btnComprar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnComprar.Margin = new System.Windows.Forms.Padding(2);
             this.btnComprar.Name = "btnComprar";
             this.btnComprar.Size = new System.Drawing.Size(232, 149);
             this.btnComprar.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace PruebaConectarAccess
             this.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVender.ForeColor = System.Drawing.SystemColors.Control;
             this.btnVender.Location = new System.Drawing.Point(718, 444);
-            this.btnVender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVender.Margin = new System.Windows.Forms.Padding(2);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(218, 149);
             this.btnVender.TabIndex = 2;
@@ -73,19 +73,20 @@ namespace PruebaConectarAccess
             // 
             // btnCerrarSesion
             // 
-            this.btnCerrarSesion.Location = new System.Drawing.Point(393, 79);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrarSesion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.BackgroundImage")));
+            this.btnCerrarSesion.Location = new System.Drawing.Point(37, 641);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(87, 26);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(177, 50);
             this.btnCerrarSesion.TabIndex = 4;
-            this.btnCerrarSesion.Text = "Cerrar Sesion";
-            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // btnMisPublicaciones
             // 
             this.btnMisPublicaciones.Location = new System.Drawing.Point(898, 79);
-            this.btnMisPublicaciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMisPublicaciones.Margin = new System.Windows.Forms.Padding(2);
             this.btnMisPublicaciones.Name = "btnMisPublicaciones";
             this.btnMisPublicaciones.Size = new System.Drawing.Size(103, 26);
             this.btnMisPublicaciones.TabIndex = 5;
@@ -156,7 +157,7 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ComprarOVender";
             this.Text = "IniciasteSesion";
             this.Load += new System.EventHandler(this.ComprarOVender_Load);
