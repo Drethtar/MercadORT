@@ -119,9 +119,6 @@ namespace PruebaConectarAccess
             }
         }
 
-        private void Apuntes_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

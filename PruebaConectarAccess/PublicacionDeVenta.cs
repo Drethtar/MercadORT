@@ -233,7 +233,7 @@ namespace PruebaConectarAccess
         {
             if (txtDescApunte.Text == "")
             {
-                txtDescApunte.Text = "Ej: Si es drive o fisico, sobre que tema se trata, etc.";
+                txtDescApunte.Text = "Ej: Si es digital o fisico, sobre que tema se trata, etc.";
 
                 txtDescApunte.ForeColor = Color.DarkGray;
             }
@@ -241,7 +241,7 @@ namespace PruebaConectarAccess
 
         private void txtDescApunte_Enter(object sender, EventArgs e)
         {
-            if (txtDescApunte.Text == "Ej: Si es drive o fisico, sobre que tema se trata, etc.")
+            if (txtDescApunte.Text == "Ej: Si es digital o fisico, sobre que tema se trata, etc.")
             {
                 txtDescApunte.Text = "";
 

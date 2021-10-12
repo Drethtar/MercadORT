@@ -97,7 +97,6 @@ C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\Class
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.pdb
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll.config
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csprojAssemblyReference.cache
-C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Apuntes.resources
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.ComprarOVender.resources
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Login.resources
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CrearCuenta.resources
@@ -109,7 +108,6 @@ C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\Prueb
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Publicaciones.resources
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionMisPublicaciones.resources
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicationItem.resources
-C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Utiles.resources
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.GenerateResource.cache
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CoreCompileInputs.cache
 C:\Users\Bauti\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CopyComplete
