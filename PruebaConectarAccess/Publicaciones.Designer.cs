@@ -48,20 +48,25 @@ namespace PruebaConectarAccess
             this.lbQueColor = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.publicationsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAtras
             // 
+            this.btnAtras.BackColor = System.Drawing.Color.Transparent;
             this.btnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtras.BackgroundImage")));
-            this.btnAtras.Location = new System.Drawing.Point(39, 17);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.FlatAppearance.BorderSize = 0;
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.Location = new System.Drawing.Point(16, 23);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(151, 63);
+            this.btnAtras.Size = new System.Drawing.Size(160, 63);
             this.btnAtras.TabIndex = 0;
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // cbxMaterial
@@ -75,8 +80,8 @@ namespace PruebaConectarAccess
             "Libro",
             "Apunte",
             "Util"});
-            this.cbxMaterial.Location = new System.Drawing.Point(74, 292);
-            this.cbxMaterial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxMaterial.Location = new System.Drawing.Point(47, 315);
+            this.cbxMaterial.Margin = new System.Windows.Forms.Padding(2);
             this.cbxMaterial.Name = "cbxMaterial";
             this.cbxMaterial.Size = new System.Drawing.Size(229, 41);
             this.cbxMaterial.TabIndex = 2;
@@ -115,8 +120,8 @@ namespace PruebaConectarAccess
             "Medios",
             "Humanidades",
             "Gestion"});
-            this.cbxMateria.Location = new System.Drawing.Point(74, 445);
-            this.cbxMateria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxMateria.Location = new System.Drawing.Point(47, 445);
+            this.cbxMateria.Margin = new System.Windows.Forms.Padding(2);
             this.cbxMateria.Name = "cbxMateria";
             this.cbxMateria.Size = new System.Drawing.Size(229, 41);
             this.cbxMateria.TabIndex = 4;
@@ -124,13 +129,16 @@ namespace PruebaConectarAccess
             // 
             // btnCerrarSesion
             // 
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.BackgroundImage")));
-            this.btnCerrarSesion.Location = new System.Drawing.Point(1148, 20);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(1165, 23);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(151, 63);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(158, 63);
             this.btnCerrarSesion.TabIndex = 5;
-            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // lblQueEs
@@ -139,10 +147,10 @@ namespace PruebaConectarAccess
             this.lblQueEs.BackColor = System.Drawing.Color.White;
             this.lblQueEs.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQueEs.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblQueEs.Location = new System.Drawing.Point(104, 245);
+            this.lblQueEs.Location = new System.Drawing.Point(39, 268);
             this.lblQueEs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQueEs.Name = "lblQueEs";
-            this.lblQueEs.Size = new System.Drawing.Size(126, 45);
+            this.lblQueEs.Size = new System.Drawing.Size(124, 45);
             this.lblQueEs.TabIndex = 6;
             this.lblQueEs.Text = "¿Que Es?";
             // 
@@ -162,14 +170,14 @@ namespace PruebaConectarAccess
             // publicationsPanel
             // 
             this.publicationsPanel.AutoScroll = true;
+            this.publicationsPanel.BackColor = System.Drawing.SystemColors.Control;
             this.publicationsPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("publicationsPanel.BackgroundImage")));
             this.publicationsPanel.Controls.Add(this.vScrollBar1);
-            this.publicationsPanel.Location = new System.Drawing.Point(388, 105);
-            this.publicationsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.publicationsPanel.Location = new System.Drawing.Point(321, 97);
+            this.publicationsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.publicationsPanel.Name = "publicationsPanel";
-            this.publicationsPanel.Size = new System.Drawing.Size(911, 585);
+            this.publicationsPanel.Size = new System.Drawing.Size(990, 588);
             this.publicationsPanel.TabIndex = 10;
-
             // 
             // vScrollBar1
             // 
@@ -201,7 +209,7 @@ namespace PruebaConectarAccess
             "Rosa",
             "Transparente",
             "No Importa"});
-            this.cbxColor.Location = new System.Drawing.Point(74, 447);
+            this.cbxColor.Location = new System.Drawing.Point(47, 447);
             this.cbxColor.Name = "cbxColor";
             this.cbxColor.Size = new System.Drawing.Size(229, 39);
             this.cbxColor.TabIndex = 11;
@@ -213,20 +221,20 @@ namespace PruebaConectarAccess
             this.lbQueColor.BackColor = System.Drawing.Color.White;
             this.lbQueColor.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbQueColor.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lbQueColor.Location = new System.Drawing.Point(72, 398);
+            this.lbQueColor.Location = new System.Drawing.Point(39, 399);
             this.lbQueColor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbQueColor.Name = "lbQueColor";
-            this.lbQueColor.Size = new System.Drawing.Size(231, 45);
+            this.lbQueColor.Size = new System.Drawing.Size(225, 45);
             this.lbQueColor.TabIndex = 12;
             this.lbQueColor.Text = "¿De que color es?";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(49, 105);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 91);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(276, 585);
+            this.pictureBox1.Size = new System.Drawing.Size(276, 602);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
@@ -234,11 +242,21 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(112, 131);
+            this.pictureBox2.Location = new System.Drawing.Point(95, 142);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(116, 101);
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(309, 91);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1014, 602);
+            this.pictureBox3.TabIndex = 15;
+            this.pictureBox3.TabStop = false;
             // 
             // Publicaciones
             // 
@@ -258,14 +276,16 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.cbxMaterial);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Publicaciones";
             this.Text = "Publicaciones";
             this.Load += new System.EventHandler(this.Publicaciones_Load);
             this.publicationsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,5 +305,6 @@ namespace PruebaConectarAccess
         private Label lbQueColor;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }
