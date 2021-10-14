@@ -117,6 +117,8 @@ namespace PruebaConectarAccess
             // 
             this.btnCambiarPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCambiarPassword.BackgroundImage")));
             this.btnCambiarPassword.FlatAppearance.BorderSize = 0;
+            this.btnCambiarPassword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnCambiarPassword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnCambiarPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarPassword.Location = new System.Drawing.Point(537, 589);
             this.btnCambiarPassword.Margin = new System.Windows.Forms.Padding(2);
@@ -164,6 +166,8 @@ namespace PruebaConectarAccess
             this.btnAtras.BackColor = System.Drawing.Color.Transparent;
             this.btnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtras.BackgroundImage")));
             this.btnAtras.FlatAppearance.BorderSize = 0;
+            this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtras.Location = new System.Drawing.Point(40, 634);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
@@ -175,6 +179,7 @@ namespace PruebaConectarAccess
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(419, 21);
             this.pictureBox1.Name = "pictureBox1";

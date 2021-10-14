@@ -65,6 +65,8 @@ namespace PruebaConectarAccess
             // 
             this.btnRecuperarContra.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRecuperarContra.BackgroundImage")));
             this.btnRecuperarContra.FlatAppearance.BorderSize = 0;
+            this.btnRecuperarContra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnRecuperarContra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnRecuperarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecuperarContra.Location = new System.Drawing.Point(540, 423);
             this.btnRecuperarContra.Name = "btnRecuperarContra";
@@ -80,7 +82,7 @@ namespace PruebaConectarAccess
             this.btnAtras.FlatAppearance.BorderSize = 0;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtras.Location = new System.Drawing.Point(49, 648);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(134, 55);
             this.btnAtras.TabIndex = 3;
@@ -89,6 +91,7 @@ namespace PruebaConectarAccess
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(398, 62);
             this.pictureBox1.Name = "pictureBox1";

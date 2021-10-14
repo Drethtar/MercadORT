@@ -62,6 +62,8 @@
             this.btnInsertarDatos.BackColor = System.Drawing.Color.White;
             this.btnInsertarDatos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInsertarDatos.BackgroundImage")));
             this.btnInsertarDatos.FlatAppearance.BorderSize = 0;
+            this.btnInsertarDatos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnInsertarDatos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnInsertarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsertarDatos.Location = new System.Drawing.Point(583, 523);
             this.btnInsertarDatos.Margin = new System.Windows.Forms.Padding(0);
@@ -132,7 +134,7 @@
             "4to",
             "5to"});
             this.cbxCurso.Location = new System.Drawing.Point(780, 292);
-            this.cbxCurso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxCurso.Margin = new System.Windows.Forms.Padding(2);
             this.cbxCurso.Name = "cbxCurso";
             this.cbxCurso.Size = new System.Drawing.Size(211, 53);
             this.cbxCurso.TabIndex = 5;
@@ -145,7 +147,7 @@
             this.cbxOrientacion.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxOrientacion.FormattingEnabled = true;
             this.cbxOrientacion.Location = new System.Drawing.Point(780, 360);
-            this.cbxOrientacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxOrientacion.Margin = new System.Windows.Forms.Padding(2);
             this.cbxOrientacion.Name = "cbxOrientacion";
             this.cbxOrientacion.Size = new System.Drawing.Size(211, 53);
             this.cbxOrientacion.TabIndex = 6;
@@ -159,7 +161,7 @@
             this.cbxLetra.FormattingEnabled = true;
             this.cbxLetra.ItemHeight = 45;
             this.cbxLetra.Location = new System.Drawing.Point(780, 426);
-            this.cbxLetra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxLetra.Margin = new System.Windows.Forms.Padding(2);
             this.cbxLetra.Name = "cbxLetra";
             this.cbxLetra.Size = new System.Drawing.Size(211, 53);
             this.cbxLetra.TabIndex = 7;
@@ -171,9 +173,11 @@
             this.btnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtras.BackgroundImage")));
             this.btnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAtras.FlatAppearance.BorderSize = 0;
+            this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtras.Location = new System.Drawing.Point(38, 651);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(134, 55);
             this.btnAtras.TabIndex = 17;
@@ -183,6 +187,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(414, 40);
             this.pictureBox1.Name = "pictureBox1";
