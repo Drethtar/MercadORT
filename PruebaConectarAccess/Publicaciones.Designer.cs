@@ -154,7 +154,7 @@ namespace PruebaConectarAccess
             this.lblQueEs.Location = new System.Drawing.Point(39, 268);
             this.lblQueEs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQueEs.Name = "lblQueEs";
-            this.lblQueEs.Size = new System.Drawing.Size(124, 45);
+            this.lblQueEs.Size = new System.Drawing.Size(126, 45);
             this.lblQueEs.TabIndex = 6;
             this.lblQueEs.Text = "¿Que Es?";
             // 
@@ -194,7 +194,7 @@ namespace PruebaConectarAccess
             // 
             this.cbxColor.BackColor = System.Drawing.Color.LightGray;
             this.cbxColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbxColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxColor.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxColor.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cbxColor.FormattingEnabled = true;
             this.cbxColor.Items.AddRange(new object[] {
@@ -213,9 +213,9 @@ namespace PruebaConectarAccess
             "Rosa",
             "Transparente",
             "No Importa"});
-            this.cbxColor.Location = new System.Drawing.Point(47, 447);
+            this.cbxColor.Location = new System.Drawing.Point(47, 445);
             this.cbxColor.Name = "cbxColor";
-            this.cbxColor.Size = new System.Drawing.Size(229, 39);
+            this.cbxColor.Size = new System.Drawing.Size(229, 41);
             this.cbxColor.TabIndex = 11;
             this.cbxColor.SelectedIndexChanged += new System.EventHandler(this.cbxColor_SelectedIndexChanged);
             // 
@@ -228,7 +228,7 @@ namespace PruebaConectarAccess
             this.lbQueColor.Location = new System.Drawing.Point(39, 399);
             this.lbQueColor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbQueColor.Name = "lbQueColor";
-            this.lbQueColor.Size = new System.Drawing.Size(225, 45);
+            this.lbQueColor.Size = new System.Drawing.Size(231, 45);
             this.lbQueColor.TabIndex = 12;
             this.lbQueColor.Text = "¿De que color es?";
             // 
