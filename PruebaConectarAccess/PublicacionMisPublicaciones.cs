@@ -117,6 +117,8 @@ namespace PruebaConectarAccess
                 new ComprarOVender().ShowDialog();
                 this.Show();
             }
+
+            
         }
 
 

@@ -35,8 +35,11 @@ namespace PruebaConectarAccess
         {
             this.WindowState = FormWindowState.Maximized;
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=MercadOrt.accdb";
+
             
         }
+
+        bool SeVeLaContra = false;
 
         private void llCrearCuenta_Click(object sender, EventArgs e)
         {
@@ -216,6 +219,24 @@ namespace PruebaConectarAccess
             }
         }
 
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            if (SeVeLaContra == false)
+            {
+                txtContra.PasswordChar = (char)0;
 
+                pictureBox8.Image = Image.FromFile(@"C:\Users\Bauty Garcia\OneDrive\Escritorio\Colegio\Zoom\OJOAbierto.png");
+
+                SeVeLaContra = true;
+            }
+            else if (SeVeLaContra == true)
+            {
+                txtContra.PasswordChar = '*';
+
+                pictureBox8.Image = Image.FromFile(@"C:\Users\Bauty Garcia\OneDrive\Escritorio\Colegio\Zoom\hidden.png");
+
+                SeVeLaContra = false;
+            }
+        }
     }
 }
