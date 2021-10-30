@@ -231,24 +231,5 @@ namespace PruebaConectarAccess
             }
         }
 
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-            if (SeVeLaContra == false)
-            {
-                txtNuevaPassword.PasswordChar = (char)0;
-
-                pictureBox14.Image = Image.FromFile(@"C:\Users\Bauty Garcia\OneDrive\Escritorio\Colegio\Zoom\OJOAbierto.png");
-
-                SeVeLaContra = true;
-            }
-            else if (SeVeLaContra == true)
-            {
-                txtNuevaPassword.PasswordChar = '*';
-
-                pictureBox14.Image = Image.FromFile(@"C:\Users\Bauty Garcia\OneDrive\Escritorio\Colegio\Zoom\hidden.png");
-
-                SeVeLaContra = false;
-            }
-        }
     }
 }

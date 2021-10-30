@@ -50,7 +50,7 @@ namespace PruebaConectarAccess
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -64,7 +64,6 @@ namespace PruebaConectarAccess
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
             // txtContraOlvidada1
@@ -156,7 +155,7 @@ namespace PruebaConectarAccess
             this.txtNuevaPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNuevaPassword.Multiline = true;
             this.txtNuevaPassword.Name = "txtNuevaPassword";
-            this.txtNuevaPassword.Size = new System.Drawing.Size(290, 65);
+            this.txtNuevaPassword.Size = new System.Drawing.Size(347, 65);
             this.txtNuevaPassword.TabIndex = 6;
             this.txtNuevaPassword.Text = "Contraseña nueva";
             this.txtNuevaPassword.Enter += new System.EventHandler(this.txtNuevaPassword_Enter);
@@ -184,7 +183,7 @@ namespace PruebaConectarAccess
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(559, 26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(719, 814);
             this.pictureBox1.TabIndex = 12;
@@ -195,7 +194,7 @@ namespace PruebaConectarAccess
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.Location = new System.Drawing.Point(844, 54);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(149, 126);
             this.pictureBox2.TabIndex = 13;
@@ -206,7 +205,7 @@ namespace PruebaConectarAccess
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.Location = new System.Drawing.Point(680, 198);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(480, 39);
             this.pictureBox3.TabIndex = 14;
@@ -216,7 +215,7 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox4.Location = new System.Drawing.Point(716, 265);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(77, 65);
             this.pictureBox4.TabIndex = 15;
@@ -227,7 +226,7 @@ namespace PruebaConectarAccess
             this.pictureBox5.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.Location = new System.Drawing.Point(743, 282);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(28, 30);
             this.pictureBox5.TabIndex = 16;
@@ -237,7 +236,7 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox6.Location = new System.Drawing.Point(716, 353);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(77, 65);
             this.pictureBox6.TabIndex = 17;
@@ -248,7 +247,7 @@ namespace PruebaConectarAccess
             this.pictureBox7.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.Location = new System.Drawing.Point(733, 363);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(47, 47);
             this.pictureBox7.TabIndex = 18;
@@ -258,7 +257,7 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox8.Location = new System.Drawing.Point(716, 442);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(77, 65);
             this.pictureBox8.TabIndex = 19;
@@ -269,7 +268,7 @@ namespace PruebaConectarAccess
             this.pictureBox9.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
             this.pictureBox9.Location = new System.Drawing.Point(744, 462);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(27, 30);
             this.pictureBox9.TabIndex = 20;
@@ -279,7 +278,7 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox10.Location = new System.Drawing.Point(716, 530);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(77, 65);
             this.pictureBox10.TabIndex = 21;
@@ -290,7 +289,7 @@ namespace PruebaConectarAccess
             this.pictureBox11.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
             this.pictureBox11.Location = new System.Drawing.Point(744, 548);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(27, 30);
             this.pictureBox11.TabIndex = 22;
@@ -300,7 +299,7 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox12.Location = new System.Drawing.Point(716, 614);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(77, 65);
             this.pictureBox12.TabIndex = 23;
@@ -311,22 +310,18 @@ namespace PruebaConectarAccess
             this.pictureBox13.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox13.BackgroundImage")));
             this.pictureBox13.Location = new System.Drawing.Point(744, 633);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(27, 30);
             this.pictureBox13.TabIndex = 24;
             this.pictureBox13.TabStop = false;
             // 
-            // pictureBox14
+            // textBox1
             // 
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(1081, 614);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(59, 65);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 28;
-            this.pictureBox14.TabStop = false;
-            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
+            this.textBox1.Location = new System.Drawing.Point(53, 882);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 29;
             // 
             // CambiarMiPassword
             // 
@@ -334,7 +329,7 @@ namespace PruebaConectarAccess
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1800, 897);
-            this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
@@ -373,7 +368,6 @@ namespace PruebaConectarAccess
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,6 +395,6 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

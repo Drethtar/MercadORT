@@ -357,24 +357,10 @@ namespace PruebaConectarAccess
             }
         }
 
-        private void pictureBox10_Click(object sender, EventArgs e)
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (SeVeLaContra == false)
-            {
-                txtContra.PasswordChar = (char)0;
 
-                pictureBox10.Image = Image.FromFile(@"C:\Users\Bauty Garcia\OneDrive\Escritorio\Colegio\Zoom\OJOAbierto.png");
-
-                SeVeLaContra = true;
-            }
-            else if (SeVeLaContra == true)
-            {
-                txtContra.PasswordChar = '*';
-
-                pictureBox10.Image = Image.FromFile(@"C:\Users\Bauty Garcia\OneDrive\Escritorio\Colegio\Zoom\hidden.png");
-
-                SeVeLaContra = false;
-            }
         }
     }
 }
