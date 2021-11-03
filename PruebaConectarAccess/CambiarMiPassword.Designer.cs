@@ -72,7 +72,7 @@ namespace PruebaConectarAccess
             this.txtContraOlvidada1.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraOlvidada1.ForeColor = System.Drawing.Color.DarkGray;
             this.txtContraOlvidada1.Location = new System.Drawing.Point(595, 359);
-            this.txtContraOlvidada1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContraOlvidada1.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraOlvidada1.Multiline = true;
             this.txtContraOlvidada1.Name = "txtContraOlvidada1";
             this.txtContraOlvidada1.Size = new System.Drawing.Size(260, 53);
@@ -88,7 +88,7 @@ namespace PruebaConectarAccess
             this.txtContraOlvidada2.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraOlvidada2.ForeColor = System.Drawing.Color.DarkGray;
             this.txtContraOlvidada2.Location = new System.Drawing.Point(595, 431);
-            this.txtContraOlvidada2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContraOlvidada2.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraOlvidada2.Multiline = true;
             this.txtContraOlvidada2.Name = "txtContraOlvidada2";
             this.txtContraOlvidada2.Size = new System.Drawing.Size(260, 53);
@@ -104,7 +104,7 @@ namespace PruebaConectarAccess
             this.txtNombrePerdiPassword.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombrePerdiPassword.ForeColor = System.Drawing.Color.DarkGray;
             this.txtNombrePerdiPassword.Location = new System.Drawing.Point(595, 215);
-            this.txtNombrePerdiPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombrePerdiPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombrePerdiPassword.Multiline = true;
             this.txtNombrePerdiPassword.Name = "txtNombrePerdiPassword";
             this.txtNombrePerdiPassword.Size = new System.Drawing.Size(260, 53);
@@ -116,12 +116,13 @@ namespace PruebaConectarAccess
             // btnCambiarPassword
             // 
             this.btnCambiarPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCambiarPassword.BackgroundImage")));
+            this.btnCambiarPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCambiarPassword.FlatAppearance.BorderSize = 0;
             this.btnCambiarPassword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnCambiarPassword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnCambiarPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarPassword.Location = new System.Drawing.Point(537, 589);
-            this.btnCambiarPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCambiarPassword.Margin = new System.Windows.Forms.Padding(2);
             this.btnCambiarPassword.Name = "btnCambiarPassword";
             this.btnCambiarPassword.Size = new System.Drawing.Size(318, 53);
             this.btnCambiarPassword.TabIndex = 3;
@@ -135,7 +136,7 @@ namespace PruebaConectarAccess
             this.txtMailPerdiPassword.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMailPerdiPassword.ForeColor = System.Drawing.Color.DarkGray;
             this.txtMailPerdiPassword.Location = new System.Drawing.Point(595, 287);
-            this.txtMailPerdiPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMailPerdiPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtMailPerdiPassword.Multiline = true;
             this.txtMailPerdiPassword.Name = "txtMailPerdiPassword";
             this.txtMailPerdiPassword.Size = new System.Drawing.Size(260, 53);
@@ -151,7 +152,7 @@ namespace PruebaConectarAccess
             this.txtNuevaPassword.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNuevaPassword.ForeColor = System.Drawing.Color.DarkGray;
             this.txtNuevaPassword.Location = new System.Drawing.Point(595, 499);
-            this.txtNuevaPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNuevaPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtNuevaPassword.Multiline = true;
             this.txtNuevaPassword.Name = "txtNuevaPassword";
             this.txtNuevaPassword.Size = new System.Drawing.Size(260, 53);
@@ -165,12 +166,13 @@ namespace PruebaConectarAccess
             // 
             this.btnAtras.BackColor = System.Drawing.Color.Transparent;
             this.btnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtras.BackgroundImage")));
+            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAtras.FlatAppearance.BorderSize = 0;
             this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtras.Location = new System.Drawing.Point(40, 634);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(134, 55);
             this.btnAtras.TabIndex = 11;
@@ -329,7 +331,7 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.txtContraOlvidada1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CambiarMiPassword";
             this.Text = "OlvideMiPassword";
             this.Load += new System.EventHandler(this.OlvideMiPassword_Load);

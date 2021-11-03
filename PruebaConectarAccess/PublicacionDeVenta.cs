@@ -289,5 +289,7 @@ namespace PruebaConectarAccess
                 txtDescLibro.ForeColor = Color.Black;
             }
         }
+
+
     }
 }

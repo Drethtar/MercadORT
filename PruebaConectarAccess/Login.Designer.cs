@@ -58,7 +58,7 @@
             this.txtUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.DarkGray;
             this.txtUsuario.Location = new System.Drawing.Point(557, 259);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Multiline = true;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(258, 54);
@@ -74,7 +74,7 @@
             this.txtContra.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContra.ForeColor = System.Drawing.Color.DarkGray;
             this.txtContra.Location = new System.Drawing.Point(557, 331);
-            this.txtContra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(2);
             this.txtContra.Multiline = true;
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(257, 54);
@@ -93,9 +93,9 @@
             this.llCrearCuenta.Location = new System.Drawing.Point(555, 485);
             this.llCrearCuenta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llCrearCuenta.Name = "llCrearCuenta";
-            this.llCrearCuenta.Size = new System.Drawing.Size(206, 18);
+            this.llCrearCuenta.Size = new System.Drawing.Size(203, 18);
             this.llCrearCuenta.TabIndex = 6;
-            this.llCrearCuenta.Text = "¿No tienes cuenta? Registrate";
+            this.llCrearCuenta.Text = "¿No tenes cuenta? Registrate";
             this.llCrearCuenta.Click += new System.EventHandler(this.llCrearCuenta_Click);
             this.llCrearCuenta.MouseLeave += new System.EventHandler(this.llCrearCuenta_MouseLeave);
             this.llCrearCuenta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.llCrearCuenta_MouseMove);
@@ -105,6 +105,7 @@
             this.btnIniciarSesion.BackColor = System.Drawing.Color.Transparent;
             this.btnIniciarSesion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIniciarSesion.BackgroundImage")));
             this.btnIniciarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciarSesion.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnIniciarSesion.FlatAppearance.BorderSize = 0;
             this.btnIniciarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;

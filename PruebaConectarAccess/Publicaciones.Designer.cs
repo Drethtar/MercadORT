@@ -40,7 +40,6 @@ namespace PruebaConectarAccess
             this.cbxMaterial = new System.Windows.Forms.ComboBox();
             this.cbxMateria = new System.Windows.Forms.ComboBox();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.lblQueEs = new System.Windows.Forms.Label();
             this.lblMateria = new System.Windows.Forms.Label();
             this.publicationsPanel = new System.Windows.Forms.Panel();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
@@ -49,6 +48,7 @@ namespace PruebaConectarAccess
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblQueEs = new System.Windows.Forms.Label();
             this.publicationsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,6 +59,7 @@ namespace PruebaConectarAccess
             // 
             this.btnAtras.BackColor = System.Drawing.Color.Transparent;
             this.btnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtras.BackgroundImage")));
+            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAtras.FlatAppearance.BorderSize = 0;
             this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -133,6 +134,7 @@ namespace PruebaConectarAccess
             // 
             this.btnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.BackgroundImage")));
+            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
             this.btnCerrarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -144,19 +146,6 @@ namespace PruebaConectarAccess
             this.btnCerrarSesion.TabIndex = 5;
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
-            // 
-            // lblQueEs
-            // 
-            this.lblQueEs.AutoSize = true;
-            this.lblQueEs.BackColor = System.Drawing.Color.White;
-            this.lblQueEs.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQueEs.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblQueEs.Location = new System.Drawing.Point(39, 268);
-            this.lblQueEs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblQueEs.Name = "lblQueEs";
-            this.lblQueEs.Size = new System.Drawing.Size(126, 45);
-            this.lblQueEs.TabIndex = 6;
-            this.lblQueEs.Text = "¿Que Es?";
             // 
             // lblMateria
             // 
@@ -230,7 +219,7 @@ namespace PruebaConectarAccess
             this.lbQueColor.Name = "lbQueColor";
             this.lbQueColor.Size = new System.Drawing.Size(231, 45);
             this.lbQueColor.TabIndex = 12;
-            this.lbQueColor.Text = "¿De que color es?";
+            this.lbQueColor.Text = "¿De qué color es?";
             // 
             // pictureBox1
             // 
@@ -261,6 +250,19 @@ namespace PruebaConectarAccess
             this.pictureBox3.Size = new System.Drawing.Size(1014, 602);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
+            // 
+            // lblQueEs
+            // 
+            this.lblQueEs.AutoSize = true;
+            this.lblQueEs.BackColor = System.Drawing.Color.White;
+            this.lblQueEs.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQueEs.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblQueEs.Location = new System.Drawing.Point(39, 268);
+            this.lblQueEs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblQueEs.Name = "lblQueEs";
+            this.lblQueEs.Size = new System.Drawing.Size(126, 45);
+            this.lblQueEs.TabIndex = 6;
+            this.lblQueEs.Text = "¿Qué Es?";
             // 
             // Publicaciones
             // 
@@ -301,7 +303,6 @@ namespace PruebaConectarAccess
         private System.Windows.Forms.ComboBox cbxMaterial;
         private System.Windows.Forms.ComboBox cbxMateria;
         private System.Windows.Forms.Button btnCerrarSesion;
-        private System.Windows.Forms.Label lblQueEs;
         private System.Windows.Forms.Label lblMateria;
         private System.Windows.Forms.Panel publicationsPanel;
         private VScrollBar vScrollBar1;
@@ -310,5 +311,6 @@ namespace PruebaConectarAccess
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private Label lblQueEs;
     }
 }

@@ -71,6 +71,9 @@ namespace PruebaConectarAccess
             // 
             // btnBorrar
             // 
+            this.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBorrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.Location = new System.Drawing.Point(786, 52);

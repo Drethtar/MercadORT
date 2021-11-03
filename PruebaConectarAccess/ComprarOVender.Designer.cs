@@ -46,6 +46,7 @@ namespace PruebaConectarAccess
             // 
             this.btnComprar.BackColor = System.Drawing.Color.White;
             this.btnComprar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnComprar.BackgroundImage")));
+            this.btnComprar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnComprar.FlatAppearance.BorderSize = 0;
             this.btnComprar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnComprar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
@@ -62,6 +63,7 @@ namespace PruebaConectarAccess
             // 
             this.btnVender.BackColor = System.Drawing.Color.White;
             this.btnVender.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVender.BackgroundImage")));
+            this.btnVender.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVender.FlatAppearance.BorderSize = 0;
             this.btnVender.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnVender.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
@@ -79,6 +81,7 @@ namespace PruebaConectarAccess
             // 
             this.btnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.BackgroundImage")));
+            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
             this.btnCerrarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -95,6 +98,7 @@ namespace PruebaConectarAccess
             // 
             this.btnMisPublicaciones.BackColor = System.Drawing.Color.White;
             this.btnMisPublicaciones.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMisPublicaciones.BackgroundImage")));
+            this.btnMisPublicaciones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMisPublicaciones.FlatAppearance.BorderSize = 0;
             this.btnMisPublicaciones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnMisPublicaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
@@ -135,9 +139,9 @@ namespace PruebaConectarAccess
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(578, 224);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 45);
+            this.label1.Size = new System.Drawing.Size(259, 45);
             this.label1.TabIndex = 8;
-            this.label1.Text = "¿Que queres hacer?";
+            this.label1.Text = "¿Qué queres hacer?";
             // 
             // llNombreUsuario
             // 
