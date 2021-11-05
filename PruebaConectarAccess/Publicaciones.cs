@@ -62,6 +62,8 @@ namespace PruebaConectarAccess
 
             while (reader.Read())
             {
+                MessageBox.Show(reader["Foto"].ToString());
+
                 PublicationItem publication = new PublicationItem();
                 publication.Title = reader["TituloLibro"].ToString();
                 publication.Description = reader["DescripcionLibro"].ToString();
@@ -69,6 +71,7 @@ namespace PruebaConectarAccess
                 publication.IdUsuario = reader["IDUsuario"].ToString();
                 publication.QueEs = "Libro";
                 publication.Dock = DockStyle.Top;
+                //publication.ImagenPublicacion = reader["Foto"];
                 publicationsPanel.Controls.Add(publication);
             }
 

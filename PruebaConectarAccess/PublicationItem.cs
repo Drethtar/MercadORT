@@ -59,7 +59,12 @@ namespace PruebaConectarAccess
             set { lblQueEs.Text = value; }
         }
 
-
+        
+        public Image ImagenPublicacion
+        {
+            get { return pbFotoPublicacion.Image; }
+            set { pbFotoPublicacion.Image = value; }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -226,6 +231,16 @@ namespace PruebaConectarAccess
                 MessageBox.Show("Error Probablemente sea porque tu direccion de correo electronico no es valida. Error: " + ex);
             }
 
+
+        }
+
+        private void lblQueEs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbFotoPublicacion_Click(object sender, EventArgs e)
+        {
 
         }
     }

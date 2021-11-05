@@ -131,9 +131,9 @@ namespace PruebaConectarAccess
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
 
-                command.CommandText = "insert into Libros (TituloLibro,MateriaLibro,DescripcionLibro,PrecioLibro) " +
+                command.CommandText = "insert into Libros (TituloLibro,MateriaLibro,DescripcionLibro,PrecioLibro,Foto) " +
                 "values ('" + txtTituloLibro.Text + "','" + cbxMateriaLibro.Text + "','"
-                + txtDescLibro.Text + "','" + numPrecioLibro.Text + "')";
+                + txtDescLibro.Text + "','" + numPrecioLibro.Text + "','"+ pbImagen.Image +"')";
 
                 command.ExecuteNonQuery();
 
@@ -290,6 +290,21 @@ namespace PruebaConectarAccess
             }
         }
 
+        private void btnExaminar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog getImage = new OpenFileDialog();
+            getImage.InitialDirectory = "C:\\";
+            getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*.jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
 
+            if (getImage.ShowDialog() == DialogResult.OK)
+            {
+                pbImagen.ImageLocation = getImage.FileName;
+                //txtRutaImagen.Text = getImage.FileName;
+            }
+            else
+            {
+                MessageBox.Show("No se selecciono ninguna Imagen","Sin Seleccion",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }

@@ -97,7 +97,7 @@ namespace PruebaConectarAccess
             }
         }
 
-        bool SeVeLaContra = false;
+        
         private void btnCambiarPassword_Click(object sender, EventArgs e)
         {
             CambiarContra();

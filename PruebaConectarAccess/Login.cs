@@ -39,7 +39,7 @@ namespace PruebaConectarAccess
             
         }
 
-        bool SeVeLaContra = false;
+        
 
         private void llCrearCuenta_Click(object sender, EventArgs e)
         {

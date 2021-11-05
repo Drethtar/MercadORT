@@ -173,5 +173,8 @@
   <ItemGroup>
     <None Include="Resources\Rectangle 108.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malu enojado.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

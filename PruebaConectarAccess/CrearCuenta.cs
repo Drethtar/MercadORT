@@ -47,8 +47,6 @@ namespace PruebaConectarAccess
             }
 
         }
-
-        bool SeVeLaContra = false;
         private void InsertarDatosParaCuenta()
         {
             try
