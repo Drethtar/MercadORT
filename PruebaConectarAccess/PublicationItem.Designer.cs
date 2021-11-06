@@ -44,9 +44,9 @@ namespace PruebaConectarAccess
             // 
             this.lblTitle.BackColor = System.Drawing.Color.White;
             this.lblTitle.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(189, 20);
+            this.lblTitle.Location = new System.Drawing.Point(212, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(848, 46);
+            this.lblTitle.Size = new System.Drawing.Size(825, 46);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Libros";
             this.lblTitle.Click += new System.EventHandler(this.label1_Click);
@@ -55,9 +55,9 @@ namespace PruebaConectarAccess
             // 
             this.lblDescription.BackColor = System.Drawing.Color.White;
             this.lblDescription.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(197, 73);
+            this.lblDescription.Location = new System.Drawing.Point(220, 73);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(831, 46);
+            this.lblDescription.Size = new System.Drawing.Size(808, 46);
             this.lblDescription.TabIndex = 1;
             this.lblDescription.Text = "label2";
             this.lblDescription.Click += new System.EventHandler(this.description_Click);
@@ -102,9 +102,9 @@ namespace PruebaConectarAccess
             // 
             // pbFotoPublicacion
             // 
-            this.pbFotoPublicacion.Location = new System.Drawing.Point(3, 3);
+            this.pbFotoPublicacion.Location = new System.Drawing.Point(15, 20);
             this.pbFotoPublicacion.Name = "pbFotoPublicacion";
-            this.pbFotoPublicacion.Size = new System.Drawing.Size(188, 130);
+            this.pbFotoPublicacion.Size = new System.Drawing.Size(199, 139);
             this.pbFotoPublicacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFotoPublicacion.TabIndex = 7;
             this.pbFotoPublicacion.TabStop = false;
@@ -114,10 +114,10 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox2.BackgroundImage = global::PruebaConectarAccess.Properties.Resources.Rectangle_108;
-            this.pictureBox2.Location = new System.Drawing.Point(40, 140);
+            this.pictureBox2.Location = new System.Drawing.Point(15, 172);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1227, 4);
+            this.pictureBox2.Size = new System.Drawing.Size(1280, 4);
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
@@ -135,7 +135,7 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.lblTitle);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PublicationItem";
-            this.Size = new System.Drawing.Size(1319, 145);
+            this.Size = new System.Drawing.Size(1319, 180);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPublicacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

@@ -43,8 +43,8 @@ namespace PruebaConectarAccess
             // 
             // lblPrecioApunte
             // 
-            this.lblPrecioApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioApunte.Location = new System.Drawing.Point(1043, 18);
+            this.lblPrecioApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F);
+            this.lblPrecioApunte.Location = new System.Drawing.Point(1040, 26);
             this.lblPrecioApunte.Name = "lblPrecioApunte";
             this.lblPrecioApunte.Size = new System.Drawing.Size(172, 46);
             this.lblPrecioApunte.TabIndex = 5;
@@ -53,9 +53,9 @@ namespace PruebaConectarAccess
             // lblDescriptionApunte
             // 
             this.lblDescriptionApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescriptionApunte.Location = new System.Drawing.Point(160, 64);
+            this.lblDescriptionApunte.Location = new System.Drawing.Point(220, 73);
             this.lblDescriptionApunte.Name = "lblDescriptionApunte";
-            this.lblDescriptionApunte.Size = new System.Drawing.Size(853, 54);
+            this.lblDescriptionApunte.Size = new System.Drawing.Size(813, 54);
             this.lblDescriptionApunte.TabIndex = 4;
             this.lblDescriptionApunte.Text = "label2";
             this.lblDescriptionApunte.Click += new System.EventHandler(this.lblDescriptionApunte_Click);
@@ -63,7 +63,7 @@ namespace PruebaConectarAccess
             // lblTitleApunte
             // 
             this.lblTitleApunte.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleApunte.Location = new System.Drawing.Point(152, 18);
+            this.lblTitleApunte.Location = new System.Drawing.Point(212, 20);
             this.lblTitleApunte.Name = "lblTitleApunte";
             this.lblTitleApunte.Size = new System.Drawing.Size(791, 46);
             this.lblTitleApunte.TabIndex = 3;
@@ -76,8 +76,8 @@ namespace PruebaConectarAccess
             this.btnBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.Location = new System.Drawing.Point(1048, 64);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBorrar.Location = new System.Drawing.Point(1041, 71);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(132, 53);
             this.btnBorrar.TabIndex = 6;
@@ -109,18 +109,18 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox2.BackgroundImage = global::PruebaConectarAccess.Properties.Resources.Rectangle_108;
-            this.pictureBox2.Location = new System.Drawing.Point(45, 122);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(18, 172);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1227, 4);
+            this.pictureBox2.Size = new System.Drawing.Size(1280, 4);
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
             // pbFotoPublicacion
             // 
-            this.pbFotoPublicacion.Location = new System.Drawing.Point(3, 4);
+            this.pbFotoPublicacion.Location = new System.Drawing.Point(15, 20);
             this.pbFotoPublicacion.Name = "pbFotoPublicacion";
-            this.pbFotoPublicacion.Size = new System.Drawing.Size(151, 114);
+            this.pbFotoPublicacion.Size = new System.Drawing.Size(199, 139);
             this.pbFotoPublicacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFotoPublicacion.TabIndex = 10;
             this.pbFotoPublicacion.TabStop = false;
@@ -140,7 +140,7 @@ namespace PruebaConectarAccess
             this.Controls.Add(this.lblTitleApunte);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PublicacionMisPublicaciones";
-            this.Size = new System.Drawing.Size(1293, 126);
+            this.Size = new System.Drawing.Size(1319, 180);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPublicacion)).EndInit();
             this.ResumeLayout(false);
