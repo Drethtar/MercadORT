@@ -59,6 +59,12 @@ namespace PruebaConectarAccess
             set { lblQueEs.Text = value; }
         }
 
+        public Image ImagenPublicacion
+        {
+            get { return pbFotoPublicacion.Image; }
+            set { pbFotoPublicacion.Image = value; }
+        }
+
         private void btnBorrar_Click(object sender, EventArgs e)
         {
             if (lblQueEs.Text == "Libro")
@@ -121,6 +127,9 @@ namespace PruebaConectarAccess
             
         }
 
+        private void lblDescriptionApunte_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

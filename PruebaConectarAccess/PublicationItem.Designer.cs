@@ -44,9 +44,9 @@ namespace PruebaConectarAccess
             // 
             this.lblTitle.BackColor = System.Drawing.Color.White;
             this.lblTitle.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(105, 20);
+            this.lblTitle.Location = new System.Drawing.Point(189, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(932, 46);
+            this.lblTitle.Size = new System.Drawing.Size(848, 46);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Libros";
             this.lblTitle.Click += new System.EventHandler(this.label1_Click);
@@ -55,9 +55,9 @@ namespace PruebaConectarAccess
             // 
             this.lblDescription.BackColor = System.Drawing.Color.White;
             this.lblDescription.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(113, 73);
+            this.lblDescription.Location = new System.Drawing.Point(197, 73);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(915, 46);
+            this.lblDescription.Size = new System.Drawing.Size(831, 46);
             this.lblDescription.TabIndex = 1;
             this.lblDescription.Text = "label2";
             this.lblDescription.Click += new System.EventHandler(this.description_Click);
@@ -81,7 +81,7 @@ namespace PruebaConectarAccess
             this.btnQuieroComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuieroComprar.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuieroComprar.Location = new System.Drawing.Point(1041, 71);
-            this.btnQuieroComprar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuieroComprar.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuieroComprar.Name = "btnQuieroComprar";
             this.btnQuieroComprar.Size = new System.Drawing.Size(224, 46);
             this.btnQuieroComprar.TabIndex = 3;
@@ -104,7 +104,7 @@ namespace PruebaConectarAccess
             // 
             this.pbFotoPublicacion.Location = new System.Drawing.Point(3, 3);
             this.pbFotoPublicacion.Name = "pbFotoPublicacion";
-            this.pbFotoPublicacion.Size = new System.Drawing.Size(100, 130);
+            this.pbFotoPublicacion.Size = new System.Drawing.Size(188, 130);
             this.pbFotoPublicacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFotoPublicacion.TabIndex = 7;
             this.pbFotoPublicacion.TabStop = false;

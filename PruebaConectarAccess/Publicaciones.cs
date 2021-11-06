@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.IO;
 
 namespace PruebaConectarAccess
 {
@@ -33,6 +34,18 @@ namespace PruebaConectarAccess
             this.Show();
             new Publicaciones(); 
             this.Close();
+        }
+
+        public Image Base64ToImage(string base64String)
+        {
+            // Convert base 64 string to byte[]
+            byte[] imageBytes = Convert.FromBase64String(base64String);
+            // Convert byte[] to Image
+            using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+            {
+                Image image = Image.FromStream(ms, true);
+                return image;
+            }
         }
 
         private void Publicaciones_Load(object sender, EventArgs e)
@@ -62,7 +75,7 @@ namespace PruebaConectarAccess
 
             while (reader.Read())
             {
-                MessageBox.Show(reader["Foto"].ToString());
+                
 
                 PublicationItem publication = new PublicationItem();
                 publication.Title = reader["TituloLibro"].ToString();
@@ -71,7 +84,7 @@ namespace PruebaConectarAccess
                 publication.IdUsuario = reader["IDUsuario"].ToString();
                 publication.QueEs = "Libro";
                 publication.Dock = DockStyle.Top;
-                //publication.ImagenPublicacion = reader["Foto"];
+                publication.ImagenPublicacion = Base64ToImage(reader["Foto"].ToString());
                 publicationsPanel.Controls.Add(publication);
             }
 
@@ -95,6 +108,7 @@ namespace PruebaConectarAccess
                 publication.Description = reader["DescripcionApuntes"].ToString();
                 publication.Precio = reader["PrecioApuntes"].ToString() + "$";
                 publication.IdUsuario = reader["IDUsuario"].ToString();
+                publication.ImagenPublicacion = Base64ToImage(reader["Foto"].ToString());
                 publication.QueEs = "Apunte";
                 publication.Dock = DockStyle.Top;
                 publicationsPanel.Controls.Add(publication);
@@ -120,6 +134,7 @@ namespace PruebaConectarAccess
                 publication.Description = reader["DescripcionUtiles"].ToString();
                 publication.Precio = reader["PrecioUtiles"].ToString() + "$";
                 publication.IdUsuario = reader["IDUsuario"].ToString();
+                publication.ImagenPublicacion = Base64ToImage(reader["Foto"].ToString());
                 publication.QueEs = "Util";
                 publication.Dock = DockStyle.Top;
                 publicationsPanel.Controls.Add(publication);
@@ -191,6 +206,7 @@ namespace PruebaConectarAccess
                     publication.Description = LectorFiltroLibroMateria["DescripcionLibro"].ToString();
                     publication.Precio = LectorFiltroLibroMateria["PrecioLibro"].ToString() + "$";
                     publication.IdUsuario = LectorFiltroLibroMateria["IDUsuario"].ToString();
+                    publication.ImagenPublicacion = Base64ToImage(LectorFiltroLibroMateria["Foto"].ToString());
                     publication.QueEs = "Libro";
                     publication.Dock = DockStyle.Top;
                     publicationsPanel.Controls.Add(publication);
@@ -216,6 +232,7 @@ namespace PruebaConectarAccess
                     publication.Description = LectorFiltroApunteMateria["DescripcionApuntes"].ToString();
                     publication.Precio = LectorFiltroApunteMateria["PrecioApuntes"].ToString() + "$";
                     publication.IdUsuario = LectorFiltroApunteMateria["IDUsuario"].ToString();
+                    publication.ImagenPublicacion = Base64ToImage(LectorFiltroApunteMateria["Foto"].ToString());
                     publication.QueEs = "Apunte";
                     publication.Dock = DockStyle.Top;
                     publicationsPanel.Controls.Add(publication);
@@ -245,6 +262,7 @@ namespace PruebaConectarAccess
                     publication.Description = LectorFiltroUtilColor["DescripcionUtiles"].ToString();
                     publication.Precio = LectorFiltroUtilColor["PrecioUtiles"].ToString() + "$";
                     publication.IdUsuario = LectorFiltroUtilColor["IDUsuario"].ToString();
+                    publication.ImagenPublicacion = Base64ToImage(LectorFiltroUtilColor["Foto"].ToString());
                     publication.QueEs = "Util";
                     publication.Dock = DockStyle.Top;
                     publicationsPanel.Controls.Add(publication);

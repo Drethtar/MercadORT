@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.IO;
 
 namespace PruebaConectarAccess
 {
@@ -18,8 +19,12 @@ namespace PruebaConectarAccess
         {
             InitializeComponent();
         }
+
+        public string ImagenCargar = "";
         private void PublicacionDeVenta_Load(object sender, EventArgs e)
         {
+            
+
             llColorUtil.Hide(); cbxColorUtil.Hide(); //util
             llDescApunte.Hide(); txtDescApunte.Hide(); //apunte
             llDescLibro.Hide(); txtDescLibro.Hide(); //libro
@@ -121,7 +126,26 @@ namespace PruebaConectarAccess
         }
 
         private void btnPublicar_Click(object sender, EventArgs e)
-        {
+        {   
+            if (pbImagen.Image == null)
+            {
+                Image imagen;
+                pbImagen.Image = PruebaConectarAccess.Properties.Resources.SinImagen;
+                imagen = pbImagen.Image;
+                string base64()
+                {
+                    using (MemoryStream m = new MemoryStream())
+                    {
+                        imagen.Save(m, imagen.RawFormat);
+                        byte[] imageBytes = m.ToArray();
+                        string base64string = Convert.ToBase64String(imageBytes);
+                        return base64string;
+                    }
+                }
+
+                ImagenCargar = base64();
+            }
+
             if (cbxQueEs.Text == "Libro")
             {
 
@@ -133,7 +157,7 @@ namespace PruebaConectarAccess
 
                 command.CommandText = "insert into Libros (TituloLibro,MateriaLibro,DescripcionLibro,PrecioLibro,Foto) " +
                 "values ('" + txtTituloLibro.Text + "','" + cbxMateriaLibro.Text + "','"
-                + txtDescLibro.Text + "','" + numPrecioLibro.Text + "','"+ pbImagen.Image +"')";
+                + txtDescLibro.Text + "','" + numPrecioLibro.Text + "','"+ ImagenCargar +"')";
 
                 command.ExecuteNonQuery();
 
@@ -168,7 +192,7 @@ namespace PruebaConectarAccess
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
 
-                command.CommandText = "insert into Utiles (TituloUtiles,ColorUtiles,DescripcionUtiles,PrecioUtiles) " + "values ('" + txtTituloUtil.Text + "','" + cbxColorUtil.Text + "','" + txtDescUtil.Text + "','" + numPrecioUtil.Text + "')";
+                command.CommandText = "insert into Utiles (TituloUtiles,ColorUtiles,DescripcionUtiles,PrecioUtiles,Foto) " + "values ('" + txtTituloUtil.Text + "','" + cbxColorUtil.Text + "','" + txtDescUtil.Text + "','" + numPrecioUtil.Text + "','"+ ImagenCargar +"')";
 
                 command.ExecuteNonQuery();
 
@@ -204,9 +228,9 @@ namespace PruebaConectarAccess
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
 
-                command.CommandText = "insert into Apuntes (TituloApuntes,DescripcionApuntes,MateriaApuntes,PrecioApuntes,IDUsuario) " +
+                command.CommandText = "insert into Apuntes (TituloApuntes,DescripcionApuntes,MateriaApuntes,PrecioApuntes,IDUsuario,Foto) " +
                 "values ('" + txtTituloApunte.Text + "','" + txtDescApunte.Text + "','" + cbxMateriaApunte.Text + "','"
-                + numPrecioApunte.Text + "','" + Login.ObtenerDatosUsuario.IDdelUsuario + "')";
+                + numPrecioApunte.Text + "','" + Login.ObtenerDatosUsuario.IDdelUsuario + "','" + ImagenCargar + "')";
 
                 command.ExecuteNonQuery();
 
@@ -295,16 +319,34 @@ namespace PruebaConectarAccess
             OpenFileDialog getImage = new OpenFileDialog();
             getImage.InitialDirectory = "C:\\";
             getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*.jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+            Image imagen;
+
+            getImage.Title = "Selecciona una foto del libro";
 
             if (getImage.ShowDialog() == DialogResult.OK)
             {
-                pbImagen.ImageLocation = getImage.FileName;
-                //txtRutaImagen.Text = getImage.FileName;
+                pbImagen.Image = Image.FromFile(getImage.FileName);
+                imagen = pbImagen.Image;
+                string base64()
+                {
+                    using (MemoryStream m = new MemoryStream())
+                    {
+                        imagen.Save(m, imagen.RawFormat);
+                        byte[] imageBytes = m.ToArray();
+                        string base64string = Convert.ToBase64String(imageBytes);
+                        return base64string;
+                    }
+                }
+
+                ImagenCargar = base64();
+
             }
-            else
-            {
-                MessageBox.Show("No se selecciono ninguna Imagen","Sin Seleccion",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
-            }
+            //MessageBox.Show("No se selecciono ninguna Imagen","Sin Seleccion",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

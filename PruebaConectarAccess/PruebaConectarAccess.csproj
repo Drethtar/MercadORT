@@ -176,5 +176,11 @@
   <ItemGroup>
     <None Include="Resources\malu enojado.JPG" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Bitmap1.bmp" />
+    <None Include="Resources\SinImagen.jpg" />
+    <None Include="Resources\SinFoto.bmp" />
+    <Content Include="Resources\unnamed.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
