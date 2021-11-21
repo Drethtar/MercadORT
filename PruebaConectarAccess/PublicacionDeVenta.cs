@@ -40,6 +40,9 @@ namespace PruebaConectarAccess
             llTituloLibro.Hide(); txtTituloLibro.Hide(); //libro
             llTituloUtil.Hide(); txtTituloUtil.Hide(); //util
 
+            pbImagen.Hide();
+            btnExaminar.Hide();
+
             btnPublicar.Hide();
 
             this.WindowState = FormWindowState.Maximized;
@@ -72,6 +75,9 @@ namespace PruebaConectarAccess
                 cbxMateriaLibro.TabIndex = 3;
                 numPrecioLibro.TabIndex = 4;
                 txtDescLibro.TabIndex = 5;
+
+                pbImagen.Show();
+                btnExaminar.Show();
             }
             else if (cbxQueEs.Text == "Apunte")
             {
@@ -97,6 +103,9 @@ namespace PruebaConectarAccess
                 cbxMateriaApunte.TabIndex = 3;
                 numPrecioApunte.TabIndex = 4;
                 txtDescApunte.TabIndex = 5;
+
+                pbImagen.Show();
+                btnExaminar.Show();
             }
             else if (cbxQueEs.Text == "Util")
             {
@@ -122,6 +131,9 @@ namespace PruebaConectarAccess
                 cbxColorUtil.TabIndex = 3;
                 numPrecioUtil.TabIndex = 4;
                 txtDescUtil.TabIndex = 5;
+
+                pbImagen.Show();
+                btnExaminar.Show();
             }
         }
 

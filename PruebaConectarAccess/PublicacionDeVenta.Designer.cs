@@ -561,7 +561,7 @@ namespace PruebaConectarAccess
             this.btnExaminar.Name = "btnExaminar";
             this.btnExaminar.Size = new System.Drawing.Size(153, 23);
             this.btnExaminar.TabIndex = 39;
-            this.btnExaminar.Text = "Examinar";
+            this.btnExaminar.Text = "Elegir Foto";
             this.btnExaminar.UseVisualStyleBackColor = true;
             this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
             // 
