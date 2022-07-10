@@ -165,3 +165,26 @@ C:\Users\46754732\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\Pr
 C:\Users\46754732\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CopyComplete
 C:\Users\46754732\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.exe
 C:\Users\46754732\Desktop\PruebaConectarAccess\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe.config
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.exe
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\bin\Debug\PruebaConectarAccess.pdb
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\bin\Debug\ClassLibrary1.pdb
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\bin\Debug\ClassLibrary1.dll.config
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.AssemblyReference.cache
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionMisPublicaciones.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.ComprarOVender.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Login.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CrearCuenta.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.CambiarMiPassword.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.MisPublicaciones.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.OlvideMiContra.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Properties.Resources.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicacionDeVenta.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.Publicaciones.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.PublicationItem.resources
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.GenerateResource.cache
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CoreCompileInputs.cache
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.csproj.CopyComplete
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.exe
+C:\Users\Bauty Garcia\OneDrive\Escritorio\MercadORT\PruebaConectarAccess\obj\Debug\PruebaConectarAccess.pdb

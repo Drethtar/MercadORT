@@ -360,5 +360,10 @@ namespace PruebaConectarAccess
         {
 
         }
+
+        private void txtDescApunte_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

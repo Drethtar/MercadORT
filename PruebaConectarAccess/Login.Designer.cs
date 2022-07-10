@@ -42,6 +42,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -57,7 +58,7 @@
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtUsuario.Location = new System.Drawing.Point(557, 259);
+            this.txtUsuario.Location = new System.Drawing.Point(907, 469);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Multiline = true;
             this.txtUsuario.Name = "txtUsuario";
@@ -73,7 +74,7 @@
             this.txtContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContra.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContra.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtContra.Location = new System.Drawing.Point(557, 331);
+            this.txtContra.Location = new System.Drawing.Point(907, 541);
             this.txtContra.Margin = new System.Windows.Forms.Padding(2);
             this.txtContra.Multiline = true;
             this.txtContra.Name = "txtContra";
@@ -90,7 +91,7 @@
             this.llCrearCuenta.BackColor = System.Drawing.Color.White;
             this.llCrearCuenta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.llCrearCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llCrearCuenta.Location = new System.Drawing.Point(555, 485);
+            this.llCrearCuenta.Location = new System.Drawing.Point(905, 695);
             this.llCrearCuenta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llCrearCuenta.Name = "llCrearCuenta";
             this.llCrearCuenta.Size = new System.Drawing.Size(203, 18);
@@ -112,7 +113,7 @@
             this.btnIniciarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(508, 413);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(858, 623);
             this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(0);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(307, 54);
@@ -126,7 +127,7 @@
             this.LLCambiarPassword.BackColor = System.Drawing.Color.White;
             this.LLCambiarPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LLCambiarPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LLCambiarPassword.Location = new System.Drawing.Point(585, 555);
+            this.LLCambiarPassword.Location = new System.Drawing.Point(935, 765);
             this.LLCambiarPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LLCambiarPassword.Name = "LLCambiarPassword";
             this.LLCambiarPassword.Size = new System.Drawing.Size(145, 18);
@@ -142,7 +143,7 @@
             this.llOlvideMiPassword.BackColor = System.Drawing.Color.White;
             this.llOlvideMiPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.llOlvideMiPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llOlvideMiPassword.Location = new System.Drawing.Point(571, 521);
+            this.llOlvideMiPassword.Location = new System.Drawing.Point(921, 731);
             this.llOlvideMiPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llOlvideMiPassword.Name = "llOlvideMiPassword";
             this.llOlvideMiPassword.Size = new System.Drawing.Size(179, 18);
@@ -156,7 +157,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(609, 54);
+            this.pictureBox2.Location = new System.Drawing.Point(959, 264);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(114, 101);
             this.pictureBox2.TabIndex = 11;
@@ -167,7 +168,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Location = new System.Drawing.Point(445, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(795, 239);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(442, 586);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +179,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(545, 194);
+            this.pictureBox3.Location = new System.Drawing.Point(895, 404);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(228, 33);
             this.pictureBox3.TabIndex = 13;
@@ -187,7 +188,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox4.Location = new System.Drawing.Point(510, 259);
+            this.pictureBox4.Location = new System.Drawing.Point(860, 469);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(47, 54);
             this.pictureBox4.TabIndex = 14;
@@ -196,7 +197,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox5.Location = new System.Drawing.Point(510, 331);
+            this.pictureBox5.Location = new System.Drawing.Point(860, 541);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(47, 54);
             this.pictureBox5.TabIndex = 15;
@@ -206,7 +207,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(525, 275);
+            this.pictureBox6.Location = new System.Drawing.Point(875, 485);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(20, 24);
             this.pictureBox6.TabIndex = 16;
@@ -216,18 +217,28 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.Location = new System.Drawing.Point(524, 348);
+            this.pictureBox7.Location = new System.Drawing.Point(874, 558);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(20, 24);
             this.pictureBox7.TabIndex = 17;
             this.pictureBox7.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(10, 10);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -273,6 +284,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button button1;
     }
 }
 

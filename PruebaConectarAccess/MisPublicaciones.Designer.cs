@@ -45,7 +45,7 @@ namespace PruebaConectarAccess
             this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtras.Location = new System.Drawing.Point(11, 26);
+            this.btnAtras.Location = new System.Drawing.Point(60, 967);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(159, 63);
@@ -57,7 +57,7 @@ namespace PruebaConectarAccess
             // 
             this.MyPublicationsPanel.AutoScroll = true;
             this.MyPublicationsPanel.BackColor = System.Drawing.Color.White;
-            this.MyPublicationsPanel.Location = new System.Drawing.Point(225, 119);
+            this.MyPublicationsPanel.Location = new System.Drawing.Point(587, 281);
             this.MyPublicationsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.MyPublicationsPanel.Name = "MyPublicationsPanel";
             this.MyPublicationsPanel.Size = new System.Drawing.Size(1000, 528);
@@ -67,7 +67,7 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(175, 82);
+            this.pictureBox1.Location = new System.Drawing.Point(539, 244);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1100, 600);
             this.pictureBox1.TabIndex = 7;
@@ -78,7 +78,7 @@ namespace PruebaConectarAccess
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.MyPublicationsPanel);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.pictureBox1);

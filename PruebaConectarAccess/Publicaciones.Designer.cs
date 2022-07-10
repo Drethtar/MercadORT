@@ -64,7 +64,7 @@ namespace PruebaConectarAccess
             this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtras.Location = new System.Drawing.Point(16, 23);
+            this.btnAtras.Location = new System.Drawing.Point(60, 967);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(160, 63);
@@ -83,7 +83,7 @@ namespace PruebaConectarAccess
             "Libro",
             "Apunte",
             "Util"});
-            this.cbxMaterial.Location = new System.Drawing.Point(47, 315);
+            this.cbxMaterial.Location = new System.Drawing.Point(414, 479);
             this.cbxMaterial.Margin = new System.Windows.Forms.Padding(2);
             this.cbxMaterial.Name = "cbxMaterial";
             this.cbxMaterial.Size = new System.Drawing.Size(229, 41);
@@ -123,7 +123,7 @@ namespace PruebaConectarAccess
             "Medios",
             "Humanidades",
             "Gestion"});
-            this.cbxMateria.Location = new System.Drawing.Point(47, 445);
+            this.cbxMateria.Location = new System.Drawing.Point(414, 609);
             this.cbxMateria.Margin = new System.Windows.Forms.Padding(2);
             this.cbxMateria.Name = "cbxMateria";
             this.cbxMateria.Size = new System.Drawing.Size(229, 41);
@@ -139,7 +139,7 @@ namespace PruebaConectarAccess
             this.btnCerrarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(1165, 23);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(1828, 967);
             this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(158, 63);
@@ -153,7 +153,7 @@ namespace PruebaConectarAccess
             this.lblMateria.BackColor = System.Drawing.Color.White;
             this.lblMateria.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMateria.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblMateria.Location = new System.Drawing.Point(76, 398);
+            this.lblMateria.Location = new System.Drawing.Point(443, 562);
             this.lblMateria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMateria.Name = "lblMateria";
             this.lblMateria.Size = new System.Drawing.Size(114, 45);
@@ -166,7 +166,7 @@ namespace PruebaConectarAccess
             this.publicationsPanel.BackColor = System.Drawing.SystemColors.Control;
             this.publicationsPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("publicationsPanel.BackgroundImage")));
             this.publicationsPanel.Controls.Add(this.vScrollBar1);
-            this.publicationsPanel.Location = new System.Drawing.Point(321, 97);
+            this.publicationsPanel.Location = new System.Drawing.Point(688, 261);
             this.publicationsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.publicationsPanel.Name = "publicationsPanel";
             this.publicationsPanel.Size = new System.Drawing.Size(990, 588);
@@ -202,7 +202,7 @@ namespace PruebaConectarAccess
             "Rosa",
             "Transparente",
             "No Importa"});
-            this.cbxColor.Location = new System.Drawing.Point(47, 445);
+            this.cbxColor.Location = new System.Drawing.Point(414, 609);
             this.cbxColor.Name = "cbxColor";
             this.cbxColor.Size = new System.Drawing.Size(229, 41);
             this.cbxColor.TabIndex = 11;
@@ -214,7 +214,7 @@ namespace PruebaConectarAccess
             this.lbQueColor.BackColor = System.Drawing.Color.White;
             this.lbQueColor.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbQueColor.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lbQueColor.Location = new System.Drawing.Point(39, 399);
+            this.lbQueColor.Location = new System.Drawing.Point(406, 563);
             this.lbQueColor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbQueColor.Name = "lbQueColor";
             this.lbQueColor.Size = new System.Drawing.Size(231, 45);
@@ -225,7 +225,7 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 91);
+            this.pictureBox1.Location = new System.Drawing.Point(383, 255);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(276, 602);
             this.pictureBox1.TabIndex = 13;
@@ -235,7 +235,7 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(95, 142);
+            this.pictureBox2.Location = new System.Drawing.Point(462, 306);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(116, 101);
             this.pictureBox2.TabIndex = 14;
@@ -245,7 +245,7 @@ namespace PruebaConectarAccess
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(309, 91);
+            this.pictureBox3.Location = new System.Drawing.Point(676, 255);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(1014, 602);
             this.pictureBox3.TabIndex = 15;
@@ -257,7 +257,7 @@ namespace PruebaConectarAccess
             this.lblQueEs.BackColor = System.Drawing.Color.White;
             this.lblQueEs.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQueEs.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblQueEs.Location = new System.Drawing.Point(39, 268);
+            this.lblQueEs.Location = new System.Drawing.Point(406, 432);
             this.lblQueEs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQueEs.Name = "lblQueEs";
             this.lblQueEs.Size = new System.Drawing.Size(126, 45);
@@ -270,7 +270,7 @@ namespace PruebaConectarAccess
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lbQueColor);
             this.Controls.Add(this.cbxColor);
